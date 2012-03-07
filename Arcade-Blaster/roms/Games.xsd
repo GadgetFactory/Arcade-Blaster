@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <xsd:simpleType name="HardwareTypes">
+	<xsd:restriction base="xsd:string">
+	  <xsd:enumeration value="pacman"/>
+	  <xsd:enumeration value="frogger"/>
+	  <xsd:enumeration value="galaxian"/>
+	  <xsd:enumeration value="space_invaders"/>
+	</xsd:restriction>
+  </xsd:simpleType>
+  <xsd:element name="gamelist">
+	<xsd:complexType>
+	  <xsd:sequence>
+		<xsd:element name="game" maxOccurs="unbounded">
+		  <xsd:complexType>
+			<xsd:sequence>
+			  <xsd:element name="hardware" type="HardwareTypes" />
+			  <xsd:element name="category" type="xsd:token" />
+			  <xsd:element name="publisher" type="xsd:token" />
+			  <xsd:element name="year" type="xsd:gYear" />
+			  <xsd:element name="description" type="xsd:string" />
+			  <xsd:element name="group" maxOccurs="unbounded">
+				<xsd:complexType>
+				  <xsd:sequence>
+					<xsd:element name="rom" maxOccurs="unbounded">
+					  <xsd:complexType>
+						<xsd:attribute name="file" type="xsd:token" use="required" />
+						<xsd:attribute name="offset" type="xsd:hexBinary" use="required" />
+						<xsd:attribute name="size" type="xsd:hexBinary" use="required" />
+						<xsd:attribute name="crc" type="xsd:hexBinary" use="required" />
+						<xsd:attribute name="sha1" type="xsd:hexBinary" use="required" />
+					  </xsd:complexType>
+					</xsd:element>
+				  </xsd:sequence>
+				  <xsd:attribute name="name" type="xsd:string" use="required" />
+				  <xsd:attribute name="size" type="xsd:hexBinary" />
+				</xsd:complexType>
+			  </xsd:element>
+			  <xsd:element maxOccurs="unbounded" name="generate">
+				<xsd:complexType>
+				  <xsd:attribute name="src" type="xsd:string" use="required" />
+				  <xsd:attribute name="file" type="xsd:token" use="required" />
+				  <xsd:attribute name="parameters" type="xsd:token" use="required" />
+				</xsd:complexType>
+			  </xsd:element>
+			  <xsd:element name="assembly">
+				<xsd:complexType>
+				  <xsd:sequence>
+					<xsd:element maxOccurs="unbounded" name="piece">
+					  <xsd:complexType>
+						<xsd:attribute name="file" type="xsd:token" use="required" />
+						<xsd:attribute name="tag" type="xsd:token" use="required" />
+					  </xsd:complexType>
+					</xsd:element>
+				  </xsd:sequence>
+				  <xsd:attribute name="name" type="xsd:token" />
+				</xsd:complexType>
+			  </xsd:element>
+			</xsd:sequence>
+			<xsd:attribute name="name" type="xsd:token" use="required" />
+			<xsd:attribute name="id" type="xsd:string" use="required" />
+		  </xsd:complexType>
+		</xsd:element>
+	  </xsd:sequence>
+	</xsd:complexType>
+  </xsd:element>
+</xsd:schema>

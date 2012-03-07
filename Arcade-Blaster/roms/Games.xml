@@ -1,0 +1,487 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+
+<gamelist>
+	<game name="Pac-Man" id="pacman">
+		<hardware>pacman</hardware>
+		<category>maze</category>
+		<publisher>Namco</publisher>
+		<year>1980</year>
+		<description>pac-man</description>
+
+		<fileset primary="true">
+			<group name="maincpu" size="4000">
+				<rom file="namcopac.6e" offset="0" size="1000" crc="fee263b3" sha1="87117ba5082cd7a615b4ec7c02dd819003fbd669" />
+				<rom file="namcopac.6f" offset="1000" size="1000" crc="39d1fc83" sha1="326dbbf94c6fa2e96613dedb53702f8832b47d59" />
+				<rom file="namcopac.6h" offset="2000" size="1000" crc="02083b03" sha1="7e1945f6eb51f2e51806d0439f975f7a2889b9b8" />
+				<rom file="namcopac.6j" offset="3000" size="1000" crc="7a36fe55" sha1="01b4c38108d9dc4e48da4f8d685248e1e6821377" />
+			</group>
+			<group name="gfx1" size="2000">
+				<rom file="pacman.5e" offset="0" size="1000" crc="0c944964" sha1="06ef227747a440831c9a3a613b76693d52a2f0a9" />
+				<rom file="pacman.5f" offset="1000" size="1000" crc="958fedf9" sha1="4a937ac02216ea8c96477d4a15522070507fb599" />
+			</group>
+			<group name="82s1261m" size="100">
+				<rom file="82s126.1m" offset="0" size="100" crc="a9cc86bf" sha1="bbcec0570aeceb582ff8238a4bc8546a23430081" />
+			</group>
+			<group name="82s1263m" size="100">
+				<rom file="82s126.3m" offset="100" size="100" crc="77245b66" sha1="0c4d0bee858b97632411c440bea6948a74759746" />
+			</group>
+			<group name="82s1237f" size="20">
+				<rom file="82s123.7f" offset="0" size="20" crc="2fc650bd" sha1="8d0268dee78e47c712202b0ec4f1f51109b1f2a5" />
+			</group>
+			<group name="82s1264a" size="100">
+				<rom file="82s126.4a" offset="20" size="100" crc="3eb3a8e4" sha1="19097b5f60d1030f8b82d9f1d3a241f93e5c75d6" />
+			</group>
+		</fileset>
+
+		<!-- Uses groups as input and creates intermediate mem files by name specified in file atribute-->
+		<generate src="82s1261m" file="prom1_dst" parameters="entity=PROM1_DST;addrbits=9" />
+		<generate src="82s1264a" file="prom4_dst" parameters="entity=PROM4_DST;addrbits=8" />
+		<generate src="82s1237f" file="prom7_dst" parameters="entity=PROM7_DST;addrbits=4" />
+		<generate src="gfx1" file="gfx1" parameters="entity=GFX1;addrbits=13" />
+		<generate src="maincpu" file="rom0" parameters="entity=ROM_PGM_0;addrbits=14" />
+		<generate src="gfx1" file="rom1" parameters="entity=ROM_PGM_1;addrbits=13" />
+
+		<!-- Uses output of (file attribute) from generate tag. Sequence is important! -->
+		<assembly name="pacman_merged">
+			<piece file="prom1_dst" tag="rom_audio1m" />
+			<piece file="prom4_dst" tag="rom_col4a" />
+			<piece file="prom7_dst" tag="rom_col7f" />
+			<piece file="gfx1" tag="rom_gfx1" />
+			<piece file="rom0" tag="rom_code" />
+			<!--piece file="rom1" tag="rom_wiz" /-->
+		</assembly>
+	</game>
+
+	<game name="Pong Demo" id="pongdemo">
+		<hardware>pacman</hardware>
+		<category>maze</category>
+		<publisher>Homebrew</publisher>
+		<year>1980</year>
+		<description>pac-man</description>
+
+		<fileset primary="true">
+			<group name="main" size="4000">
+				<rom file="pacman.6e" offset="0" size="1000" crc="b0d6d512" sha1="" />
+				<rom file="pacman.6f" offset="1000" size="1000" crc="c71c0011" sha1="" />
+				<rom file="pacman.6h" offset="2000" size="1000" crc="c71c0011" sha1="" />
+				<rom file="pacman.6j" offset="3000" size="1000" crc="c71c0011" sha1="" />
+			</group>
+			<group name="gfx1" size="2000">
+				<rom file="pacman.5e" offset="0" size="1000" crc="57fe0ace" sha1="" />
+				<rom file="pacman.5f" offset="1000" size="1000" crc="8bbd8de5" sha1="" />
+			</group>
+			<group name="pacman1m" size="100">
+				<rom file="pacman.1m" offset="0" size="100" crc="0d968558" sha1="" />
+			</group>
+			<group name="pacman7f" size="20">
+				<rom file="pacman.7f" offset="0" size="20" crc="e3a96194" sha1="" />
+			</group>
+			<group name="pacman4a" size="100">
+				<rom file="pacman.4a" offset="20" size="100" crc="dbd17cc2" sha1="" />
+			</group>
+		</fileset>
+
+		<!-- Uses groups as input and creates intermediate mem files by name specified in file atribute-->
+		<generate src="pacman1m" file="prom1_dst" parameters="entity=PROM1_DST;addrbits=9" />
+		<generate src="pacman4a" file="prom4_dst" parameters="entity=PROM4_DST;addrbits=8" />
+		<generate src="pacman7f" file="prom7_dst" parameters="entity=PROM7_DST;addrbits=4" />
+		<generate src="gfx1" file="gfx1" parameters="entity=GFX1;addrbits=13" />
+		<generate src="main" file="rom0" parameters="entity=ROM_PGM_0;addrbits=14" />
+		<generate src="gfx1" file="rom1" parameters="entity=ROM_PGM_1;addrbits=13" />
+
+		<!-- Uses output of (file attribute) from generate tag. Sequence is important! -->
+		<assembly name="pong_merged">
+			<piece file="prom1_dst" tag="rom_audio1m" />
+			<piece file="prom4_dst" tag="rom_col4a" />
+			<piece file="prom7_dst" tag="rom_col7f" />
+			<piece file="gfx1" tag="rom_gfx1" />
+			<piece file="rom0" tag="rom_code" />
+			<!--piece file="rom1" tag="rom_wiz" /-->
+		</assembly>
+	</game>
+
+	<game name="Crush Roller" id="crush2">
+		<hardware>pacman</hardware>
+		<category>maze</category>
+		<publisher>Kural Esco Electric</publisher>
+		<year>1981</year>
+		<description>Crush Roller</description>
+
+		<fileset primary="true">
+			<group name="maincpu" size="4000">
+				<rom file="tp1" offset="0" size="800" crc="f276592e" sha1="68ebb7d9f70af868d99ec42c26bc55a54ba1f22c" />
+				<rom file="tp5a" offset="800" size="800" crc="3d302abe" sha1="8ca5cd82d099b55e20f785489158231a1d99a430" />
+				<rom file="tp2" offset="1000" size="800" crc="25f42e70" sha1="66de8203c364fd90e8a2b5749c2e40665b2f5830" />
+				<rom file="tp6" offset="1800" size="800" crc="98279cbe" sha1="84b5e64bdbc25afab9b6f53e1719640e21a6feba" />
+				<rom file="tp3" offset="2000" size="800" crc="8377b4cb" sha1="f828a177f22db9093a00c31e39e16214ce0dc6de" />
+				<rom file="tp7" offset="2800" size="800" crc="d8e76c8c" sha1="7c3d7eb07b9256130141f71eba722f7823fd4c32" />
+				<rom file="tp4" offset="3000" size="800" crc="90b28fa3" sha1="ff58d2dfb016397daabe2996bc3a7b63d28a4cca" />
+				<rom file="tp8" offset="3800" size="800" crc="10854e1b" sha1="b3b9066d9a43796185c00ae12f7bb2bbf42e3a07" />
+			</group>
+			<group name="gfx1" size="2000">
+				<rom file="tpa" offset="0" size="800" crc="c7617198" sha1="95b204af0345163f93811cc770ee0ca2851a39c1" />
+				<rom file="tpc" offset="800" size="800" crc="e129d76a" sha1="c9256795c6d0929ade1f24b372dadc2a2b88d897" />
+				<rom file="tpb" offset="1000" size="800" crc="d1899f05" sha1="dce755511b6262b984a2bca329f454892e486a09" />
+				<rom file="tpd" offset="1800" size="800" crc="d35d1caf" sha1="65dd7861e05651485626465dc97215fed58db551" />
+			</group>
+			<group name="82s1237f" size="20">
+				<rom file="82S123.7F" offset="0" size="20" crc="2fc650bd" sha1="8d0268dee78e47c712202b0ec4f1f51109b1f2a5" />
+			</group>
+			<group name="2s1404a" size="100">
+				<rom file="2s140.4a" offset="20" size="100" crc="63efb927" sha1="5c144a613fc4960a1dfd7ead89e7fee258a63171" />
+			</group>
+			<group name="82s1261m" size="100">
+				<rom file="82S126.1M" offset="0" size="100" crc="a9cc86bf" sha1="bbcec0570aeceb582ff8238a4bc8546a23430081" />
+			</group>
+			<group name="82s1263m" size="100">
+				<rom file="82S126.3M" offset="100" size="100" crc="77245b66" sha1="0c4d0bee858b97632411c440bea6948a74759746" />
+			</group>
+		</fileset>
+
+		<generate src="82s1261m" file="prom1_dst" parameters="entity=PROM1_DST;addrbits=9" />
+		<generate src="2s1404a" file="prom4_dst" parameters="entity=PROM4_DST;addrbits=8" />
+		<generate src="82s1237f" file="prom7_dst" parameters="entity=PROM7_DST;addrbits=4" />
+		<generate src="gfx1" file="gfx1" parameters="entity=GFX1;addrbits=13" />
+		<generate src="maincpu" file="rom0" parameters="entity=ROM_PGM_0;addrbits=14" />
+		<generate src="gfx1" file="rom1" parameters="entity=ROM_PGM_1;addrbits=13" />
+
+		<assembly name="crush_merged">
+			<piece file="prom1_dst" tag="rom_audio1m" />
+			<piece file="prom4_dst" tag="rom_col4a" />
+			<piece file="prom7_dst" tag="rom_col7f" />
+			<piece file="gfx1" tag="rom_gfx1" />
+			<piece file="rom0" tag="rom_code" />
+			<!--piece file="rom1" tag="rom_wiz" /-->
+		</assembly>
+	</game>
+
+	<game name="Gorkans" id="gorkans">
+		<hardware>pacman</hardware>
+		<category>maze</category>
+		<publisher>Techstar</publisher>
+		<year>1983</year>
+		<description>gorkans</description>
+
+		<fileset primary="true">
+			<group name="maincpu" size="4000">
+				<rom file="gorkans8.rom" offset="0" size="800" crc="55100b18" sha1="8f657c1b2865987b60d95960c5297a82bb1cc6e0" />
+				<rom file="gorkans4.rom" offset="800" size="800" crc="b5c604bf" sha1="0f3608d630fba9d4734a3ef30199a5d1a067cdff" />
+				<rom file="gorkans7.rom" offset="1000" size="800" crc="b8c6def4" sha1="58ac78fc5b3559ef771ca708a79089b7a00cf6b8" />
+				<rom file="gorkans3.rom" offset="1800" size="800" crc="4602c840" sha1="c77de0e991c44c2ee8a4537e264ac8fbb1b4b7db" />
+				<rom file="gorkans6.rom" offset="2000" size="800" crc="21412a62" sha1="ece44c3204cf182db23b594ebdc051b51340ba2b" />
+				<rom file="gorkans2.rom" offset="2800" size="800" crc="a013310b" sha1="847ba7ca033eaf49245bef49d6513619edec3472" />
+				<rom file="gorkans5.rom" offset="3000" size="800" crc="122969b2" sha1="0803e1ec5e5ed742ea83ff156ae75a2d48530f71" />
+				<rom file="gorkans1.rom" offset="3800" size="800" crc="f2524b11" sha1="1216b963e73c1de63cc323e361875f6810d83a05" />
+			</group>
+			<group name="gfx1" size="2000">
+				<rom file="gorkgfx4.rom" offset="0" size="800" crc="39cd0dbc" sha1="8d6882dad94b26da8f0737e7f7f99946fe273f1b" />
+				<rom file="gorkgfx2.rom" offset="800" size="800" crc="33d52535" sha1="e78ac5afa1ce996c41005c619ba2d2aa718497fc" />
+				<rom file="gorkgfx3.rom" offset="1000" size="800" crc="4b6b7970" sha1="1d8b65cad0b834fb920135fc907432042bc83db2" />
+				<rom file="gorkgfx1.rom" offset="1800" size="800" crc="ed70bb3c" sha1="7e51ddcf496f3b80fe186acc8bc6a0e574340346" />
+			</group>
+			<group name="gorkprom3" size="100">
+				<rom file="gorkprom.3" offset="0" size="100" crc="a9cc86bf" sha1="bbcec0570aeceb582ff8238a4bc8546a23430081" />
+			</group>
+			<group name="gorkprom1" size="100">
+				<rom file="gorkprom.1" offset="20" size="100" crc="3eb3a8e4" sha1="19097b5f60d1030f8b82d9f1d3a241f93e5c75d6" />
+			</group>
+			<group name="gorkprom4" size="20">
+				<rom file="gorkprom.4" offset="0" size="20" crc="2fc650bd" sha1="8d0268dee78e47c712202b0ec4f1f51109b1f2a5" />
+			</group>
+		</fileset>
+
+		<!-- Uses groups as input and creates intermediate mem files by name specified in file atribute-->
+		<generate src="gorkprom3" file="prom1_dst" parameters="entity=PROM1_DST;addrbits=9" />
+		<generate src="gorkprom1" file="prom4_dst" parameters="entity=PROM4_DST;addrbits=8" />
+		<generate src="gorkprom4" file="prom7_dst" parameters="entity=PROM7_DST;addrbits=4" />
+		<generate src="gfx1" file="gfx1" parameters="entity=GFX1;addrbits=13" />
+		<generate src="maincpu" file="rom0" parameters="entity=ROM_PGM_0;addrbits=14" />
+		<generate src="gfx1" file="rom1" parameters="entity=ROM_PGM_1;addrbits=13" />
+
+		<!-- Uses output of (file attribute) from generate tag. Sequence is important! -->
+		<assembly name="gorkans_merged">
+			<piece file="prom1_dst" tag="rom_audio1m" />
+			<piece file="prom4_dst" tag="rom_col4a" />
+			<piece file="prom7_dst" tag="rom_col7f" />
+			<piece file="gfx1" tag="rom_gfx1" />
+			<piece file="rom0" tag="rom_code" />
+			<!--piece file="rom1" tag="rom_wiz" /-->
+		</assembly>
+	</game>
+
+	<game name="Lizard Wizard" id="lizwiz">
+		<hardware>pacman</hardware>
+		<category>maze</category>
+		<publisher>Techstar</publisher>
+		<year>1985</year>
+		<description>lizwiz</description>
+
+		<fileset primary="true">		
+			<group name="maincpu" size="4000">
+				<rom file="6e.cpu" offset="0" size="1000" crc="32bc1990" sha1="467c9d70e07f403b6b9118aebe4e6d0abb40a5c1" />
+				<rom file="6f.cpu" offset="1000" size="1000" crc="ef24b414" sha1="12fce48008c4f9387df0c84f3b0d7c5a1b35d898" />
+				<rom file="6h.cpu" offset="2000" size="1000" crc="30bed83d" sha1="8c2458f98320c6887580c71632b544da0a582ba2" />
+				<rom file="6j.cpu" offset="3000" size="1000" crc="dd09baeb" sha1="f91447ec1f06bf95106e6872d80dcb82e1d42ffb" />
+			</group>
+			<group name="wiz" size="2000">
+				<rom file="wiza" offset="8000" size="1000" crc="f6dea3a6" sha1="ec0b123fd2e6de6681ca14f35fda249b2c2ec44f" />
+				<rom file="wizb" offset="9000" size="1000" crc="f27fb5a8" sha1="3ea384a1064302709d97fc16b347d3c012e90ac7" />
+			</group>
+			<group name="gfx1" size="2000">
+				<rom file="5e.cpu" offset="0" size="1000" crc="45059e73" sha1="c960cd5720bfa21db73e1000fe8be7d5baf2a3a1" />
+				<rom file="5f.cpu" offset="1000" size="1000" crc="d2469717" sha1="194c8f816e5ff7614b3db4f355223667105738fa" />
+			</group>
+			<group name="82s1261m" size="100">
+				<rom file="82s126.1m" offset="0" size="100" crc="a9cc86bf" sha1="bbcec0570aeceb582ff8238a4bc8546a23430081" />
+			</group>
+			<group name="4acpu" size="100">
+				<rom file="4a.cpu" offset="20" size="100" crc="5fdca536" sha1="3a09b29374031aaa3722932aff974a467b3bb201" />
+			</group>
+			<group name="7fcpu" size="20">
+				<rom file="7f.cpu" offset="0" size="20" crc="7549a947" sha1="4f2c3e7d6c38f0b9a90317f91feb3f86c9a0d0a5" />
+			</group>
+		</fileset>
+
+		<!-- Uses groups as input and creates intermediate mem files by name specified in file atribute-->
+		<generate src="82s1261m" file="prom1_dst" parameters="entity=PROM1_DST;addrbits=9" />
+		<generate src="4acpu" file="prom4_dst" parameters="entity=PROM4_DST;addrbits=8" />
+		<generate src="7fcpu" file="prom7_dst" parameters="entity=PROM7_DST;addrbits=4" />
+		<generate src="gfx1" file="gfx1" parameters="entity=GFX1;addrbits=13" />
+		<generate src="maincpu" file="rom0" parameters="entity=ROM_PGM_0;addrbits=14" />
+		<generate src="wiz" file="rom1" parameters="entity=ROM_PGM_1;addrbits=13" />
+
+		<!-- Uses output of (file attribute) from generate tag. Sequence is important! -->
+		<assembly name="lizwiz_merged">
+			<piece file="prom1_dst" tag="rom_audio1m" />
+			<piece file="prom4_dst" tag="rom_col4a" />
+			<piece file="prom7_dst" tag="rom_col7f" />
+			<piece file="gfx1" tag="rom_gfx1" />
+			<piece file="rom0" tag="rom_code" />
+			<piece file="rom1" tag="rom_wiz" />
+		</assembly>
+	</game>
+
+	<game name="Amidar" id="amidars">
+		<hardware>scramble</hardware>
+		<category>maze</category>
+		<publisher>Konami</publisher>
+		<year>1982</year>
+		<description>amidar</description>
+		
+		<fileset primary="true">		
+			<group name="maincpu" size="4000">
+				<rom file="am2d" offset="0" size="800" crc="24b79547" sha1="eca735c6a35561a9a6ba8a20dca1e1c78ed073fc" />
+				<rom file="am2e" offset="800" size="800" crc="4c64161e" sha1="5b2e49ff915295617671b13f15b566046a5dbc15" />
+				<rom file="am2f" offset="1000" size="800" crc="b3987a72" sha1="1d72e9ae3005029628c6f9beb6ca65afcb1f7893" />
+				<rom file="am2h" offset="1800" size="800" crc="29873461" sha1="7d0ee9a82f02163b4cc6a7097e88ae34e96ebf58" />
+				<rom file="am2j" offset="2000" size="800" crc="0fdd54d8" sha1="c32fdc8e292d91159e6c80c7033abea6404a4f2c" />
+				<rom file="am2l" offset="2800" size="800" crc="5382f7ed" sha1="425ec2c2caf404fc8ab13ee38d6567413022e1a1" />
+				<rom file="am2m" offset="3000" size="800" crc="1d7109e9" sha1="e0d24475547bbe5a94b45be6abefb84ad84d2534" />
+				<rom file="am2p" offset="3800" size="800" crc="c9163ac6" sha1="46d757180426b71c827d14a35824a248f2c787b6" />
+			</group>
+			<group name="amidarus5c" size="1000">
+				<rom file="amidarus.5c" offset="0" size="1000" crc="8ca7b750" sha1="4f4c2915503b85abe141d717fd254ee10c9da99e" />
+			</group>
+			<group name="amidarus5d" size="1000">
+				<rom file="amidarus.5d" offset="0" size="1000" crc="9b5bdc0a" sha1="84d953618c8bf510d23b42232a856ac55f1baff5" />
+			</group>
+			<group name="2716a6" size="800">
+				<rom file="2716.a6" offset="0" size="800" crc="2082ad0a" sha1="c6014d9575e92adf09b0961c2158a779ebe940c4" />
+			</group>
+			<group name="2716a5" size="800">
+				<rom file="2716.a5" offset="0" size="800" crc="3029f94f" sha1="3b432b42e79f8b0a7d65e197f373a04e3c92ff20" />
+			</group>
+			<group name="amidarclr" size="20">
+				<rom file="amidar.clr" offset="0" size="20" crc="f940dcc3" sha1="1015e56f37c244a850a8f4bf0e36668f047fd46d" />
+			</group>
+		</fileset>
+
+		<!-- Uses groups as input and creates intermediate mem files by name specified in file atribute-->
+		<generate src="maincpu" file="ROM_PGM" parameters="entity=ROM_PGM;addrbits=14" />
+		<generate src="amidarus5c" file="ROM_SND_0" parameters="entity=ROM_SND_0;addrbits=11" />
+		<generate src="amidarus5d" file="ROM_SND_1" parameters="entity=ROM_SND_1;addrbits=11" />
+		<generate src="amidarus5d" file="ROM_SND_2" parameters="entity=ROM_SND_2;addrbits=11" />
+		<generate src="2716a6" file="ROM_OBJ_1" parameters="entity=ROM_OBJ_1;addrbits=11" />
+		<generate src="2716a5" file="ROM_OBJ_0" parameters="entity=ROM_OBJ_0;addrbits=11" />
+		<generate src="amidarclr" file="ROM_LUT" parameters="entity=ROM_LUT;addrbits=5" />
+
+		<!-- Uses output of (file attribute) from generate tag. Sequence is important! -->
+		<assembly name="amidar_merged">
+			<piece file="ROM_LUT" tag="ROM_LUT" />		
+			<piece file="ROM_PGM" tag="ROM_PGM" />
+			<piece file="ROM_OBJ_0" tag="ROM_OBJ_0" />
+			<piece file="ROM_OBJ_1" tag="ROM_OBJ_1" />
+			<piece file="ROM_SND_0" tag="ROM_SND_0" />
+			<piece file="ROM_SND_1" tag="ROM_SND_1" />
+			<piece file="ROM_SND_2" tag="ROM_SND_2" />
+		</assembly>
+	</game>	
+
+	<game name="Scramble" id="scramble">
+		<hardware>scramble</hardware>
+		<category>undefined</category>
+		<publisher>Konami</publisher>
+		<year>1981</year>
+		<description>scramble</description>
+		
+		<fileset primary="true">
+			<group name="maincpu" size="4000">
+				<rom file="2d" offset="0" size="800" crc="b89207a1" sha1="5422df979e82bcc73df49f50515fe76c126c037b" />
+				<rom file="2e" offset="800" size="800" crc="e9b4b9eb" sha1="a8ee9ddfadf5e9accedfaf81da757a88a2e55a0a" />
+				<rom file="2f" offset="1000" size="800" crc="a1f14f4c" sha1="3eae2b3e4596505a8afb5c5cfb108e823c2c4319" />
+				<rom file="2h" offset="1800" size="800" crc="591bc0d9" sha1="170f9e92f0a3bee04407be27210b4fa825367688" />
+				<rom file="2j" offset="2000" size="800" crc="22f11b6b" sha1="e426ef6a7444a39a34d59799973b07d11b89f372" />
+				<rom file="2l" offset="2800" size="800" crc="705ffe49" sha1="174df3f281068c767344f751daace646360e26d6" />
+				<rom file="2m" offset="3000" size="800" crc="ea26c35c" sha1="a2f3380982d93a022f46756f974fd16c4cd617de" />
+				<rom file="2p" offset="3800" size="800" crc="94d8f5e3" sha1="f3a9c4d1d91836476fcad87ea0d243dde7171e0a" />
+			</group>
+			<group name="ot15c" size="800">
+				<rom file="ot1.5c" offset="0" size="800" crc="bcd297f0" sha1="8ed78487d76fd0a917ab7b258937a46e2cd9800c" />
+			</group>
+			<group name="ot25d" size="800">
+				<rom file="ot2.5d" offset="0" size="800" crc="de7912da" sha1="8558b4eff5d7e63029b325edef9914feda5834c3" />
+			</group>
+			<group name="ot35e" size="800">
+				<rom file="ot3.5e" offset="0" size="800" crc="ba2fa933" sha1="1f976d8595706730e29f93027e7ab4620075c078" />
+			</group>
+			<group name="5f" size="800">
+				<rom file="5f" offset="0" size="800" crc="5f30311a" sha1="d64134089bebd995b3a1a089411e180c8c29f32d" />
+			</group>
+			<group name="5h" size="800">
+				<rom file="5h" offset="0" size="800" crc="516e029e" sha1="81b44eb1ce43cebde87f0a41ade2e7eb291af78d" />
+			</group>
+			<group name="c01s6e" size="20">
+				<rom file="c01s.6e" offset="0" size="20" crc="4e3caeab" sha1="a25083c3e36d28afdefe4af6e6d4f3155e303625" />
+			</group>
+		</fileset>
+
+		<!-- Uses groups as input and creates intermediate mem files by name specified in file atribute-->
+		<generate src="maincpu" file="ROM_PGM" parameters="entity=ROM_PGM;addrbits=14" />
+		<generate src="ot15c" file="ROM_SND_0" parameters="entity=ROM_SND_0;addrbits=11" />
+		<generate src="ot25d" file="ROM_SND_1" parameters="entity=ROM_SND_1;addrbits=11" />
+		<generate src="ot35e" file="ROM_SND_2" parameters="entity=ROM_SND_2;addrbits=11" />
+		<generate src="5f" file="ROM_OBJ_1" parameters="entity=ROM_OBJ_1;addrbits=11" />
+		<generate src="5h" file="ROM_OBJ_0" parameters="entity=ROM_OBJ_0;addrbits=11" />
+		<generate src="c01s6e" file="ROM_LUT" parameters="entity=ROM_LUT;addrbits=5" />
+
+		<!-- Uses output of (file attribute) from generate tag. Sequence is important! -->
+		<assembly name="scramble_merged">
+			<piece file="ROM_LUT" tag="ROM_LUT" />		
+			<piece file="ROM_PGM" tag="ROM_PGM" />
+			<piece file="ROM_OBJ_0" tag="ROM_OBJ_0" />
+			<piece file="ROM_OBJ_1" tag="ROM_OBJ_1" />
+			<piece file="ROM_SND_0" tag="ROM_SND_0" />
+			<piece file="ROM_SND_1" tag="ROM_SND_1" />
+			<piece file="ROM_SND_2" tag="ROM_SND_2" />
+		</assembly>
+	</game>
+
+	<game name="The End" id="theend">
+		<hardware>scramble</hardware>
+		<category>shooting</category>
+		<publisher>Konami</publisher>
+		<year>1980</year>
+		<description>The end</description>
+		
+		<fileset primary="true">
+			<group name="maincpu" size="3000">
+				<rom file="ic13" offset="0" size="800" crc="90e5ab14" sha1="b926801ab1cc1e2787a76ced6c7cffd6fce753d4" />
+				<rom file="ic14" offset="800" size="800" crc="950f0a07" sha1="bde9f3c6cf060dc6f5b7652287b94e04bed7bcf7" />
+				<rom file="ic15" offset="1000" size="800" crc="6786bcf5" sha1="7556d3dc51d6a112b6357b8a36df05fd1a4d1cc9" />
+				<rom file="ic16" offset="1800" size="800" crc="380a0017" sha1="3354eb328a32537f722fe8a0949ddcab6cf21eb8" />
+				<rom file="ic17" offset="2000" size="800" crc="af067b7f" sha1="855c6ddf29fbfea004c7143fe29064abf53801ad" />
+				<rom file="ic18" offset="2800" size="800" crc="a0411b93" sha1="d644968758a1b73d13e09b24d24bfec82276e8f4" />
+			</group>
+			<group name="ic56" size="800">
+				<rom file="ic56" offset="0" size="800" crc="3b2c2f70" sha1="bcccdacacfc9a3b5f1412dfba6bb0046d283bccc" />
+			</group>
+			<group name="ic55" size="800">
+				<rom file="ic55" offset="0" size="800" crc="e0429e50" sha1="27678fc3172cbca3ae1eae96e9d8a62561d5ce40" />
+			</group>
+			<group name="ic30" size="800">
+				<rom file="ic30" offset="0" size="800" crc="527fd384" sha1="92a384899d5acd2c689f637da16a0e2d11a9d9c6" />
+			</group>
+			<group name="ic31" size="800">
+				<rom file="ic31" offset="0" size="800" crc="af6d09b6" sha1="f3ad51dc88aa58fd39195ead978b039e0b0b585c" />
+			</group>
+			<group name="63311j86" size="20">
+				<rom file="6331-1j.86" offset="0" size="20" crc="24652bc4" sha1="d89575f3749c75dc963317fe451ffeffd9856e4d" />
+			</group>
+		</fileset>
+		
+		<!-- Uses groups as input and creates intermediate mem files by name specified in file atribute-->
+		<generate src="maincpu" file="ROM_PGM" parameters="entity=ROM_PGM;addrbits=14" />
+		<generate src="ic55" file="ROM_SND_0" parameters="entity=ROM_SND_0;addrbits=11" />
+		<generate src="ic56" file="ROM_SND_1" parameters="entity=ROM_SND_1;addrbits=11" />
+		<generate src="ic56" file="ROM_SND_2" parameters="entity=ROM_SND_2;addrbits=11" />
+		<generate src="ic30" file="ROM_OBJ_1" parameters="entity=ROM_OBJ_1;addrbits=11" />
+		<generate src="ic31" file="ROM_OBJ_0" parameters="entity=ROM_OBJ_0;addrbits=11" />
+		<generate src="63311j86" file="ROM_LUT" parameters="entity=ROM_LUT;addrbits=5" />
+
+		<!-- Uses output of (file attribute) from generate tag. Sequence is important! -->
+		<assembly name="theend_merged">
+			<piece file="ROM_LUT" tag="ROM_LUT" />		
+			<piece file="ROM_PGM" tag="ROM_PGM" />
+			<piece file="ROM_OBJ_0" tag="ROM_OBJ_0" />
+			<piece file="ROM_OBJ_1" tag="ROM_OBJ_1" />
+			<piece file="ROM_SND_0" tag="ROM_SND_0" />
+			<piece file="ROM_SND_1" tag="ROM_SND_1" />
+			<piece file="ROM_SND_2" tag="ROM_SND_2" />
+		</assembly>
+	</game>	
+
+	<game name="Frogger" id="froggers2">
+		<hardware>frogger</hardware>
+		<category>maze</category>
+		<publisher>Konami</publisher>
+		<year>1981</year>
+		<description>frogger</description>
+		
+		<fileset primary="true">
+			<group name="maincpu" size="4000">
+				<rom file="epr-1012.ic5" offset="0" size="1000" crc="efab0c79" sha1="68c99b6cdcb9396bb473739a62ffc009b4bf57d5" />
+				<rom file="epr-1013a.ic6" offset="1000" size="1000" crc="aeca9c13" sha1="cdf560adbd7f2813e86e378da7781cccf7928a44" />
+				<rom file="epr-1014.ic7" offset="2000" size="1000" crc="dd251066" sha1="4612e1fe1ab7182a277140b1a1976cc17e0746a5" />
+				<rom file="epr-1015.ic8" offset="3000" size="1000" crc="bf293a02" sha1="be94e9f5caa74c3de6fd95bd20928f4a9c514227" />
+			</group>
+			<group name="epr608ic32" size="800">
+				<rom file="epr-608.ic32" offset="0" size="1000" crc="e8ab0256" sha1="f090afcfacf5f13cdfa0dfda8e3feb868c6ce8bc" />
+			</group>
+			<group name="epr609ic33" size="800">
+				<rom file="epr-609.ic33" offset="0" size="1000" crc="7380a48f" sha1="75582a94b696062cbdb66a4c5cf0bc0bb94f81ee" />
+			</group>
+			<group name="epr610ic34" size="800">
+				<rom file="epr-610.ic34" offset="0" size="800" crc="31d7eb27" sha1="2e1d34ae4da385fd7cac94707d25eeddf4604e1a" />
+			</group>
+			<group name="epr607ic101" size="800">
+				<rom file="epr-607.ic101" offset="0" size="800" crc="05f7d883" sha1="78831fd287da18928651a8adb7e578d291493eff" />
+			</group>
+			<group name="epr606ic102" size="800">
+				<rom file="epr-606.ic102" offset="0" size="800" crc="f524ee30" sha1="dd768967add61467baa08d5929001f157d6cd911" />
+			</group>
+			<group name="pr916l" size="20">
+				<rom file="pr-91.6l" offset="0" size="20" crc="413703bf" sha1="66648b2b28d3dcbda5bdb2605d1977428939dd3c" />
+			</group>
+		</fileset>
+
+		<!-- Uses groups as input and creates intermediate mem files by name specified in file atribute-->
+		<generate src="maincpu" file="ROM_PGM" parameters="entity=ROM_PGM;addrbits=14" />
+		<generate src="epr608ic32" file="ROM_SND_0" parameters="entity=ROM_SND_0;addrbits=11" />
+		<generate src="epr609ic33" file="ROM_SND_1" parameters="entity=ROM_SND_1;addrbits=11" />
+		<generate src="epr610ic34" file="ROM_SND_2" parameters="entity=ROM_SND_2;addrbits=11" />
+		<generate src="epr607ic101" file="ROM_OBJ_1" parameters="entity=ROM_OBJ_1;addrbits=11" />
+		<generate src="epr606ic102" file="ROM_OBJ_0" parameters="entity=ROM_OBJ_0;addrbits=11" />
+		<generate src="pr916l" file="ROM_LUT" parameters="entity=ROM_LUT;addrbits=5" />
+
+		<!-- Uses output of (file attribute) from generate tag. Sequence is important! -->
+		<assembly name="frogger_merged">
+			<piece file="ROM_LUT" tag="ROM_LUT" />		
+			<piece file="ROM_PGM" tag="ROM_PGM" />
+			<piece file="ROM_OBJ_0" tag="ROM_OBJ_0" />
+			<piece file="ROM_OBJ_1" tag="ROM_OBJ_1" />
+			<piece file="ROM_SND_0" tag="ROM_SND_0" />
+			<piece file="ROM_SND_1" tag="ROM_SND_1" />
+			<piece file="ROM_SND_2" tag="ROM_SND_2" />
+		</assembly>
+	</game>
+</gamelist>
