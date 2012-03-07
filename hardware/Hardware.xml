@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+
+<hardwarelist>
+	<hardware id="pacman">
+		<platform name="PapilioOne500k_ArcadeMegaWing" memmap="avrmap">pacman_hardware_p1_500K.bit</platform>
+		<platform name="PapilioLogicLX9_ArcadeMegaWing" memmap="avrmap">pacman_hardware_papilio_logic_lx9.bit</platform>
+	</hardware>
+	<hardware id="frogger">
+		<platform name="PapilioOne500k_ArcadeMegaWing" memmap="avrmap">frogger_hardware_p1_500K.bit</platform>
+		<platform name="PapilioLogicLX9_ArcadeMegaWing" memmap="avrmap">frogger_hardware_papilio_logic_lx9.bit</platform>
+	</hardware>
+	<hardware id="scramble">
+		<platform name="PapilioOne500k_ArcadeMegaWing" memmap="avrmap">scramble_hardware_p1_500K.bit</platform>
+		<platform name="PapilioLogicLX9_ArcadeMegaWing" memmap="avrmap">scramble_hardware_papilio_logic_lx9.bit</platform>
+	</hardware>
+	<hardware id="galaxian">
+		<platform name="PapilioOne500k_ArcadeMegaWing">galaxian_hardware_p1_500K.bit</platform>
+		<platform name="PapilioLogicLX9_ArcadeMegaWing">galaxian_hardware_papilio_logic_lx9.bit</platform>
+	</hardware>
+	<hardware id="spaceinv">
+		<platform name="PapilioOne500k_ArcadeMegaWing">space_invaders_hardware_p1_500K.bit</platform>
+		<platform name="PapilioLogicLX9_ArcadeMegaWing">space_invaders_hardware_papilio_logic_lx9.bit</platform>
+	</hardware>
+</hardwarelist>
