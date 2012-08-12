@@ -86,7 +86,7 @@
 		<rom name="pacman.5e" merge="pacman.5e" size="4096" crc="0c944964" sha1="06ef227747a440831c9a3a613b76693d52a2f0a9"/>
 		<rom name="pacman.5f" merge="pacman.5f" size="4096" crc="958fedf9" sha1="4a937ac02216ea8c96477d4a15522070507fb599"/>
         </game>
-        <game name="hangly2">
+	<game name="hangly2">
 		<description>Hangly-Man (Set 2)</description>
 		<year>1984</year>
 		<manufacturer>Nittoh</manufacturer>
@@ -102,8 +102,8 @@
 		<rom name="hangly2.6p" size="2048" crc="427c9d4d" sha1="917bc3d571cbdd24d88327ecabfb5b3f6d39af0a"/>
 		<rom name="pacman.5f" merge="pacman.5f" size="4096" crc="958fedf9" sha1="4a937ac02216ea8c96477d4a15522070507fb599"/>
 		<rom name="pacmanh.5e" size="4096" crc="299fb17a" sha1="ad97adc2122482a9018bacd137df9d8f409ddf85"/>
-        </game>
-        <game name="hangly3">
+	</game>
+	<game name="hangly3">
 		<description>Hangly-Man (Set 3)</description>
 		<year>1984</year>
 		<manufacturer>Nittoh</manufacturer>
@@ -123,7 +123,7 @@
 		<rom name="hm7.6n" size="2048" crc="ab74b51f" sha1="1bce8933ed7807eb7aca9670df8994f8d1a8b5b7"/>
 		<rom name="hm8.6p" size="2048" crc="931770d7" sha1="78fcf88e07ec5126c12c3297b62ca388809e947c"/>
 		<rom name="hm9.5e" size="2048" crc="5f4be3cc" sha1="eeb0e1e44549b99eab481d9ac016b4359e19fe30"/>
-        </game>
+	</game>
 
 	<gameDisabled name="Homebrew - Tetris">
 		<description>Homebrew #001 [Pac-Man Hardware]</description>
@@ -137,6 +137,7 @@
 		<rom name="pacman.7f" size="20" crc="e3a96194" sha1=""/>
 		<rom name="pacman.4a" size="100" crc="dbd17cc2" sha1=""/>
 	</gameDisabled>
+
 	<game name="Crush Roller">
 		<description>Kural Esco Electric - Crush Roller [Pac-Man Hardware]</description>
 		<rom name="tp1" size="2048" crc="f276592e" sha1="68ebb7d9f70af868d99ec42c26bc55a54ba1f22c"/>
