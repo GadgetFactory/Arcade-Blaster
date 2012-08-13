@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
 
 <gamelist>
-	<game name="Pac-Man" id="pacman">
+	<game name="Puckman" id="puckman">
 		<hardware>pacman</hardware>
 		<category>maze</category>
 		<publisher>Namco</publisher>
-		<year>1980</year>
-		<description>pac-man</description>
+		<year>1979</year>
+		<description>puckman</description>
 
 		<fileset primary="true">
 			<group name="maincpu" size="4000">
@@ -52,6 +52,106 @@
 		</assembly>
 	</game>
 
+	<game name="Pac-Man" id="pacman">
+		<hardware>pacman</hardware>
+		<category>maze</category>
+		<publisher>Midway Mfg Co</publisher>
+		<year>1980</year>
+		<description>pac-man</description>
+
+		<fileset primary="true">
+			<group name="maincpu" size="4000">
+			    <rom file="pacman.6e" offset="0" size="1000" crc="c1e6ab10" sha1="e87e059c5be45753f7e9f33dff851f16d6751181" />
+				<rom file="pacman.6f" offset="1000" size="1000" crc="1a6fb2d4" sha1="674d3a7f00d8be5e38b1fdc208ebef5a92d38329" />
+				<rom file="pacman.6h" offset="2000" size="1000" crc="bcdd1beb" sha1="8e47e8c2c4d6117d174cdac150392042d3e0a881" />
+				<rom file="pacman.6j" offset="3000" size="1000" crc="817d94e3" sha1="d4a70d56bb01d27d094d73db8667ffb00ca69cb9" />
+			</group>
+			<group name="gfx1" size="2000">
+				<rom file="pacman.5e" offset="0" size="1000" crc="0c944964" sha1="06ef227747a440831c9a3a613b76693d52a2f0a9" />
+				<rom file="pacman.5f" offset="1000" size="1000" crc="958fedf9" sha1="4a937ac02216ea8c96477d4a15522070507fb599" />
+			</group>
+			<group name="82s1261m" size="100">
+				<rom file="82s126.1m" offset="0" size="100" crc="a9cc86bf" sha1="bbcec0570aeceb582ff8238a4bc8546a23430081" />
+			</group>
+			<group name="82s1263m" size="100">
+				<rom file="82s126.3m" offset="100" size="100" crc="77245b66" sha1="0c4d0bee858b97632411c440bea6948a74759746" />
+			</group>
+			<group name="82s1237f" size="20">
+				<rom file="82s123.7f" offset="0" size="20" crc="2fc650bd" sha1="8d0268dee78e47c712202b0ec4f1f51109b1f2a5" />
+			</group>
+			<group name="82s1264a" size="100">
+				<rom file="82s126.4a" offset="20" size="100" crc="3eb3a8e4" sha1="19097b5f60d1030f8b82d9f1d3a241f93e5c75d6" />
+			</group>
+		</fileset>
+
+		<!-- Uses groups as input and creates intermediate mem files by name specified in file atribute-->
+		<generate src="82s1261m" file="prom1_dst" parameters="entity=PROM1_DST;addrbits=9" />
+		<generate src="82s1264a" file="prom4_dst" parameters="entity=PROM4_DST;addrbits=8" />
+		<generate src="82s1237f" file="prom7_dst" parameters="entity=PROM7_DST;addrbits=4" />
+		<generate src="gfx1" file="gfx1" parameters="entity=GFX1;addrbits=13" />
+		<generate src="maincpu" file="rom0" parameters="entity=ROM_PGM_0;addrbits=14" />
+		<generate src="gfx1" file="rom1" parameters="entity=ROM_PGM_1;addrbits=13" />
+
+		<!-- Uses output of (file attribute) from generate tag. Sequence is important! -->
+		<assembly name="pacman_merged">
+			<piece file="prom1_dst" tag="rom_audio1m" />
+			<piece file="prom4_dst" tag="rom_col4a" />
+			<piece file="prom7_dst" tag="rom_col7f" />
+			<piece file="gfx1" tag="rom_gfx1" />
+			<piece file="rom0" tag="rom_code" />
+			<!--piece file="rom1" tag="rom_wiz" /-->
+		</assembly>
+	</game>
+
+	<game name="pacmanf" id="pacmanf">
+		<hardware>pacman</hardware>
+		<category>maze</category>
+		<publisher>Midway</publisher>
+		<year>1980</year>
+		<description>Pac-Man (Midway, with speedup hack)</description>
+		<fileset primary="true">
+			<group name="maincpu" size="10000">
+				<rom file="pacman.6e" offset="0" size="1000" crc="c1e6ab10" sha1="e87e059c5be45753f7e9f33dff851f16d6751181" />
+				<rom file="pacfast.6f" offset="1000" size="1000" crc="720dc3ee" sha1="7224d7acfa0144b681c71d7734a7337189835361" />
+				<rom file="pacman.6h" offset="2000" size="1000" crc="bcdd1beb" sha1="8e47e8c2c4d6117d174cdac150392042d3e0a881" />
+				<rom file="pacman.6j" offset="3000" size="1000" crc="817d94e3" sha1="d4a70d56bb01d27d094d73db8667ffb00ca69cb9" />
+			</group>
+			<group name="gfx1" size="2000">
+				<rom file="pacman.5e" offset="0" size="1000" crc="0c944964" sha1="06ef227747a440831c9a3a613b76693d52a2f0a9" />
+				<rom file="pacman.5f" offset="1000" size="1000" crc="958fedf9" sha1="4a937ac02216ea8c96477d4a15522070507fb599" />
+			</group>
+			<group name="82s1261m" size="100">
+				<rom file="82s126.1m" offset="0" size="100" crc="a9cc86bf" sha1="bbcec0570aeceb582ff8238a4bc8546a23430081" />
+			</group>
+			<group name="82s1263m" size="100">
+				<rom file="82s126.3m" offset="100" size="100" crc="77245b66" sha1="0c4d0bee858b97632411c440bea6948a74759746" />
+			</group>
+			<group name="82s1237f" size="20">
+				<rom file="82s123.7f" offset="0" size="20" crc="2fc650bd" sha1="8d0268dee78e47c712202b0ec4f1f51109b1f2a5" />
+			</group>
+			<group name="82s1264a" size="100">
+				<rom file="82s126.4a" offset="20" size="100" crc="3eb3a8e4" sha1="19097b5f60d1030f8b82d9f1d3a241f93e5c75d6" />
+			</group>
+		</fileset>
+		<!-- Uses groups as input and creates intermediate mem files by name specified in file atribute-->
+		<generate src="82s1261m" file="prom1_dst" parameters="entity=PROM1_DST;addrbits=9" />
+		<generate src="82s1264a" file="prom4_dst" parameters="entity=PROM4_DST;addrbits=8" />
+		<generate src="82s1237f" file="prom7_dst" parameters="entity=PROM7_DST;addrbits=4" />
+		<generate src="gfx1" file="gfx1" parameters="entity=GFX1;addrbits=13" />
+		<generate src="maincpu" file="rom0" parameters="entity=ROM_PGM_0;addrbits=14" />
+		<generate src="gfx1" file="rom1" parameters="entity=ROM_PGM_1;addrbits=13" />
+
+		<!-- Uses output of (file attribute) from generate tag. Sequence is important! -->
+		<assembly name="pacman_merged">
+			<piece file="prom1_dst" tag="rom_audio1m" />
+			<piece file="prom4_dst" tag="rom_col4a" />
+			<piece file="prom7_dst" tag="rom_col7f" />
+			<piece file="gfx1" tag="rom_gfx1" />
+			<piece file="rom0" tag="rom_code" />
+			<!--piece file="rom1" tag="rom_wiz" /-->
+		</assembly>
+	</game>
+	
 	<game name="Pong Demo" id="pongdemo">
 		<hardware>pacman</hardware>
 		<category>maze</category>
@@ -91,6 +191,227 @@
 
 		<!-- Uses output of (file attribute) from generate tag. Sequence is important! -->
 		<assembly name="pong_merged">
+			<piece file="prom1_dst" tag="rom_audio1m" />
+			<piece file="prom4_dst" tag="rom_col4a" />
+			<piece file="prom7_dst" tag="rom_col7f" />
+			<piece file="gfx1" tag="rom_gfx1" />
+			<piece file="rom0" tag="rom_code" />
+			<!--piece file="rom1" tag="rom_wiz" /-->
+		</assembly>
+	</game>
+
+	<game name="Caterpillar" id="ctrpllrp">
+		<hardware>pacman</hardware>
+		<category>maze</category>
+		<publisher>Phi</publisher>
+		<year>1982</year>
+		<description>Caterpillar [Pac-Man Hack]</description>
+
+		<fileset primary="true">
+			<group name="maincpu" size="6400">
+				<rom file="c1.bin" offset="0000" size="800" crc="9d027c4a" sha1="88e094880057451a75cdc2ce9477403021813982" />
+				<rom file="c5.bin" offset="0800" size="800" crc="f39846d3" sha1="bc1137a45898210523cf8da1e6a2425e7c322884" />
+				<rom file="c2.bin" offset="1600" size="800" crc="afa149a8" sha1="207b842854ac9e015e12a2dae41105438cda1df9" />
+				<rom file="c6.bin" offset="2400" size="800" crc="baf5461e" sha1="754586a6449fd54a342f260e572c1cd60ab70815" />
+				<rom file="c3.bin" offset="3200" size="800" crc="6bb282a1" sha1="a96f25dc0f49ebe7e528e3297a112d778c6c3030" />
+				<rom file="c7.bin" offset="4000" size="800" crc="fa2140f5" sha1="123d31e653e8af78c6153702eca2e136c427ed64" />
+				<rom file="c4.bin" offset="4800" size="800" crc="86c91e0e" sha1="52af6a3af5b1363859f790470ca5860ef2a08566" />
+				<rom file="c8.bin" offset="5600" size="800" crc="3d28134e" sha1="45a257a0aca74e2ab36dd70097220d8be29cc87b" />
+			</group>
+			<group name="gfx1" size="3200">
+				<rom file="c9.bin" offset="0000" size="800" crc="1c4617be" sha1="2b2b10f1256b4612e3e01ed1c8e2d7ccb6989f5d" />
+				<rom file="c11.bin" offset="0800" size="800" crc="46f72fef" sha1="daf334c78fdb73d43d524b733b763b290c602ae2" />
+				<rom file="c10.bin" offset="1600" size="800" crc="ba9ec199" sha1="626ab2eedf4c8d307dfad3b8863a67f8c34dda97" />
+				<rom file="c12.bin" offset="2400" size="800" crc="41c09655" sha1="cc639e660443b9dcb33f9aefe9af5d332591c466" />
+			</group>
+			<group name="82s1261m" size="100">
+				<rom file="82s126.1m" offset="0" size="100" crc="a9cc86bf" sha1="bbcec0570aeceb582ff8238a4bc8546a23430081" />
+			</group>
+			<group name="82s1263m" size="100">
+				<rom file="82s126.3m" offset="100" size="100" crc="77245b66" sha1="0c4d0bee858b97632411c440bea6948a74759746" />
+			</group>
+			<group name="82s1237f" size="20">
+				<rom file="82s123.7f" offset="0" size="20" crc="2fc650bd" sha1="8d0268dee78e47c712202b0ec4f1f51109b1f2a5" />
+			</group>
+			<group name="82s1264a" size="100">
+				<rom file="82s126.4a" offset="20" size="100" crc="3eb3a8e4" sha1="19097b5f60d1030f8b82d9f1d3a241f93e5c75d6" />
+			</group>
+		</fileset>
+
+		<!-- Uses groups as input and creates intermediate mem files by name specified in file atribute-->
+		<generate src="82s1261m" file="prom1_dst" parameters="entity=PROM1_DST;addrbits=9" />
+		<generate src="82s1264a" file="prom4_dst" parameters="entity=PROM4_DST;addrbits=8" />
+		<generate src="82s1237f" file="prom7_dst" parameters="entity=PROM7_DST;addrbits=4" />
+		<generate src="gfx1" file="gfx1" parameters="entity=GFX1;addrbits=13" />
+		<generate src="maincpu" file="rom0" parameters="entity=ROM_PGM_0;addrbits=14" />
+		<generate src="gfx1" file="rom1" parameters="entity=ROM_PGM_1;addrbits=13" />
+
+		<!-- Uses output of (file attribute) from generate tag. Sequence is important! -->
+		<assembly name="pacman_merged">
+			<piece file="prom1_dst" tag="rom_audio1m" />
+			<piece file="prom4_dst" tag="rom_col4a" />
+			<piece file="prom7_dst" tag="rom_col7f" />
+			<piece file="gfx1" tag="rom_gfx1" />
+			<piece file="rom0" tag="rom_code" />
+			<!--piece file="rom1" tag="rom_wiz" /-->
+		</assembly>
+	</game>
+
+	<game name="hangly" id="hangly">
+		<hardware>pacman</hardware>
+		<category>maze</category>
+		<publisher>Nittoh</publisher>
+		<year>1981</year>
+		<description>hangly</description>
+		<fileset primary="true">
+			<group name="maincpu" size="10000">
+				<rom file="hangly.6e" offset="0" size="1000" crc="5fe8610a" sha1="d63eaebd85e10aa6c27bb7f47642dd403eeb6934" />
+				<rom file="hangly.6f" offset="1000" size="1000" crc="73726586" sha1="cedddc5194589039dd8b64f07ab6320d7d4f55f9" />
+				<rom file="hangly.6h" offset="2000" size="1000" crc="4e7ef99f" sha1="bd42e68b29b4d654dc817782ba00db69b7d2dfe2" />
+				<rom file="hangly.6j" offset="3000" size="1000" crc="7f4147e6" sha1="0a7ac0e59d4d26fe52a2f4196c9f19e5ab677c87" />
+			</group>
+			<group name="gfx1" size="2000">
+				<rom file="pacman.5e" offset="0" size="1000" crc="0c944964" sha1="06ef227747a440831c9a3a613b76693d52a2f0a9" />
+				<rom file="pacman.5f" offset="1000" size="1000" crc="958fedf9" sha1="4a937ac02216ea8c96477d4a15522070507fb599" />
+			</group>
+
+			<!-- Standard PacMan Parent ROMS  -->
+			<group name="82s1261m" size="100">
+				<rom file="82s126.1m" offset="0" size="100" crc="a9cc86bf" sha1="bbcec0570aeceb582ff8238a4bc8546a23430081" />
+			</group>
+			<group name="82s1263m" size="100">
+				<rom file="82s126.3m" offset="100" size="100" crc="77245b66" sha1="0c4d0bee858b97632411c440bea6948a74759746" />
+			</group>
+			<group name="82s1237f" size="20">
+				<rom file="82s123.7f" offset="0" size="20" crc="2fc650bd" sha1="8d0268dee78e47c712202b0ec4f1f51109b1f2a5" />
+			</group>
+			<group name="82s1264a" size="100">
+				<rom file="82s126.4a" offset="20" size="100" crc="3eb3a8e4" sha1="19097b5f60d1030f8b82d9f1d3a241f93e5c75d6" />
+			</group>
+		</fileset>
+
+		<!-- Uses groups as input and creates intermediate mem files by name specified in file atribute-->
+		<generate src="82s1261m" file="prom1_dst" parameters="entity=PROM1_DST;addrbits=9" />
+		<generate src="82s1264a" file="prom4_dst" parameters="entity=PROM4_DST;addrbits=8" />
+		<generate src="82s1237f" file="prom7_dst" parameters="entity=PROM7_DST;addrbits=4" />
+		<generate src="gfx1" file="gfx1" parameters="entity=GFX1;addrbits=13" />
+		<generate src="maincpu" file="rom0" parameters="entity=ROM_PGM_0;addrbits=14" />
+		<generate src="gfx1" file="rom1" parameters="entity=ROM_PGM_1;addrbits=13" />
+
+		<!-- Uses output of (file attribute) from generate tag. Sequence is important! -->
+		<assembly name="pacman_merged">
+			<piece file="prom1_dst" tag="rom_audio1m" />
+			<piece file="prom4_dst" tag="rom_col4a" />
+			<piece file="prom7_dst" tag="rom_col7f" />
+			<piece file="gfx1" tag="rom_gfx1" />
+			<piece file="rom0" tag="rom_code" />
+			<!--piece file="rom1" tag="rom_wiz" /-->
+		</assembly>
+	</game>
+
+	<game name="hangly2" id="hangly2">
+		<hardware>pacman</hardware>
+		<category>maze</category>
+		<publisher>Nittoh</publisher>
+		<year>1984</year>
+		<description>hangly2</description>
+		<fileset primary="true">
+			<group name="maincpu" size="10000">
+				<rom file="hangly.6e" offset="0" size="1000" crc="5fe8610a" sha1="d63eaebd85e10aa6c27bb7f47642dd403eeb6934" />
+				<rom file="hangly2.6f" offset="1000" size="800" crc="5ba228bb" sha1="b0e902cdf98bee72d6ec8069eec96adce3245074" />
+				<rom file="hangly2.6m" offset="1800" size="800" crc="baf5461e" sha1="754586a6449fd54a342f260e572c1cd60ab70815" />
+				<rom file="hangly.6h" offset="2000" size="1000" crc="4e7ef99f" sha1="bd42e68b29b4d654dc817782ba00db69b7d2dfe2" />
+				<rom file="hangly2.6j" offset="3000" size="800" crc="51305374" sha1="6197b606a0eedb11135d9f4f7a89aecc23fb2d33" />
+				<rom file="hangly2.6p" offset="3800" size="800" crc="427c9d4d" sha1="917bc3d571cbdd24d88327ecabfb5b3f6d39af0a" />
+			</group>
+			<group name="gfx1" size="2000">
+				<rom file="pacmanh.5e" offset="0" size="1000" crc="299fb17a" sha1="ad97adc2122482a9018bacd137df9d8f409ddf85" />
+				<rom file="pacman.5f" offset="1000" size="1000" crc="958fedf9" sha1="4a937ac02216ea8c96477d4a15522070507fb599" />
+			</group>
+
+			<!-- Standard PacMan Parent ROMS  -->
+			<group name="82s1261m" size="100">
+				<rom file="82s126.1m" offset="0" size="100" crc="a9cc86bf" sha1="bbcec0570aeceb582ff8238a4bc8546a23430081" />
+			</group>
+			<group name="82s1263m" size="100">
+				<rom file="82s126.3m" offset="100" size="100" crc="77245b66" sha1="0c4d0bee858b97632411c440bea6948a74759746" />
+			</group>
+			<group name="82s1237f" size="20">
+				<rom file="82s123.7f" offset="0" size="20" crc="2fc650bd" sha1="8d0268dee78e47c712202b0ec4f1f51109b1f2a5" />
+			</group>
+			<group name="82s1264a" size="100">
+				<rom file="82s126.4a" offset="20" size="100" crc="3eb3a8e4" sha1="19097b5f60d1030f8b82d9f1d3a241f93e5c75d6" />
+			</group>
+		</fileset>
+
+		<!-- Uses groups as input and creates intermediate mem files by name specified in file atribute-->
+		<generate src="82s1261m" file="prom1_dst" parameters="entity=PROM1_DST;addrbits=9" />
+		<generate src="82s1264a" file="prom4_dst" parameters="entity=PROM4_DST;addrbits=8" />
+		<generate src="82s1237f" file="prom7_dst" parameters="entity=PROM7_DST;addrbits=4" />
+		<generate src="gfx1" file="gfx1" parameters="entity=GFX1;addrbits=13" />
+		<generate src="maincpu" file="rom0" parameters="entity=ROM_PGM_0;addrbits=14" />
+		<generate src="gfx1" file="rom1" parameters="entity=ROM_PGM_1;addrbits=13" />
+
+		<!-- Uses output of (file attribute) from generate tag. Sequence is important! -->
+		<assembly name="pacman_merged">
+			<piece file="prom1_dst" tag="rom_audio1m" />
+			<piece file="prom4_dst" tag="rom_col4a" />
+			<piece file="prom7_dst" tag="rom_col7f" />
+			<piece file="gfx1" tag="rom_gfx1" />
+			<piece file="rom0" tag="rom_code" />
+			<!--piece file="rom1" tag="rom_wiz" /-->
+		</assembly>
+	</game>
+	
+	<game name="hangly3" id="hangly3">
+		<hardware>pacman</hardware>
+		<category>maze</category>
+		<publisher>Nittoh</publisher>
+		<year>1984</year>
+		<description>hangly3</description>
+		<fileset primary="true">
+			<group name="maincpu" size="10000">
+				<rom file="hm1.6e" offset="0" size="800" crc="9d027c4a" sha1="88e094880057451a75cdc2ce9477403021813982" />
+				<rom file="hm5.6k" offset="800" size="800" crc="194c7189" sha1="fd423bac2810015313841c7b935054565390fbd0" />
+				<rom file="hangly2.6f" offset="1000" size="800" crc="5ba228bb" sha1="b0e902cdf98bee72d6ec8069eec96adce3245074" />
+				<rom file="hangly2.6m" offset="1800" size="800" crc="baf5461e" sha1="754586a6449fd54a342f260e572c1cd60ab70815" />
+				<rom file="hm3.6h" offset="2000" size="800" crc="08419c4a" sha1="7e5001adad401080c788737c1d2349f218750442" />
+				<rom file="hm7.6n" offset="2800" size="800" crc="ab74b51f" sha1="1bce8933ed7807eb7aca9670df8994f8d1a8b5b7" />
+				<rom file="hm4.6j" offset="3000" size="800" crc="5039b082" sha1="086a6ac4742734167d283b1121fce29d8ac4a6cd" />
+				<rom file="hm8.6p" offset="3800" size="800" crc="931770d7" sha1="78fcf88e07ec5126c12c3297b62ca388809e947c" />
+			</group>
+			<group name="gfx1" size="2000">
+				<rom file="hm9.5e" offset="0" size="800" crc="5f4be3cc" sha1="eeb0e1e44549b99eab481d9ac016b4359e19fe30" />
+				<rom file="hm11.5h" offset="800" size="800" crc="3591b89d" sha1="79bb456be6c39c1ccd7d077fbe181523131fb300" />
+				<rom file="hm10.5f" offset="1000" size="800" crc="9e39323a" sha1="be933e691df4dbe7d12123913c3b7b7b585b7a35" />
+				<rom file="hm12.5j" offset="1800" size="800" crc="1b1d9096" sha1="53771c573051db43e7185b1d188533056290a620" />
+			</group>
+
+			<!-- Standard PacMan Parent ROMS  -->
+			<group name="82s1261m" size="100">
+				<rom file="82s126.1m" offset="0" size="100" crc="a9cc86bf" sha1="bbcec0570aeceb582ff8238a4bc8546a23430081" />
+			</group>
+			<group name="82s1263m" size="100">
+				<rom file="82s126.3m" offset="100" size="100" crc="77245b66" sha1="0c4d0bee858b97632411c440bea6948a74759746" />
+			</group>
+			<group name="82s1237f" size="20">
+				<rom file="82s123.7f" offset="0" size="20" crc="2fc650bd" sha1="8d0268dee78e47c712202b0ec4f1f51109b1f2a5" />
+			</group>
+			<group name="82s1264a" size="100">
+				<rom file="82s126.4a" offset="20" size="100" crc="3eb3a8e4" sha1="19097b5f60d1030f8b82d9f1d3a241f93e5c75d6" />
+			</group>
+		</fileset>
+
+		<!-- Uses groups as input and creates intermediate mem files by name specified in file atribute-->
+		<generate src="82s1261m" file="prom1_dst" parameters="entity=PROM1_DST;addrbits=9" />
+		<generate src="82s1264a" file="prom4_dst" parameters="entity=PROM4_DST;addrbits=8" />
+		<generate src="82s1237f" file="prom7_dst" parameters="entity=PROM7_DST;addrbits=4" />
+		<generate src="gfx1" file="gfx1" parameters="entity=GFX1;addrbits=13" />
+		<generate src="maincpu" file="rom0" parameters="entity=ROM_PGM_0;addrbits=14" />
+		<generate src="gfx1" file="rom1" parameters="entity=ROM_PGM_1;addrbits=13" />
+
+		<!-- Uses output of (file attribute) from generate tag. Sequence is important! -->
+		<assembly name="pacman_merged">
 			<piece file="prom1_dst" tag="rom_audio1m" />
 			<piece file="prom4_dst" tag="rom_col4a" />
 			<piece file="prom7_dst" tag="rom_col7f" />
