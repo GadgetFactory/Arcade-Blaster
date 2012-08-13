@@ -1,6 +1,89 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
 
 <gamelist>
+	<game name="Mr. Do's Nightmare" id="mrdonightmare">
+		<hardware>mrdonightmare</hardware>
+		<category>shooter</category>
+		<publisher>Nameco</publisher>
+		<year>1979</year>
+		<description>mrdonightmare</description>
+		<fileset primary="true">
+			<group name="maincpu" size="2000">
+				<rom file="galmidw.u" offset="0" size="800" crc="745e2d61" sha1="e65f74e35b1bfaccd407e168ea55678ae9b68edf" />
+				<rom file="galmidw.v" offset="800" size="200" crc="9c999a40" sha1="02fdcd95d8511e64c0d2b007b874112d53e41045" />
+				<rom file="galmidw.w" offset="1000" size="800" crc="b5894925" sha1="0046b9ed697a34d088de1aead8bd7cbe526a2396" />
+				<rom file="galmidw.y" offset="1800" size="200" crc="6b3ca10b" sha1="18d8714e5ef52f63ba8888ecc5a25b17b3bf17d1" />
+				<rom file="7l" offset="2000" size="200" crc="1b933207" sha1="8b44b0f74420871454e27894d0f004859f9e59a9" />
+			</group>
+			<group name="1h" size="1000">
+				<rom file="1h.bin" offset="0" size="1000" crc="39fb43a4" sha1="4755609bd974976f04855d51e08ec0d62ab4bc07" />
+			</group>
+			<group name="1k" size="1000">
+				<rom file="1h.bin" offset="0" size="1000" crc="39fb43a4" sha1="4755609bd974976f04855d51e08ec0d62ab4bc07" />
+			</group>			
+			<group name="proms" size="1000">
+				<rom file="6l.bpr" offset="0" size="1000" crc="c3ac9467" sha1="f382ad5a34d282056c78a5ec00c30ec43772bae2" />
+			</group>			
+		</fileset>
+
+		<!-- Uses groups as input and creates intermediate mem files by name specified in file atribute-->
+		<generate src="proms" file="GALAXIAN_6L" parameters="entity=galaxian_6l;addrbits=5" />
+
+
+		<!-- Uses output of (file attribute) from generate tag. Sequence is important! -->
+		<assembly name="mrdo_merged">
+			<piece file="GALAXIAN_6L" tag="galaxian_6l" />		
+		</assembly>
+	</game>	
+	
+	<game name="Pong Demo" id="pongdemo">
+		<hardware>pacman</hardware>
+		<category>maze</category>
+		<publisher>Homebrew</publisher>
+		<year>1980</year>
+		<description>pac-man</description>
+
+		<fileset primary="true">
+			<group name="main" size="4000">
+				<rom file="pacman.6e" offset="0" size="1000" crc="b0d6d512" sha1="" />
+				<rom file="pacman.6f" offset="1000" size="1000" crc="c71c0011" sha1="" />
+				<rom file="pacman.6h" offset="2000" size="1000" crc="c71c0011" sha1="" />
+				<rom file="pacman.6j" offset="3000" size="1000" crc="c71c0011" sha1="" />
+			</group>
+			<group name="gfx1" size="2000">
+				<rom file="pacman.5e" offset="0" size="1000" crc="57fe0ace" sha1="" />
+				<rom file="pacman.5f" offset="1000" size="1000" crc="8bbd8de5" sha1="" />
+			</group>
+			<group name="pacman1m" size="100">
+				<rom file="pacman.1m" offset="0" size="100" crc="0d968558" sha1="" />
+			</group>
+			<group name="pacman7f" size="20">
+				<rom file="pacman.7f" offset="0" size="20" crc="e3a96194" sha1="" />
+			</group>
+			<group name="pacman4a" size="100">
+				<rom file="pacman.4a" offset="20" size="100" crc="dbd17cc2" sha1="" />
+			</group>
+		</fileset>
+
+		<!-- Uses groups as input and creates intermediate mem files by name specified in file atribute-->
+		<generate src="pacman1m" file="prom1_dst" parameters="entity=PROM1_DST;addrbits=9" />
+		<generate src="pacman4a" file="prom4_dst" parameters="entity=PROM4_DST;addrbits=8" />
+		<generate src="pacman7f" file="prom7_dst" parameters="entity=PROM7_DST;addrbits=4" />
+		<generate src="gfx1" file="gfx1" parameters="entity=GFX1;addrbits=13" />
+		<generate src="main" file="rom0" parameters="entity=ROM_PGM_0;addrbits=14" />
+		<generate src="gfx1" file="rom1" parameters="entity=ROM_PGM_1;addrbits=13" />
+
+		<!-- Uses output of (file attribute) from generate tag. Sequence is important! -->
+		<assembly name="pong_merged">
+			<piece file="prom1_dst" tag="rom_audio1m" />
+			<piece file="prom4_dst" tag="rom_col4a" />
+			<piece file="prom7_dst" tag="rom_col7f" />
+			<piece file="gfx1" tag="rom_gfx1" />
+			<piece file="rom0" tag="rom_code" />
+			<!--piece file="rom1" tag="rom_wiz" /-->
+		</assembly>
+	</game>	
+	
 	<game name="Puckman" id="puckman">
 		<hardware>pacman</hardware>
 		<category>maze</category>
@@ -143,54 +226,6 @@
 
 		<!-- Uses output of (file attribute) from generate tag. Sequence is important! -->
 		<assembly name="pacman_merged">
-			<piece file="prom1_dst" tag="rom_audio1m" />
-			<piece file="prom4_dst" tag="rom_col4a" />
-			<piece file="prom7_dst" tag="rom_col7f" />
-			<piece file="gfx1" tag="rom_gfx1" />
-			<piece file="rom0" tag="rom_code" />
-			<!--piece file="rom1" tag="rom_wiz" /-->
-		</assembly>
-	</game>
-	
-	<game name="Pong Demo" id="pongdemo">
-		<hardware>pacman</hardware>
-		<category>maze</category>
-		<publisher>Homebrew</publisher>
-		<year>1980</year>
-		<description>pac-man</description>
-
-		<fileset primary="true">
-			<group name="main" size="4000">
-				<rom file="pacman.6e" offset="0" size="1000" crc="b0d6d512" sha1="" />
-				<rom file="pacman.6f" offset="1000" size="1000" crc="c71c0011" sha1="" />
-				<rom file="pacman.6h" offset="2000" size="1000" crc="c71c0011" sha1="" />
-				<rom file="pacman.6j" offset="3000" size="1000" crc="c71c0011" sha1="" />
-			</group>
-			<group name="gfx1" size="2000">
-				<rom file="pacman.5e" offset="0" size="1000" crc="57fe0ace" sha1="" />
-				<rom file="pacman.5f" offset="1000" size="1000" crc="8bbd8de5" sha1="" />
-			</group>
-			<group name="pacman1m" size="100">
-				<rom file="pacman.1m" offset="0" size="100" crc="0d968558" sha1="" />
-			</group>
-			<group name="pacman7f" size="20">
-				<rom file="pacman.7f" offset="0" size="20" crc="e3a96194" sha1="" />
-			</group>
-			<group name="pacman4a" size="100">
-				<rom file="pacman.4a" offset="20" size="100" crc="dbd17cc2" sha1="" />
-			</group>
-		</fileset>
-
-		<!-- Uses groups as input and creates intermediate mem files by name specified in file atribute-->
-		<generate src="pacman1m" file="prom1_dst" parameters="entity=PROM1_DST;addrbits=9" />
-		<generate src="pacman4a" file="prom4_dst" parameters="entity=PROM4_DST;addrbits=8" />
-		<generate src="pacman7f" file="prom7_dst" parameters="entity=PROM7_DST;addrbits=4" />
-		<generate src="gfx1" file="gfx1" parameters="entity=GFX1;addrbits=13" />
-		<generate src="main" file="rom0" parameters="entity=ROM_PGM_0;addrbits=14" />
-		<generate src="gfx1" file="rom1" parameters="entity=ROM_PGM_1;addrbits=13" />
-
-		<!-- Uses output of (file attribute) from generate tag. Sequence is important! -->
-		<assembly name="pong_merged">
 			<piece file="prom1_dst" tag="rom_audio1m" />
 			<piece file="prom4_dst" tag="rom_col4a" />
 			<piece file="prom7_dst" tag="rom_col7f" />
@@ -838,51 +873,37 @@
 		<generate src="proms" file="GALAXIAN_6L" parameters="entity=galaxian_6l;addrbits=5" />
 
 		<!-- Uses output of (file attribute) from generate tag. Sequence is important! -->
-		<assembly name="frogger_merged">
+		<assembly name="galaxian_merged">
 			<piece file="ROM_PGM_0" tag="rom_code" />		
-			<piece file="1h" tag="rom_1h" />
-			<piece file="1k" tag="rom_1k" />
-			<piece file="proms" tag="galaxian_6l" />
+			<piece file="GALAXIAN_1H" tag="rom_1h" />
+			<piece file="GALAXIAN_1K" tag="rom_1k" />
+			<piece file="GALAXIAN_6L" tag="galaxian_6l" />
 		</assembly>
 	</game>	
-	<game name="Mr. Do's Nightmare" id="mrdonightmare">
-		<hardware>galaxian</hardware>
+	
+	<game name="Space Invaders" id="alieninv">
+		<hardware>invaders</hardware>
 		<category>shooter</category>
-		<publisher>Nameco</publisher>
-		<year>1979</year>
-		<description>mrdonightmare</description>
-		
+		<publisher>Taito</publisher>
+		<year>1980</year>
+		<description>alieninv</description>
 		<fileset primary="true">
 			<group name="maincpu" size="2000">
-				<rom file="galmidw.u" offset="0" size="800" crc="745e2d61" sha1="e65f74e35b1bfaccd407e168ea55678ae9b68edf" />
-				<rom file="galmidw.v" offset="800" size="200" crc="9c999a40" sha1="02fdcd95d8511e64c0d2b007b874112d53e41045" />
-				<rom file="galmidw.w" offset="1000" size="800" crc="b5894925" sha1="0046b9ed697a34d088de1aead8bd7cbe526a2396" />
-				<rom file="galmidw.y" offset="1800" size="200" crc="6b3ca10b" sha1="18d8714e5ef52f63ba8888ecc5a25b17b3bf17d1" />
-				<rom file="7l" offset="2000" size="200" crc="1b933207" sha1="8b44b0f74420871454e27894d0f004859f9e59a9" />
-			</group>
-			<group name="1h" size="1000">
-				<rom file="1h.bin" offset="0" size="1000" crc="39fb43a4" sha1="4755609bd974976f04855d51e08ec0d62ab4bc07" />
-			</group>
-			<group name="1k" size="1000">
-				<rom file="1h.bin" offset="0" size="1000" crc="39fb43a4" sha1="4755609bd974976f04855d51e08ec0d62ab4bc07" />
-			</group>			
-			<group name="proms" size="1000">
-				<rom file="6l.bpr" offset="0" size="1000" crc="c3ac9467" sha1="f382ad5a34d282056c78a5ec00c30ec43772bae2" />
-			</group>			
+				<rom file="1h.bin" offset="0" size="800" crc="c46df7f4  " sha1="eec34b3d5585bae03c7b80585daaa05ddfcc2164" />
+				<rom file="1g.bin" offset="800" size="200" crc="4b1112d6" sha1="b693667656e5d8f44eeb2ea730f4d4db436da579" />
+				<rom file="1f.bin" offset="1000" size="800" crc="adca18a5" sha1="7e02651692113db31fd469868ae5ffdb0f941ecf  " />
+				<rom file="1e.bin" offset="1800" size="200" crc="0449cb52" sha1="8adcb7cd4492fa6649d9ee81172d8dff56621d64 " />
+			</group>		
 		</fileset>
 
 		<!-- Uses groups as input and creates intermediate mem files by name specified in file atribute-->
-		<generate src="maincpu" file="ROM_PGM_0" parameters="entity=rom_code;addrbits=14" />
-		<generate src="1h" file="GALAXIAN_1H" parameters="entity=rom_1h;addrbits=11" />
-		<generate src="1k" file="GALAXIAN_1K" parameters="entity=rom_1k;addrbits=11" />
-		<generate src="proms" file="GALAXIAN_6L" parameters="entity=galaxian_6l;addrbits=5" />
+		<generate src="maincpu" file="INVADERS_ROM" parameters="entity=rom_code;addrbits=13" />
+
 
 		<!-- Uses output of (file attribute) from generate tag. Sequence is important! -->
-		<assembly name="frogger_merged">
-			<piece file="ROM_PGM_0" tag="rom_code" />		
-			<piece file="1h" tag="rom_1h" />
-			<piece file="1k" tag="rom_1k" />
-			<piece file="proms" tag="galaxian_6l" />
+		<assembly name="invaders_merged">
+			<piece file="INVADERS_ROM" tag="rom_code" />	
 		</assembly>
 	</game>		
+	
 </gamelist>
