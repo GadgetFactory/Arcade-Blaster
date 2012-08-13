@@ -805,4 +805,84 @@
 			<piece file="ROM_SND_2" tag="ROM_SND_2" />
 		</assembly>
 	</game>
+	<game name="Galaxian" id="galaxian">
+		<hardware>galaxian</hardware>
+		<category>shooter</category>
+		<publisher>Nameco</publisher>
+		<year>1979</year>
+		<description>galaxian</description>
+		
+		<fileset primary="true">
+			<group name="maincpu" size="2000">
+				<rom file="galmidw.u" offset="0" size="800" crc="745e2d61" sha1="e65f74e35b1bfaccd407e168ea55678ae9b68edf" />
+				<rom file="galmidw.v" offset="800" size="200" crc="9c999a40" sha1="02fdcd95d8511e64c0d2b007b874112d53e41045" />
+				<rom file="galmidw.w" offset="1000" size="800" crc="b5894925" sha1="0046b9ed697a34d088de1aead8bd7cbe526a2396" />
+				<rom file="galmidw.y" offset="1800" size="200" crc="6b3ca10b" sha1="18d8714e5ef52f63ba8888ecc5a25b17b3bf17d1" />
+				<rom file="7l" offset="2000" size="200" crc="1b933207" sha1="8b44b0f74420871454e27894d0f004859f9e59a9" />
+			</group>
+			<group name="1h" size="1000">
+				<rom file="1h.bin" offset="0" size="1000" crc="39fb43a4" sha1="4755609bd974976f04855d51e08ec0d62ab4bc07" />
+			</group>
+			<group name="1k" size="1000">
+				<rom file="1h.bin" offset="0" size="1000" crc="39fb43a4" sha1="4755609bd974976f04855d51e08ec0d62ab4bc07" />
+			</group>			
+			<group name="proms" size="1000">
+				<rom file="6l.bpr" offset="0" size="1000" crc="c3ac9467" sha1="f382ad5a34d282056c78a5ec00c30ec43772bae2" />
+			</group>			
+		</fileset>
+
+		<!-- Uses groups as input and creates intermediate mem files by name specified in file atribute-->
+		<generate src="maincpu" file="ROM_PGM_0" parameters="entity=rom_code;addrbits=14" />
+		<generate src="1h" file="GALAXIAN_1H" parameters="entity=rom_1h;addrbits=11" />
+		<generate src="1k" file="GALAXIAN_1K" parameters="entity=rom_1k;addrbits=11" />
+		<generate src="proms" file="GALAXIAN_6L" parameters="entity=galaxian_6l;addrbits=5" />
+
+		<!-- Uses output of (file attribute) from generate tag. Sequence is important! -->
+		<assembly name="frogger_merged">
+			<piece file="ROM_PGM_0" tag="rom_code" />		
+			<piece file="1h" tag="rom_1h" />
+			<piece file="1k" tag="rom_1k" />
+			<piece file="proms" tag="galaxian_6l" />
+		</assembly>
+	</game>	
+	<game name="Mr. Do's Nightmare" id="mrdonightmare">
+		<hardware>galaxian</hardware>
+		<category>shooter</category>
+		<publisher>Nameco</publisher>
+		<year>1979</year>
+		<description>mrdonightmare</description>
+		
+		<fileset primary="true">
+			<group name="maincpu" size="2000">
+				<rom file="galmidw.u" offset="0" size="800" crc="745e2d61" sha1="e65f74e35b1bfaccd407e168ea55678ae9b68edf" />
+				<rom file="galmidw.v" offset="800" size="200" crc="9c999a40" sha1="02fdcd95d8511e64c0d2b007b874112d53e41045" />
+				<rom file="galmidw.w" offset="1000" size="800" crc="b5894925" sha1="0046b9ed697a34d088de1aead8bd7cbe526a2396" />
+				<rom file="galmidw.y" offset="1800" size="200" crc="6b3ca10b" sha1="18d8714e5ef52f63ba8888ecc5a25b17b3bf17d1" />
+				<rom file="7l" offset="2000" size="200" crc="1b933207" sha1="8b44b0f74420871454e27894d0f004859f9e59a9" />
+			</group>
+			<group name="1h" size="1000">
+				<rom file="1h.bin" offset="0" size="1000" crc="39fb43a4" sha1="4755609bd974976f04855d51e08ec0d62ab4bc07" />
+			</group>
+			<group name="1k" size="1000">
+				<rom file="1h.bin" offset="0" size="1000" crc="39fb43a4" sha1="4755609bd974976f04855d51e08ec0d62ab4bc07" />
+			</group>			
+			<group name="proms" size="1000">
+				<rom file="6l.bpr" offset="0" size="1000" crc="c3ac9467" sha1="f382ad5a34d282056c78a5ec00c30ec43772bae2" />
+			</group>			
+		</fileset>
+
+		<!-- Uses groups as input and creates intermediate mem files by name specified in file atribute-->
+		<generate src="maincpu" file="ROM_PGM_0" parameters="entity=rom_code;addrbits=14" />
+		<generate src="1h" file="GALAXIAN_1H" parameters="entity=rom_1h;addrbits=11" />
+		<generate src="1k" file="GALAXIAN_1K" parameters="entity=rom_1k;addrbits=11" />
+		<generate src="proms" file="GALAXIAN_6L" parameters="entity=galaxian_6l;addrbits=5" />
+
+		<!-- Uses output of (file attribute) from generate tag. Sequence is important! -->
+		<assembly name="frogger_merged">
+			<piece file="ROM_PGM_0" tag="rom_code" />		
+			<piece file="1h" tag="rom_1h" />
+			<piece file="1k" tag="rom_1k" />
+			<piece file="proms" tag="galaxian_6l" />
+		</assembly>
+	</game>		
 </gamelist>
