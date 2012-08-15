@@ -767,8 +767,8 @@
 		
 		<!-- Uses groups as input and creates intermediate mem files by name specified in file atribute-->
 		<generate src="maincpu" file="ROM_PGM" parameters="entity=ROM_PGM;addrbits=14" />
-		<generate src="ic55" file="ROM_SND_0" parameters="entity=ROM_SND_0;addrbits=11" />
-		<generate src="ic56" file="ROM_SND_1" parameters="entity=ROM_SND_1;addrbits=11" />
+		<generate src="ic56" file="ROM_SND_0" parameters="entity=ROM_SND_0;addrbits=11" />
+		<generate src="ic55" file="ROM_SND_1" parameters="entity=ROM_SND_1;addrbits=11" />
 		<generate src="ic56" file="ROM_SND_2" parameters="entity=ROM_SND_2;addrbits=11" />
 		<generate src="ic30" file="ROM_OBJ_1" parameters="entity=ROM_OBJ_1;addrbits=11" />
 		<generate src="ic31" file="ROM_OBJ_0" parameters="entity=ROM_OBJ_0;addrbits=11" />

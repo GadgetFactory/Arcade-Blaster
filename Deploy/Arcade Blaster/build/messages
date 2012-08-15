@@ -4,6 +4,9 @@
 357CA20C-077C-414E-B400-A618E44B1B80,Text
 {}
 
+4E6C63E2-EC53-446E-8C3F-BE01E815CDED,TextToWrite
+{}
+
 5D3A1856-08AF-4BC2-A601-1F1B166FB226,Message
 {<%UninstallingApplicationText%>}
 
@@ -18,6 +21,9 @@
 
 85A32F95-6AEE-4C87-B4E6-8A8E538D31D4,Title
 {RÃ²tul de la Finestra}
+
+916232D2-337E-451C-A1D8-C33F5FFFE1B1,TextToWrite
+{}
 
 ApplicationReadmeText
 {<%AppName%> Llegiu-me}
@@ -574,6 +580,9 @@ Yes
 357CA20C-077C-414E-B400-A618E44B1B80,Text
 {}
 
+4E6C63E2-EC53-446E-8C3F-BE01E815CDED,TextToWrite
+{}
+
 5D3A1856-08AF-4BC2-A601-1F1B166FB226,Message
 {<%UninstallingApplicationText%>}
 
@@ -588,6 +597,9 @@ Yes
 
 85A32F95-6AEE-4C87-B4E6-8A8E538D31D4,Title
 {Název okna}
+
+916232D2-337E-451C-A1D8-C33F5FFFE1B1,TextToWrite
+{}
 
 ApplicationReadmeText
 {ČtiMě pro <%AppName%>}
@@ -1244,6 +1256,9 @@ Yes
 357CA20C-077C-414E-B400-A618E44B1B80,Text
 {}
 
+4E6C63E2-EC53-446E-8C3F-BE01E815CDED,TextToWrite
+{}
+
 5D3A1856-08AF-4BC2-A601-1F1B166FB226,Message
 {<%UninstallingApplicationText%>}
 
@@ -1258,6 +1273,9 @@ Yes
 
 85A32F95-6AEE-4C87-B4E6-8A8E538D31D4,Title
 {Window Titel}
+
+916232D2-337E-451C-A1D8-C33F5FFFE1B1,TextToWrite
+{}
 
 ApplicationReadmeText
 {<%AppName%> LiesMich}
@@ -1823,6 +1841,9 @@ Yes
 3B154EDD-CDCE-4F32-9C1B-F65597824199,Title
 {<%InstallApplicationText%>}
 
+4E6C63E2-EC53-446E-8C3F-BE01E815CDED,TextToWrite
+{UserMode=Simple}
+
 5D3A1856-08AF-4BC2-A601-1F1B166FB226,Message
 {<%UninstallingApplicationText%>}
 
@@ -1843,6 +1864,9 @@ Yes
 
 85A32F95-6AEE-4C87-B4E6-8A8E538D31D4,Title
 {<%ApplicationReadmeText%>}
+
+916232D2-337E-451C-A1D8-C33F5FFFE1B1,TextToWrite
+{UserMode=Expert}
 
 ApplicationReadmeText
 {<%AppName%> Readme}
@@ -2541,6 +2565,9 @@ Yes
 357CA20C-077C-414E-B400-A618E44B1B80,Text
 {}
 
+4E6C63E2-EC53-446E-8C3F-BE01E815CDED,TextToWrite
+{}
+
 5D3A1856-08AF-4BC2-A601-1F1B166FB226,Message
 {<%UninstallingApplicationText%>}
 
@@ -2555,6 +2582,9 @@ Yes
 
 85A32F95-6AEE-4C87-B4E6-8A8E538D31D4,Title
 {Título de la Ventana}
+
+916232D2-337E-451C-A1D8-C33F5FFFE1B1,TextToWrite
+{}
 
 ApplicationReadmeText
 {<%AppName%> Léeme}
@@ -3109,6 +3139,9 @@ Yes
 357CA20C-077C-414E-B400-A618E44B1B80,Text
 {}
 
+4E6C63E2-EC53-446E-8C3F-BE01E815CDED,TextToWrite
+{}
+
 5D3A1856-08AF-4BC2-A601-1F1B166FB226,Message
 {<%UninstallingApplicationText%>}
 
@@ -3123,6 +3156,9 @@ Yes
 
 85A32F95-6AEE-4C87-B4E6-8A8E538D31D4,Title
 {Titre de la fenêtre}
+
+916232D2-337E-451C-A1D8-C33F5FFFE1B1,TextToWrite
+{}
 
 ApplicationReadmeText
 {<%AppName%> Readme}
@@ -3684,6 +3720,9 @@ Yes
 357CA20C-077C-414E-B400-A618E44B1B80,Text
 {}
 
+4E6C63E2-EC53-446E-8C3F-BE01E815CDED,TextToWrite
+{}
+
 5D3A1856-08AF-4BC2-A601-1F1B166FB226,Message
 {<%UninstallingApplicationText%>}
 
@@ -3698,6 +3737,9 @@ Yes
 
 85A32F95-6AEE-4C87-B4E6-8A8E538D31D4,Title
 {Ablak cím}
+
+916232D2-337E-451C-A1D8-C33F5FFFE1B1,TextToWrite
+{}
 
 ApplicationReadmeText
 {<%AppName%> OlvassaEl}
@@ -4333,6 +4375,9 @@ Yes
 357CA20C-077C-414E-B400-A618E44B1B80,Text
 {}
 
+4E6C63E2-EC53-446E-8C3F-BE01E815CDED,TextToWrite
+{}
+
 5D3A1856-08AF-4BC2-A601-1F1B166FB226,Message
 {<%UninstallingApplicationText%>}
 
@@ -4347,6 +4392,9 @@ Yes
 
 85A32F95-6AEE-4C87-B4E6-8A8E538D31D4,Title
 {Titolo della finestra}
+
+916232D2-337E-451C-A1D8-C33F5FFFE1B1,TextToWrite
+{}
 
 ApplicationReadmeText
 {<%AppName%> Leggimi}
@@ -4981,6 +5029,9 @@ Yes
 357CA20C-077C-414E-B400-A618E44B1B80,Text
 {}
 
+4E6C63E2-EC53-446E-8C3F-BE01E815CDED,TextToWrite
+{}
+
 5D3A1856-08AF-4BC2-A601-1F1B166FB226,Message
 {<%UninstallingApplicationText%>}
 
@@ -4995,6 +5046,9 @@ Yes
 
 85A32F95-6AEE-4C87-B4E6-8A8E538D31D4,Title
 {Lango Antraðtë}
+
+916232D2-337E-451C-A1D8-C33F5FFFE1B1,TextToWrite
+{}
 
 ApplicationReadmeText
 {<%AppName%> Skaityk}
@@ -5641,6 +5695,9 @@ Yes
 357CA20C-077C-414E-B400-A618E44B1B80,Text
 {}
 
+4E6C63E2-EC53-446E-8C3F-BE01E815CDED,TextToWrite
+{}
+
 5D3A1856-08AF-4BC2-A601-1F1B166FB226,Message
 {<%UninstallingApplicationText%>}
 
@@ -5655,6 +5712,9 @@ Yes
 
 85A32F95-6AEE-4C87-B4E6-8A8E538D31D4,Title
 {Scherm titel}
+
+916232D2-337E-451C-A1D8-C33F5FFFE1B1,TextToWrite
+{}
 
 ApplicationReadmeText
 {<%AppName%> Readme}
@@ -6286,6 +6346,9 @@ Yes
 357CA20C-077C-414E-B400-A618E44B1B80,Text
 {}
 
+4E6C63E2-EC53-446E-8C3F-BE01E815CDED,TextToWrite
+{}
+
 5D3A1856-08AF-4BC2-A601-1F1B166FB226,Message
 {<%UninstallingApplicationText%>}
 
@@ -6300,6 +6363,9 @@ Yes
 
 85A32F95-6AEE-4C87-B4E6-8A8E538D31D4,Title
 {Okno tytułowe}
+
+916232D2-337E-451C-A1D8-C33F5FFFE1B1,TextToWrite
+{}
 
 ApplicationReadmeText
 {<%AppName%> Readme}
@@ -6892,6 +6958,9 @@ Yes
 357CA20C-077C-414E-B400-A618E44B1B80,Text
 {}
 
+4E6C63E2-EC53-446E-8C3F-BE01E815CDED,TextToWrite
+{}
+
 5D3A1856-08AF-4BC2-A601-1F1B166FB226,Message
 {<%UninstallingApplicationText%>}
 
@@ -6906,6 +6975,9 @@ Yes
 
 85A32F95-6AEE-4C87-B4E6-8A8E538D31D4,Title
 {Título da Janela}
+
+916232D2-337E-451C-A1D8-C33F5FFFE1B1,TextToWrite
+{}
 
 ApplicationReadmeText
 {<%AppName%> Readme}
@@ -7466,6 +7538,9 @@ Yes
 357CA20C-077C-414E-B400-A618E44B1B80,Text
 {}
 
+4E6C63E2-EC53-446E-8C3F-BE01E815CDED,TextToWrite
+{}
+
 5D3A1856-08AF-4BC2-A601-1F1B166FB226,Message
 {<%UninstallingApplicationText%>}
 
@@ -7480,6 +7555,9 @@ Yes
 
 85A32F95-6AEE-4C87-B4E6-8A8E538D31D4,Title
 {Çàãîëîâîê îêíà}
+
+916232D2-337E-451C-A1D8-C33F5FFFE1B1,TextToWrite
+{}
 
 ApplicationReadmeText
 {Èíôîðìàöèÿ î <%AppName%>}
