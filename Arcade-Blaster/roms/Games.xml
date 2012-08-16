@@ -293,7 +293,6 @@
 				<rom file="1h.bin" offset="0" size="1000" crc="39fb43a4" sha1="4755609bd974976f04855d51e08ec0d62ab4bc07" />
 			</group>
 			<group name="1k" size="1000">
-				<romDISABLED file="1h.bin" offset="0" size="1000" crc="39fb43a4" sha1="4755609bd974976f04855d51e08ec0d62ab4bc07" />
 				<rom file="1k.bin" offset="0" size="1000" crc="7e3f56a2" sha1="a9795d8b7388f404f3b0e2c6ce15d713a4c5bafa" />
 			</group>			
 			<group name="proms" size="1000">
