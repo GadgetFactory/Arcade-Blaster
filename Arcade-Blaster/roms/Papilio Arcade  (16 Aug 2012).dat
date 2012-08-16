@@ -2,19 +2,43 @@
 <!DOCTYPE datafile PUBLIC "-//Logiqx//DTD ROM Management Datafile//EN" "http://www.logiqx.com/Dats/datafile.dtd">
  <datafile>
 	<header>
+		<type>DAT</type>
 		<name>Papilio Arcade Compatible ROMset</name>
 		<description>Papilio Arcade Compatible ROMset</description>
 		<category>Papilio Arcade</category>
-		<version>v1</version>
-		<date>2012-02-16</date>
+		<version>2012-08-16</version>
+		<date>2012-08-16</date>
 		<author>Papilio Arcade DAT Generator v0.1</author>
 		<email>none</email>
 		<homepage>none</homepage>
 		<url>none</url>
 		<comment>Papilio Arcade Generator v0.1</comment>
 	</header>
-	<game name="Puck Man">
-		<description>Namco - Puck Man [Pac-Man Hardware]</description>
+	<game name="Mr Do's Nightmare">
+		<description>Nameco - Mr Do's Nightmare on [mrdonightmare hardware]</description>
+		<rom name="galmidw.u" size="2048" crc="197493a6" sha1="f939fd712985db24dced4f7a66f4a804ca34ce60"/>
+		<rom name="galmidw.v" size="2048" crc="b8ee84cf" sha1="c5018f21da2f65fa573a2d5e9c8f96db1f0136e9"/>
+		<rom name="galmidw.w" size="2048" crc="76879d31" sha1="7aae5ee1eeaa5dacf4a232b3336f9e3df74018ca"/>
+		<rom name="galmidw.y" size="2048" crc="d6d5e47e" sha1="e5f41f90ca357f3e7ef1a6b055ca0cccc91ed391"/>
+		<rom name="7l" size="2048" crc="34913886" sha1="c1936ef6dc6080d080715d1c064513d581180fea"/>
+		<rom name="1h.bin" size="2048" crc="f880af4b" sha1="67d24ac48a6bd68de5b914675dc4cd5982d8ffc4"/>
+		<rom name="1k.bin" size="2048" crc="40fd608a" sha1="3a58d5ac17e98bea3d58d238d81bd6a5dd24bb81"/>
+		<rom name="6l.bpr" size="32" crc="77f95861" sha1="2acb3021e31b3c91bbf48763d2504dfad0d87f38"/>
+	</game>
+	<game name="Pong Demo">
+		<description>Homebrew - Pong Demo on [pacman hardware]</description>
+		<rom name="pacman.6e" size="4096" crc="b0d6d512" sha1="1D1CCC0CF0436680FC3B2BBD1A77292506B7514B"/>
+		<rom name="pacman.6f" size="4096" crc="c71c0011" sha1="1CEAF73DF40E531DF3BFB26B4FB7CD95FB7BFF1D"/>
+		<rom name="pacman.6h" size="4096" crc="c71c0011" sha1="1CEAF73DF40E531DF3BFB26B4FB7CD95FB7BFF1D"/>
+		<rom name="pacman.6j" size="4096" crc="c71c0011" sha1="1CEAF73DF40E531DF3BFB26B4FB7CD95FB7BFF1D"/>
+		<rom name="pacman.5e" size="4096" crc="57fe0ace" sha1="87B9E980C8C30B73EBF7C2750DD40806754BED51"/>
+		<rom name="pacman.5f" size="4096" crc="8bbd8de5" sha1="FEEC6C9D413C6767EDF2A521DA439B21CCDF3D9A"/>
+		<rom name="pacman.1m" size="256" crc="0d968558" sha1="B376885AC8452B6CBF9CED81B1080BFD570D9B91"/>
+		<rom name="pacman.7f" size="32" crc="e3a96194" sha1="6EB54A64E9D1DF6052FECB754852BD44DD9ED69E"/>
+		<rom name="pacman.4a" size="256" crc="dbd17cc2" sha1="072E20975AE0453DF57CFC54C344238AA311C373"/>
+	</game>
+	<game name="Puckman">
+		<description>Namco - Puckman on [pacman hardware]</description>
 		<rom name="namcopac.6e" size="4096" crc="fee263b3" sha1="87117ba5082cd7a615b4ec7c02dd819003fbd669"/>
 		<rom name="namcopac.6f" size="4096" crc="39d1fc83" sha1="326dbbf94c6fa2e96613dedb53702f8832b47d59"/>
 		<rom name="namcopac.6h" size="4096" crc="02083b03" sha1="7e1945f6eb51f2e51806d0439f975f7a2889b9b8"/>
@@ -27,7 +51,7 @@
 		<rom name="82s126.4a" size="256" crc="3eb3a8e4" sha1="19097b5f60d1030f8b82d9f1d3a241f93e5c75d6"/>
 	</game>
 	<game name="Pac-Man">
-		<description>Midway Mfg Co - Pac-Man [Pac-Man Hardware]</description>
+		<description>Midway Mfg Co - Pac-Man on [pacman hardware]</description>
 		<rom name="pacman.6e" size="4096" crc="c1e6ab10" sha1="e87e059c5be45753f7e9f33dff851f16d6751181"/>
 		<rom name="pacman.6f" size="4096" crc="1a6fb2d4" sha1="674d3a7f00d8be5e38b1fdc208ebef5a92d38329"/>
 		<rom name="pacman.6h" size="4096" crc="bcdd1beb" sha1="8e47e8c2c4d6117d174cdac150392042d3e0a881"/>
@@ -39,8 +63,8 @@
 		<rom name="82s123.7f" size="32" crc="2fc650bd" sha1="8d0268dee78e47c712202b0ec4f1f51109b1f2a5"/>
 		<rom name="82s126.4a" size="256" crc="3eb3a8e4" sha1="19097b5f60d1030f8b82d9f1d3a241f93e5c75d6"/>
 	</game>
-	<game name="Pac-Man (Fast)">
-		<description>Midway Mfg Co - Pac-Man (with Speedup Hack) [Pac-Man Hardware]</description>
+	<game name="Pac-Man [Midway, with speedup hack]">
+		<description>Midway - Pac-Man [Midway, with speedup hack] on [pacman hardware]</description>
 		<rom name="pacman.6e" size="4096" crc="c1e6ab10" sha1="e87e059c5be45753f7e9f33dff851f16d6751181"/>
 		<rom name="pacfast.6f" size="4096" crc="720dc3ee" sha1="7224d7acfa0144b681c71d7734a7337189835361"/>
 		<rom name="pacman.6h" size="4096" crc="bcdd1beb" sha1="8e47e8c2c4d6117d174cdac150392042d3e0a881"/>
@@ -52,8 +76,8 @@
 		<rom name="82s123.7f" size="32" crc="2fc650bd" sha1="8d0268dee78e47c712202b0ec4f1f51109b1f2a5"/>
 		<rom name="82s126.4a" size="256" crc="3eb3a8e4" sha1="19097b5f60d1030f8b82d9f1d3a241f93e5c75d6"/>
 	</game>
-	<game name="Caterpillar (Pac-Man Hack) [Pac-Man Hardware]">
-		<description>hack - caterpillar hack of pac-man on [Pac-Man Hardware]</description>
+	<game name="Caterpillar [Pac-Man Hack]">
+		<description>Phi - Caterpillar [Pac-Man Hack] on [pacman hardware]</description>
 		<rom name="c1.bin" size="2048" crc="9d027c4a" sha1="88e094880057451a75cdc2ce9477403021813982"/>
 		<rom name="c5.bin" size="2048" crc="f39846d3" sha1="bc1137a45898210523cf8da1e6a2425e7c322884"/>
 		<rom name="c2.bin" size="2048" crc="afa149a8" sha1="207b842854ac9e015e12a2dae41105438cda1df9"/>
@@ -71,75 +95,55 @@
 		<rom name="82s123.7f" size="32" crc="2fc650bd" sha1="8d0268dee78e47c712202b0ec4f1f51109b1f2a5"/>
 		<rom name="82s126.4a" size="256" crc="3eb3a8e4" sha1="19097b5f60d1030f8b82d9f1d3a241f93e5c75d6"/>
 	</game>
-	<game name="hangly">
-		<description>Hangly-Man (Set 1)</description>
-		<year>1981</year>
-		<manufacturer>Nittoh</manufacturer>
-		<rom name="82s123.7f" merge="82s123.7f" size="32" crc="2fc650bd" sha1="8d0268dee78e47c712202b0ec4f1f51109b1f2a5"/>
-		<rom name="82s126.1m" merge="82s126.1m" size="256" crc="a9cc86bf" sha1="bbcec0570aeceb582ff8238a4bc8546a23430081"/>
-		<rom name="82s126.3m" merge="82s126.3m" size="256" crc="77245b66" sha1="0c4d0bee858b97632411c440bea6948a74759746"/>
-		<rom name="82s126.4a" merge="82s126.4a" size="256" crc="3eb3a8e4" sha1="19097b5f60d1030f8b82d9f1d3a241f93e5c75d6"/>
+	<game name="Hangly Man (Set 1)">
+		<description>Nittoh - Hangly Man (Set 1) on [pacman hardware]</description>
 		<rom name="hangly.6e" size="4096" crc="5fe8610a" sha1="d63eaebd85e10aa6c27bb7f47642dd403eeb6934"/>
 		<rom name="hangly.6f" size="4096" crc="73726586" sha1="cedddc5194589039dd8b64f07ab6320d7d4f55f9"/>
 		<rom name="hangly.6h" size="4096" crc="4e7ef99f" sha1="bd42e68b29b4d654dc817782ba00db69b7d2dfe2"/>
 		<rom name="hangly.6j" size="4096" crc="7f4147e6" sha1="0a7ac0e59d4d26fe52a2f4196c9f19e5ab677c87"/>
-		<rom name="pacman.5e" merge="pacman.5e" size="4096" crc="0c944964" sha1="06ef227747a440831c9a3a613b76693d52a2f0a9"/>
-		<rom name="pacman.5f" merge="pacman.5f" size="4096" crc="958fedf9" sha1="4a937ac02216ea8c96477d4a15522070507fb599"/>
-        </game>
-	<game name="hangly2">
-		<description>Hangly-Man (Set 2)</description>
-		<year>1984</year>
-		<manufacturer>Nittoh</manufacturer>
-		<rom name="82s123.7f" merge="82s123.7f" size="32" crc="2fc650bd" sha1="8d0268dee78e47c712202b0ec4f1f51109b1f2a5"/>
-		<rom name="82s126.1m" merge="82s126.1m" size="256" crc="a9cc86bf" sha1="bbcec0570aeceb582ff8238a4bc8546a23430081"/>
-		<rom name="82s126.3m" merge="82s126.3m" size="256" crc="77245b66" sha1="0c4d0bee858b97632411c440bea6948a74759746"/>
-		<rom name="82s126.4a" merge="82s126.4a" size="256" crc="3eb3a8e4" sha1="19097b5f60d1030f8b82d9f1d3a241f93e5c75d6"/>
-		<rom name="hangly.6e" size="4096" crc="5fe8610a" sha1="d63eaebd85e10aa6c27bb7f47642dd403eeb6934"/>
-		<rom name="hangly.6h" size="4096" crc="4e7ef99f" sha1="bd42e68b29b4d654dc817782ba00db69b7d2dfe2"/>
-		<rom name="hangly2.6f" size="2048" crc="5ba228bb" sha1="b0e902cdf98bee72d6ec8069eec96adce3245074"/>
-		<rom name="hangly2.6j" size="2048" crc="51305374" sha1="6197b606a0eedb11135d9f4f7a89aecc23fb2d33"/>
-		<rom name="hangly2.6m" size="2048" crc="baf5461e" sha1="754586a6449fd54a342f260e572c1cd60ab70815"/>
-		<rom name="hangly2.6p" size="2048" crc="427c9d4d" sha1="917bc3d571cbdd24d88327ecabfb5b3f6d39af0a"/>
-		<rom name="pacman.5f" merge="pacman.5f" size="4096" crc="958fedf9" sha1="4a937ac02216ea8c96477d4a15522070507fb599"/>
-		<rom name="pacmanh.5e" size="4096" crc="299fb17a" sha1="ad97adc2122482a9018bacd137df9d8f409ddf85"/>
+		<rom name="pacman.5e" size="4096" crc="0c944964" sha1="06ef227747a440831c9a3a613b76693d52a2f0a9"/>
+		<rom name="pacman.5f" size="4096" crc="958fedf9" sha1="4a937ac02216ea8c96477d4a15522070507fb599"/>
+		<rom name="82s126.1m" size="256" crc="a9cc86bf" sha1="bbcec0570aeceb582ff8238a4bc8546a23430081"/>
+		<rom name="82s126.3m" size="256" crc="77245b66" sha1="0c4d0bee858b97632411c440bea6948a74759746"/>
+		<rom name="82s123.7f" size="32" crc="2fc650bd" sha1="8d0268dee78e47c712202b0ec4f1f51109b1f2a5"/>
+		<rom name="82s126.4a" size="256" crc="3eb3a8e4" sha1="19097b5f60d1030f8b82d9f1d3a241f93e5c75d6"/>
 	</game>
-	<game name="hangly3">
-		<description>Hangly-Man (Set 3)</description>
-		<year>1984</year>
-		<manufacturer>Nittoh</manufacturer>
-		<rom name="82s123.7f" merge="82s123.7f" size="32" crc="2fc650bd" sha1="8d0268dee78e47c712202b0ec4f1f51109b1f2a5"/>
-		<rom name="82s126.1m" merge="82s126.1m" size="256" crc="a9cc86bf" sha1="bbcec0570aeceb582ff8238a4bc8546a23430081"/>
-		<rom name="82s126.3m" merge="82s126.3m" size="256" crc="77245b66" sha1="0c4d0bee858b97632411c440bea6948a74759746"/>
-		<rom name="82s126.4a" merge="82s126.4a" size="256" crc="3eb3a8e4" sha1="19097b5f60d1030f8b82d9f1d3a241f93e5c75d6"/>
+	<game name="Hangly Man (Set 2)">
+		<description>Nittoh - Hangly Man (Set 2) on [pacman hardware]</description>
+		<rom name="hangly.6e" size="4096" crc="5fe8610a" sha1="d63eaebd85e10aa6c27bb7f47642dd403eeb6934"/>
 		<rom name="hangly2.6f" size="2048" crc="5ba228bb" sha1="b0e902cdf98bee72d6ec8069eec96adce3245074"/>
 		<rom name="hangly2.6m" size="2048" crc="baf5461e" sha1="754586a6449fd54a342f260e572c1cd60ab70815"/>
+		<rom name="hangly.6h" size="4096" crc="4e7ef99f" sha1="bd42e68b29b4d654dc817782ba00db69b7d2dfe2"/>
+		<rom name="hangly2.6j" size="2048" crc="51305374" sha1="6197b606a0eedb11135d9f4f7a89aecc23fb2d33"/>
+		<rom name="hangly2.6p" size="2048" crc="427c9d4d" sha1="917bc3d571cbdd24d88327ecabfb5b3f6d39af0a"/>
+		<rom name="pacmanh.5e" size="4096" crc="299fb17a" sha1="ad97adc2122482a9018bacd137df9d8f409ddf85"/>
+		<rom name="pacman.5f" size="4096" crc="958fedf9" sha1="4a937ac02216ea8c96477d4a15522070507fb599"/>
+		<rom name="82s126.1m" size="256" crc="a9cc86bf" sha1="bbcec0570aeceb582ff8238a4bc8546a23430081"/>
+		<rom name="82s126.3m" size="256" crc="77245b66" sha1="0c4d0bee858b97632411c440bea6948a74759746"/>
+		<rom name="82s123.7f" size="32" crc="2fc650bd" sha1="8d0268dee78e47c712202b0ec4f1f51109b1f2a5"/>
+		<rom name="82s126.4a" size="256" crc="3eb3a8e4" sha1="19097b5f60d1030f8b82d9f1d3a241f93e5c75d6"/>
+	</game>
+	<game name="Hangly Man (Set 3)">
+		<description>Nittoh - Hangly Man (Set 3) on [pacman hardware]</description>
 		<rom name="hm1.6e" size="2048" crc="9d027c4a" sha1="88e094880057451a75cdc2ce9477403021813982"/>
-		<rom name="hm10.5f" size="2048" crc="9e39323a" sha1="be933e691df4dbe7d12123913c3b7b7b585b7a35"/>
-		<rom name="hm11.5h" size="2048" crc="3591b89d" sha1="79bb456be6c39c1ccd7d077fbe181523131fb300"/>
-		<rom name="hm12.5j" size="2048" crc="1b1d9096" sha1="53771c573051db43e7185b1d188533056290a620"/>
-		<rom name="hm3.6h" size="2048" crc="08419c4a" sha1="7e5001adad401080c788737c1d2349f218750442"/>
-		<rom name="hm4.6j" size="2048" crc="5039b082" sha1="086a6ac4742734167d283b1121fce29d8ac4a6cd"/>
 		<rom name="hm5.6k" size="2048" crc="194c7189" sha1="fd423bac2810015313841c7b935054565390fbd0"/>
+		<rom name="hangly2.6f" size="2048" crc="5ba228bb" sha1="b0e902cdf98bee72d6ec8069eec96adce3245074"/>
+		<rom name="hangly2.6m" size="2048" crc="baf5461e" sha1="754586a6449fd54a342f260e572c1cd60ab70815"/>
+		<rom name="hm3.6h" size="2048" crc="08419c4a" sha1="7e5001adad401080c788737c1d2349f218750442"/>
 		<rom name="hm7.6n" size="2048" crc="ab74b51f" sha1="1bce8933ed7807eb7aca9670df8994f8d1a8b5b7"/>
+		<rom name="hm4.6j" size="2048" crc="5039b082" sha1="086a6ac4742734167d283b1121fce29d8ac4a6cd"/>
 		<rom name="hm8.6p" size="2048" crc="931770d7" sha1="78fcf88e07ec5126c12c3297b62ca388809e947c"/>
 		<rom name="hm9.5e" size="2048" crc="5f4be3cc" sha1="eeb0e1e44549b99eab481d9ac016b4359e19fe30"/>
+		<rom name="hm11.5h" size="2048" crc="3591b89d" sha1="79bb456be6c39c1ccd7d077fbe181523131fb300"/>
+		<rom name="hm10.5f" size="2048" crc="9e39323a" sha1="be933e691df4dbe7d12123913c3b7b7b585b7a35"/>
+		<rom name="hm12.5j" size="2048" crc="1b1d9096" sha1="53771c573051db43e7185b1d188533056290a620"/>
+		<rom name="82s126.1m" size="256" crc="a9cc86bf" sha1="bbcec0570aeceb582ff8238a4bc8546a23430081"/>
+		<rom name="82s126.3m" size="256" crc="77245b66" sha1="0c4d0bee858b97632411c440bea6948a74759746"/>
+		<rom name="82s123.7f" size="32" crc="2fc650bd" sha1="8d0268dee78e47c712202b0ec4f1f51109b1f2a5"/>
+		<rom name="82s126.4a" size="256" crc="3eb3a8e4" sha1="19097b5f60d1030f8b82d9f1d3a241f93e5c75d6"/>
 	</game>
-
-	<gameDisabled name="Homebrew - Tetris">
-		<description>Homebrew #001 [Pac-Man Hardware]</description>
-		<rom name="pacman.6e" size="4096" crc="b0d6d512" sha1=""/>
-		<rom name="pacman.6f" size="4096" crc="c71c0011" sha1=""/>
-		<rom name="pacman.6h" size="4096" crc="c71c0011" sha1=""/>
-		<rom name="pacman.6j" size="4096" crc="c71c0011" sha1=""/>
-		<rom name="pacman.5e" size="1000" crc="57fe0ace" sha1=""/>
-		<rom name="pacman.5f" size="1000" crc="8bbd8de5" sha1=""/>
-		<rom name="pacman.1m" size="100" crc="0d968558" sha1=""/>
-		<rom name="pacman.7f" size="20" crc="e3a96194" sha1=""/>
-		<rom name="pacman.4a" size="100" crc="dbd17cc2" sha1=""/>
-	</gameDisabled>
-
 	<game name="Crush Roller">
-		<description>Kural Esco Electric - Crush Roller [Pac-Man Hardware]</description>
+		<description>Kural Esco Electric - Crush Roller on [pacman hardware]</description>
 		<rom name="tp1" size="2048" crc="f276592e" sha1="68ebb7d9f70af868d99ec42c26bc55a54ba1f22c"/>
 		<rom name="tp5a" size="2048" crc="3d302abe" sha1="8ca5cd82d099b55e20f785489158231a1d99a430"/>
 		<rom name="tp2" size="2048" crc="25f42e70" sha1="66de8203c364fd90e8a2b5749c2e40665b2f5830"/>
@@ -158,7 +162,7 @@
 		<rom name="82S126.3M" size="256" crc="77245b66" sha1="0c4d0bee858b97632411c440bea6948a74759746"/>
 	</game>
 	<game name="Gorkans">
-		<description>Techstar - Gorkans [Pac-Man Hardware]</description>
+		<description>Techstar - Gorkans on [pacman hardware]</description>
 		<rom name="gorkans8.rom" size="2048" crc="55100b18" sha1="8f657c1b2865987b60d95960c5297a82bb1cc6e0"/>
 		<rom name="gorkans4.rom" size="2048" crc="b5c604bf" sha1="0f3608d630fba9d4734a3ef30199a5d1a067cdff"/>
 		<rom name="gorkans7.rom" size="2048" crc="b8c6def4" sha1="58ac78fc5b3559ef771ca708a79089b7a00cf6b8"/>
@@ -176,7 +180,7 @@
 		<rom name="gorkprom.4" size="32" crc="2fc650bd" sha1="8d0268dee78e47c712202b0ec4f1f51109b1f2a5"/>
 	</game>
 	<game name="Lizard Wizard">
-		<description>Techstar - Lizard Wizard [Pac-Man Hardware]</description>
+		<description>Techstar - Lizard Wizard on [pacman hardware]</description>
 		<rom name="6e.cpu" size="4096" crc="32bc1990" sha1="467c9d70e07f403b6b9118aebe4e6d0abb40a5c1"/>
 		<rom name="6f.cpu" size="4096" crc="ef24b414" sha1="12fce48008c4f9387df0c84f3b0d7c5a1b35d898"/>
 		<rom name="6h.cpu" size="4096" crc="30bed83d" sha1="8c2458f98320c6887580c71632b544da0a582ba2"/>
@@ -190,7 +194,7 @@
 		<rom name="7f.cpu" size="32" crc="7549a947" sha1="4f2c3e7d6c38f0b9a90317f91feb3f86c9a0d0a5"/>
 	</game>
 	<game name="Amidar">
-		<description>Konami - Amidar [Scramble Hardware]</description>
+		<description>Konami - Amidar on [scramble hardware]</description>
 		<rom name="am2d" size="2048" crc="24b79547" sha1="eca735c6a35561a9a6ba8a20dca1e1c78ed073fc"/>
 		<rom name="am2e" size="2048" crc="4c64161e" sha1="5b2e49ff915295617671b13f15b566046a5dbc15"/>
 		<rom name="am2f" size="2048" crc="b3987a72" sha1="1d72e9ae3005029628c6f9beb6ca65afcb1f7893"/>
@@ -205,8 +209,8 @@
 		<rom name="2716.a5" size="2048" crc="3029f94f" sha1="3b432b42e79f8b0a7d65e197f373a04e3c92ff20"/>
 		<rom name="amidar.clr" size="32" crc="f940dcc3" sha1="1015e56f37c244a850a8f4bf0e36668f047fd46d"/>
 	</game>
-	<game name="Scramble">
-		<description>Konami - Scramble [Scramble Hardware]</description>
+	<game name="Scramble (Galaxian Hardware)">
+		<description>Stern (Konami License) - Scramble (Galaxian Hardware) on [scramble hardware]</description>
 		<rom name="2d" size="2048" crc="b89207a1" sha1="5422df979e82bcc73df49f50515fe76c126c037b"/>
 		<rom name="2e" size="2048" crc="e9b4b9eb" sha1="a8ee9ddfadf5e9accedfaf81da757a88a2e55a0a"/>
 		<rom name="2f" size="2048" crc="a1f14f4c" sha1="3eae2b3e4596505a8afb5c5cfb108e823c2c4319"/>
@@ -222,8 +226,8 @@
 		<rom name="5h" size="2048" crc="516e029e" sha1="81b44eb1ce43cebde87f0a41ade2e7eb291af78d"/>
 		<rom name="c01s.6e" size="32" crc="4e3caeab" sha1="a25083c3e36d28afdefe4af6e6d4f3155e303625"/>
 	</game>
-	<game name="-The End-">
-		<description>Konami - -The End- [Scramble Hardware]</description>
+	<game name="The End">
+		<description>Konami - The End on [scramble hardware]</description>
 		<rom name="ic13" size="2048" crc="90e5ab14" sha1="b926801ab1cc1e2787a76ced6c7cffd6fce753d4"/>
 		<rom name="ic14" size="2048" crc="950f0a07" sha1="bde9f3c6cf060dc6f5b7652287b94e04bed7bcf7"/>
 		<rom name="ic15" size="2048" crc="6786bcf5" sha1="7556d3dc51d6a112b6357b8a36df05fd1a4d1cc9"/>
@@ -236,8 +240,8 @@
 		<rom name="ic31" size="2048" crc="af6d09b6" sha1="f3ad51dc88aa58fd39195ead978b039e0b0b585c"/>
 		<rom name="6331-1j.86" size="32" crc="24652bc4" sha1="d89575f3749c75dc963317fe451ffeffd9856e4d"/>
 	</game>
-	<game name="Frogger">
-		<description>Konami - Frogger [Frogger Hardware]</description>
+	<game name="Frogger (Sega Set 2)">
+		<description>Konami - Frogger (Sega Set 2) on [frogger hardware]</description>
 		<rom name="epr-1012.ic5" size="4096" crc="efab0c79" sha1="68c99b6cdcb9396bb473739a62ffc009b4bf57d5"/>
 		<rom name="epr-1013a.ic6" size="4096" crc="aeca9c13" sha1="cdf560adbd7f2813e86e378da7781cccf7928a44"/>
 		<rom name="epr-1014.ic7" size="4096" crc="dd251066" sha1="4612e1fe1ab7182a277140b1a1976cc17e0746a5"/>
@@ -248,5 +252,69 @@
 		<rom name="epr-607.ic101" size="2048" crc="05f7d883" sha1="78831fd287da18928651a8adb7e578d291493eff"/>
 		<rom name="epr-606.ic102" size="2048" crc="f524ee30" sha1="dd768967add61467baa08d5929001f157d6cd911"/>
 		<rom name="pr-91.6l" size="32" crc="413703bf" sha1="66648b2b28d3dcbda5bdb2605d1977428939dd3c"/>
+	</game>
+	<game name="Galaxian (Namco Set 1)">
+		<description>Nameco - Galaxian (Namco Set 1) on [galaxian hardware]</description>
+		<rom name="galmidw.u" size="2048" crc="745e2d61" sha1="e65f74e35b1bfaccd407e168ea55678ae9b68edf"/>
+		<rom name="galmidw.v" size="2048" crc="9c999a40" sha1="02fdcd95d8511e64c0d2b007b874112d53e41045"/>
+		<rom name="galmidw.w" size="2048" crc="b5894925" sha1="0046b9ed697a34d088de1aead8bd7cbe526a2396"/>
+		<rom name="galmidw.y" size="2048" crc="6b3ca10b" sha1="18d8714e5ef52f63ba8888ecc5a25b17b3bf17d1"/>
+		<rom name="7l" size="2048" crc="1b933207" sha1="8b44b0f74420871454e27894d0f004859f9e59a9"/>
+		<rom name="1h.bin" size="2048" crc="39fb43a4" sha1="4755609bd974976f04855d51e08ec0d62ab4bc07"/>
+		<rom name="1k.bin" size="2048" crc="7e3f56a2" sha1="a9795d8b7388f404f3b0e2c6ce15d713a4c5bafa"/>
+		<rom name="6l.bpr" size="32" crc="c3ac9467" sha1="f382ad5a34d282056c78a5ec00c30ec43772bae2"/>
+	</game>
+	<game name="Alien Invasion">
+		<description>Margamatics Video - Alien Invasion on [invaders hardware]</description>
+		<rom name="alieninv.h" size="2048" crc="6ad601c3" sha1="9fc88698f98ce43992a5044d28d3e19751f82772"/>
+		<rom name="alieninv.g" size="2048" crc="c6bb6fb3" sha1="01a12163309f967dcffce19890b1e0d079021fc2"/>
+		<rom name="alieninv.f" size="2048" crc="1d2ff324" sha1="209766a981fdd3a68e36da3d8122a244c883cae7"/>
+		<rom name="alieninv.e" size="2048" crc="2f2e6791" sha1="08a1f17bcfec598182386f1c43e4fc7b476212de"/>
+	</game>
+	<game name="Alien Invasion Part II">
+		<description>Taito - Alien Invasion Part II on [invaders hardware]</description>
+		<rom name="1h.bin" size="2048" crc="c46df7f4" sha1="eec34b3d5585bae03c7b80585daaa05ddfcc2164"/>
+		<rom name="1g.bin" size="2048" crc="4b1112d6" sha1="b693667656e5d8f44eeb2ea730f4d4db436da579"/>
+		<rom name="1f.bin" size="2048" crc="adca18a5" sha1="7e02651692113db31fd469868ae5ffdb0f941ecf"/>
+		<rom name="1e.bin" size="2048" crc="0449cb52" sha1="8adcb7cd4492fa6649d9ee81172d8dff56621d64"/>
+	</game>
+	<game name="Space Invaders">
+		<description>Taito / Midway - Space Invaders on [invaders hardware]</description>
+		<rom name="invaders.h" size="2048" crc="734f5ad8" sha1="ff6200af4c9110d8181249cbcef1a8a40fa40b7f"/>
+		<rom name="invaders.g" size="2048" crc="6bfaca4a" sha1="16f48649b531bdef8c2d1446c429b5f414524350"/>
+		<rom name="invaders.f" size="2048" crc="0ccead96" sha1="537aef03468f63c5b9e11dd61e253f7ae17d9743"/>
+		<rom name="invaders.e" size="2048" crc="14e538b0" sha1="1d6ca0c99f9df71e2990b610deb9d7da0125e2d8"/>
+	</game>
+	<game name="Space Invaders Part 4">
+		<description>Taito / Midway - Space Invaders Part 4 on [invaders hardware]</description>
+		<rom name="spin4.a" size="2048" crc="bb386dfe" sha1="cc00f3e4f6ca4c05bae038a24ccdb213fb951cfc"/>
+		<rom name="spin4.b" size="2048" crc="63afa11d" sha1="d8cedfa010a49237e31f6ebaed35134cb1c3ce68"/>
+		<rom name="spin4.c" size="2048" crc="22b0317c" sha1="8fd037bf5f89a7bcb06042697410566d5180912a"/>
+		<rom name="spin4.d" size="2048" crc="9102fd68" sha1="3523e69314844fcd1863b1e9a9d7fcebe9ee174b"/>
+	</game>
+	<game name="Space King (Space Invaders [Japanese])">
+		<description>Leijac Corporation - Space King (Space Invaders [Japanese]) on [invaders hardware]</description>
+		<rom name="invaders.h" size="2048" crc="734f5ad8" sha1="ff6200af4c9110d8181249cbcef1a8a40fa40b7f"/>
+		<rom name="spcekng2" size="2048" crc="96dcdd42" sha1="e18d7ffca92e863ef40e235b2be973d8c5879fdb"/>
+		<rom name="spcekng3" size="2048" crc="95fc96ad" sha1="38175edad0e538a1561cec8f7613f15ae274dd14"/>
+		<rom name="spcekng4" size="2048" crc="54170ada" sha1="1e8b3774355ec0d448f04805a917f4c1fe64bceb"/>
+	</game>
+	<game name="Super Earth Invasion (Set 1) [bootleg]">
+		<description>Competitive Video - Super Earth Invasion (Set 1) [bootleg] on [invaders hardware]</description>
+		<rom name="earthinv.h" size="2048" crc="58a750c8" sha1="90bfa4ea06f38e67fe4286d37d151632439249d2"/>
+		<rom name="earthinv.g" size="2048" crc="b91742f1" sha1="8d9ca92405fbaf1d5a7138d400986616378d061e"/>
+		<rom name="earthinv.f" size="2048" crc="4acbbc60" sha1="b8c1efb4251a1e690ff6936ec956d6f66136a085"/>
+		<rom name="earthinv.e" size="2048" crc="df397b12" sha1="e7e8c080cb6baf342ec637532e05d38129ae73cf"/>
+	</game>
+	<game name="Super Earth Invasion (Set 2) [bootleg]">
+		<description>Competitive Video - Super Earth Invasion (Set 2) [bootleg] on [invaders hardware]</description>
+		<rom name="unkh.h1" size="1024" crc="272b9bf3" sha1="dd57d6a88d42024a39640931114107b547b4c520"/>
+		<rom name="unkg.g1" size="1024" crc="61bb6101" sha1="8fc8bbd8ac93d239e0cf0e4881f709860ec2c973"/>
+		<rom name="unkf.f1" size="1024" crc="2a8d9cd5" sha1="7948d79b326e729bcb629607c8797156ff9fb0e8"/>
+		<rom name="unke.e1" size="1024" crc="1938d349" sha1="3bd2a0deb126cf2e22bc3cb53e9a59c3875be260"/>
+		<rom name="unkd.d1" size="1024" crc="9bc2ab88" sha1="1e9f3b780135827d16ba25978382b097a8110828"/>
+		<rom name="unkc.c1" size="1024" crc="d4e2dada" sha1="e98271212fc89e240fdf97d292edd17dc8dd4191"/>
+		<rom name="unkb.b1" size="1024" crc="ab645a9c" sha1="9c286f8a031a8babfb8e9b594e05e133c338b342"/>
+		<rom name="unka.a1" size="1024" crc="4b65bd7c" sha1="3931f9f5b0e3339ab484eee14473d3a474935fd9"/>
 	</game>
 </datafile>
