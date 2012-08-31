@@ -3,26 +3,32 @@
 <hardwarelist>
 	<hardware id="pacman">
 		<platform name="PapilioOne500k_ArcadeMegaWing" memmap="avrmap">pacman_hardware_p1_500K.bit</platform>
+		<platform name="PapilioOne500k_LogicStart" memmap="avrmap">pacman_hardware_p1LS_500K.bit</platform>
 		<platform name="PapilioLogicLX9_ArcadeMegaWing" memmap="avrmap">pacman_hardware_papilio_logic_lx9.bit</platform>
 	</hardware>
 	<hardware id="frogger">
 		<platform name="PapilioOne500k_ArcadeMegaWing" memmap="avrmap">frogger_hardware_p1_500K.bit</platform>
+		<platform name="PapilioOne500k_LogicStart" memmap="avrmap">frogger_hardware_p1LS_500K.bit</platform>
 		<platform name="PapilioLogicLX9_ArcadeMegaWing" memmap="avrmap">frogger_hardware_papilio_logic_lx9.bit</platform>
 	</hardware>
 	<hardware id="scramble">
 		<platform name="PapilioOne500k_ArcadeMegaWing" memmap="avrmap">scramble_hardware_p1_500K.bit</platform>
+		<platform name="PapilioOne500k_LogicStart" memmap="avrmap">scramble_hardware_p1LS_500K.bit</platform>
 		<platform name="PapilioLogicLX9_ArcadeMegaWing" memmap="avrmap">scramble_hardware_papilio_logic_lx9.bit</platform>
 	</hardware>
 	<hardware id="galaxian">
 		<platform name="PapilioOne500k_ArcadeMegaWing" memmap="avrmap">galaxian_hardware_p1_500K.bit</platform>
+		<platform name="PapilioOne500k_LogicStart" memmap="avrmap">galaxian_hardware_p1LS_500K.bit</platform>
 		<platform name="PapilioLogicLX9_ArcadeMegaWing" memmap="avrmap">galaxian_hardware_papilio_logic_lx9.bit</platform>
 	</hardware>
 	<hardware id="mrdonightmare">
 		<platform name="PapilioOne500k_ArcadeMegaWing" memmap="avrmap">mrdo_hardware_p1_500K.bit</platform>
+		<platform name="PapilioOne500k_LogicStart" memmap="avrmap">mrdo_hardware_p1LS_500K.bit</platform>
 		<platform name="PapilioLogicLX9_ArcadeMegaWing" memmap="avrmap">galaxian_hardware_papilio_logic_lx9.bit</platform>
 	</hardware>	
 	<hardware id="invaders">
 		<platform name="PapilioOne500k_ArcadeMegaWing" memmap="avrmap">invaders_hardware_p1_500K.bit</platform>
+		<platform name="PapilioOne500k_LogicStart" memmap="avrmap">invaders_hardware_p1LS_500K.bit</platform>
 		<platform name="PapilioLogicLX9_ArcadeMegaWing" memmap="avrmap">invaders_hardware_papilio_logic_lx9.bit</platform>
 	</hardware>
 </hardwarelist>
