@@ -5,11 +5,21 @@
 		<displayname>PapilioOne 500k with Arcade MegaWing</displayname>
 		<model>PPK7003-FULL</model>
 		<components nos="2">
-			<board name="">
-			
-			</board>
+			<board name=""></board>
 			<accessory></accessory>
-
+		</components>
+		<desc>Papilio One FPGA board</desc>
+		<device>XC3S500E-4VQG100C</device>
+		<devicedesc>Xilinx Spartan 3E 500k</devicedesc>
+		<image>p1500k.jpg</image>
+		<resourcelevel>0</resourcelevel>
+	</platform>
+	<platform id="PapilioOne500k_LogicStart">
+		<displayname>PapilioOne 500k with LogicStart Wing</displayname>
+		<model>PPK7003-FULL</model>
+		<components nos="2">
+			<board name=""></board>
+			<accessory></accessory>
 		</components>
 		<desc>Papilio One FPGA board</desc>
 		<device>XC3S500E-4VQG100C</device>
