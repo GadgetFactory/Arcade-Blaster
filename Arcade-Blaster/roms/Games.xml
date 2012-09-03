@@ -574,10 +574,10 @@
 		<description>Space Invaders Part 4</description>
 		<fileset primary="true">
 			<group name="maincpu" size="4000">
-				<rom file="spin4.a" size="2048" crc="bb386dfe" sha1="cc00f3e4f6ca4c05bae038a24ccdb213fb951cfc" offset="0"/>
-				<rom file="spin4.b" size="2048" crc="63afa11d" sha1="d8cedfa010a49237e31f6ebaed35134cb1c3ce68" offset="800"/>
-				<rom file="spin4.c" size="2048" crc="22b0317c" sha1="8fd037bf5f89a7bcb06042697410566d5180912a" offset="1000"/>
-				<rom file="spin4.d" size="2048" crc="9102fd68" sha1="3523e69314844fcd1863b1e9a9d7fcebe9ee174b" offset="1800"/>
+				<rom file="spin4.a" offset="0" size="2048" crc="bb386dfe" sha1="cc00f3e4f6ca4c05bae038a24ccdb213fb951cfc" />
+				<rom file="spin4.b" offset="0" size="2048" crc="63afa11d" sha1="d8cedfa010a49237e31f6ebaed35134cb1c3ce68" />
+				<rom file="spin4.c" offset="0" size="2048" crc="22b0317c" sha1="8fd037bf5f89a7bcb06042697410566d5180912a" />
+				<rom file="spin4.d" offset="0" size="2048" crc="9102fd68" sha1="3523e69314844fcd1863b1e9a9d7fcebe9ee174b" />
 			</group>					
 		</fileset>
 
@@ -813,23 +813,23 @@
 		<publisher>Phi</publisher>
 		<year>1982</year>
 		<description>PacHeart [French Pac-Man Hack]</description>
-
+		
 		<fileset primary="true">
 			<group name="maincpu" size="6400">
-				<rom file="pacheart1.6e" offset="0000" size="800" crc="9d027c4a" sha1="88e094880057451a75cdc2ce9477403021813982" />
-				<rom file="pacheart.pg2" offset="0800" size="800" crc="f39846d3" sha1="bc1137a45898210523cf8da1e6a2425e7c322884" />
-				<rom file="pacheart2.6f" offset="1600" size="800" crc="afa149a8" sha1="207b842854ac9e015e12a2dae41105438cda1df9" />
-				<rom file="pacheart.pg4" offset="2400" size="800" crc="baf5461e" sha1="754586a6449fd54a342f260e572c1cd60ab70815" />
-				<rom file="pacheart3.6h" offset="3200" size="800" crc="6bb282a1" sha1="a96f25dc0f49ebe7e528e3297a112d778c6c3030" />
-				<rom file="pacheart7.6n" offset="4000" size="800" crc="fa2140f5" sha1="123d31e653e8af78c6153702eca2e136c427ed64" />
-				<rom file="pacheart.pg7" offset="4800" size="800" crc="86c91e0e" sha1="52af6a3af5b1363859f790470ca5860ef2a08566" />
-				<rom file="pacheart.pg8" offset="5600" size="800" crc="3d28134e" sha1="45a257a0aca74e2ab36dd70097220d8be29cc87b" />
+				<rom file="pacheart1.6e" offset="0000" size="800" crc="D844B679" sha1="c4486198b3126bb8e05a308c53787e51065f77ae" />
+				<rom file="pacheart.pg2" offset="0800" size="800" crc="B9152A38" sha1="b6be2cb6bc7dd123503eb6bf1165dd1c99456813" />
+				<rom file="pacheart2.6f" offset="1600" size="800" crc="7D177853" sha1="9b5ddaaa8b564654f97af193dbcc29f81f230a25" />
+				<rom file="pacheart.pg4" offset="2400" size="800" crc="842D6574" sha1="40e32d09cc8d701eb318716493a68cf3f95d3d6d" />
+				<rom file="pacheart3.6h" offset="3200" size="800" crc="9045A44C" sha1="a97d7016effbd2ace9a7d92ceb04a6ce18fb42f9" />
+				<rom file="pacheart7.6n" offset="4000" size="800" crc="888F3C3E" sha1="c2b5917bf13071131dd53ea76f0da86706db2d80" />
+				<rom file="pacheart.pg7" offset="4800" size="800" crc="F5265C10" sha1="9a320790d7a03fd6192a92d30b3e9c754bbc6a9d" />
+				<rom file="pacheart.pg8" offset="5600" size="800" crc="1A21A381" sha1="d5367a327d19fb57ba5e484bd4fda1b10953c040" />
 			</group>
 			<group name="gfx1" size="3200">
-				<rom file="pacheart.ch1" offset="0000" size="800" crc="1c4617be" sha1="2b2b10f1256b4612e3e01ed1c8e2d7ccb6989f5d" />
-				<rom file="chg2" offset="0800" size="800" crc="46f72fef" sha1="daf334c78fdb73d43d524b733b763b290c602ae2" />
-				<rom file="pacheart.ch3" offset="1600" size="800" crc="ba9ec199" sha1="626ab2eedf4c8d307dfad3b8863a67f8c34dda97" />
-				<rom file="pacheart.ch4" offset="2400" size="800" crc="41c09655" sha1="cc639e660443b9dcb33f9aefe9af5d332591c466" />
+				<rom file="pacheart.ch1" offset="0000" size="800" crc="C62BBABF" sha1="f6f28ae33c2ab274105283b22b49ad243780a95e" />
+				<rom file="chg2" offset="0800" size="800" crc="3591B89D" sha1="79bb456be6c39c1ccd7d077fbe181523131fb300" />
+				<rom file="pacheart.ch3" offset="1600" size="800" crc="CA8C184C" sha1="833aa845824ed80777b62f03df36a920ad7c3656" />
+				<rom file="pacheart.ch4" offset="2400" size="800" crc="1B1D9096" sha1="53771c573051db43e7185b1d188533056290a620" />
 			</group>
 			<group name="82s1261m" size="100">
 				<rom file="82s126.1m" offset="0" size="100" crc="a9cc86bf" sha1="bbcec0570aeceb582ff8238a4bc8546a23430081" />
@@ -1018,19 +1018,19 @@
 		<fileset primary="true">
 			<group name="maincpu" size="6400">
 				<rom file="pop1.6e" offset="0000" size="800" crc="9d027c4a" sha1="88e094880057451a75cdc2ce9477403021813982" />
-				<rom file="pop5.6k" offset="0800" size="800" crc="f39846d3" sha1="bc1137a45898210523cf8da1e6a2425e7c322884" />
-				<rom file="pop2.6f" offset="1600" size="800" crc="afa149a8" sha1="207b842854ac9e015e12a2dae41105438cda1df9" />
-				<rom file="pop6.6m" offset="2400" size="800" crc="baf5461e" sha1="754586a6449fd54a342f260e572c1cd60ab70815" />
-				<rom file="pop3.6h" offset="3200" size="800" crc="6bb282a1" sha1="a96f25dc0f49ebe7e528e3297a112d778c6c3030" />
-				<rom file="pop7.6n" offset="4000" size="800" crc="fa2140f5" sha1="123d31e653e8af78c6153702eca2e136c427ed64" />
-				<rom file="pop4.6j" offset="4800" size="800" crc="86c91e0e" sha1="52af6a3af5b1363859f790470ca5860ef2a08566" />
-				<rom file="pop8.6p" offset="5600" size="800" crc="3d28134e" sha1="45a257a0aca74e2ab36dd70097220d8be29cc87b" />
+				<rom file="pop5.6k" offset="0800" size="800" crc="194C7189" sha1="bc1137a45898210523cf8da1e6a2425e7c322884" />
+				<rom file="pop2.6f" offset="1600" size="800" crc="5BA228BB" sha1="207b842854ac9e015e12a2dae41105438cda1df9" />
+				<rom file="pop6.6m" offset="2400" size="800" crc="BAF5461E" sha1="754586a6449fd54a342f260e572c1cd60ab70815" />
+				<rom file="pop3.6h" offset="3200" size="800" crc="08419C4A" sha1="a96f25dc0f49ebe7e528e3297a112d778c6c3030" />
+				<rom file="pop7.6n" offset="4000" size="800" crc="AB74B51F" sha1="123d31e653e8af78c6153702eca2e136c427ed64" />
+				<rom file="pop4.6j" offset="4800" size="800" crc="5039B082" sha1="52af6a3af5b1363859f790470ca5860ef2a08566" />
+				<rom file="pop8.6p" offset="5600" size="800" crc="931770D7" sha1="45a257a0aca74e2ab36dd70097220d8be29cc87b" />
 			</group>
 			<group name="gfx1" size="3200">
-				<rom file="pop9.5e" offset="0000" size="800" crc="1c4617be" sha1="2b2b10f1256b4612e3e01ed1c8e2d7ccb6989f5d" />
-				<rom file="pop11.5h" offset="0800" size="800" crc="46f72fef" sha1="daf334c78fdb73d43d524b733b763b290c602ae2" />
-				<rom file="pop10.5f" offset="1600" size="800" crc="ba9ec199" sha1="626ab2eedf4c8d307dfad3b8863a67f8c34dda97" />
-				<rom file="pop12.5j" offset="2400" size="800" crc="41c09655" sha1="cc639e660443b9dcb33f9aefe9af5d332591c466" />
+				<rom file="pop9.5e" offset="0000" size="800" crc="B569C4C1" sha1="2b2b10f1256b4612e3e01ed1c8e2d7ccb6989f5d" />
+				<rom file="pop11.5h" offset="0800" size="800" crc="3591B89D" sha1="daf334c78fdb73d43d524b733b763b290c602ae2" />
+				<rom file="pop10.5f" offset="1600" size="800" crc="014FB5A4" sha1="626ab2eedf4c8d307dfad3b8863a67f8c34dda97" />
+				<rom file="pop12.5j" offset="2400" size="800" crc="21B91C64" sha1="cc639e660443b9dcb33f9aefe9af5d332591c466" />
 			</group>
 			<group name="82s1261m" size="100">
 				<rom file="82s126.1m" offset="0" size="100" crc="a9cc86bf" sha1="bbcec0570aeceb582ff8238a4bc8546a23430081" />
@@ -1181,10 +1181,10 @@
 		<description>Super Earth Invasion (Set 1) [bootleg]</description>
 		<fileset primary="true">
 			<group name="maincpu" size="4000">
-       	       	<rom file="earthinv.h" size="2048" crc="58a750c8" sha1="90bfa4ea06f38e67fe4286d37d151632439249d2" offset="0"/>
-       	       	<rom file="earthinv.g" size="2048" crc="b91742f1" sha1="8d9ca92405fbaf1d5a7138d400986616378d061e" offset="800"/>
-       	       	<rom file="earthinv.f" size="2048" crc="4acbbc60" sha1="b8c1efb4251a1e690ff6936ec956d6f66136a085" offset="1000"/>
-       	       	<rom file="earthinv.e" size="2048" crc="df397b12" sha1="e7e8c080cb6baf342ec637532e05d38129ae73cf" offset="1800"/>
+				<rom file="earthinv.h" offset="0" size="2048" crc="58a750c8" sha1="90bfa4ea06f38e67fe4286d37d151632439249d2" />
+				<rom file="earthinv.g" offset="0" size="2048" crc="b91742f1" sha1="8d9ca92405fbaf1d5a7138d400986616378d061e" />
+				<rom file="earthinv.f" offset="0" size="2048" crc="4acbbc60" sha1="b8c1efb4251a1e690ff6936ec956d6f66136a085" />
+				<rom file="earthinv.e" offset="0" size="2048" crc="df397b12" sha1="e7e8c080cb6baf342ec637532e05d38129ae73cf" />
 			</group>
 		</fileset>
 
@@ -1205,14 +1205,14 @@
 		<description>Super Earth Invasion (Set 2) [bootleg]</description>
 		<fileset primary="true">
 			<group name="maincpu" size="4000">
-       	       	<rom file="unkh.h1" size="1024" crc="272b9bf3" sha1="dd57d6a88d42024a39640931114107b547b4c520" offset="0"/>
-       	       	<rom file="unkg.g1" size="1024" crc="61bb6101" sha1="8fc8bbd8ac93d239e0cf0e4881f709860ec2c973" offset="400"/>
-       	       	<rom file="unkf.f1" size="1024" crc="2a8d9cd5" sha1="7948d79b326e729bcb629607c8797156ff9fb0e8" offset="800"/>
-       	       	<rom file="unke.e1" size="1024" crc="1938d349" sha1="3bd2a0deb126cf2e22bc3cb53e9a59c3875be260" offset="c00"/>
-       	       	<rom file="unkd.d1" size="1024" crc="9bc2ab88" sha1="1e9f3b780135827d16ba25978382b097a8110828" offset="1000"/>
-       	       	<rom file="unkc.c1" size="1024" crc="d4e2dada" sha1="e98271212fc89e240fdf97d292edd17dc8dd4191" offset="1400"/>
-       	       	<rom file="unkb.b1" size="1024" crc="ab645a9c" sha1="9c286f8a031a8babfb8e9b594e05e133c338b342" offset="1800"/>
-       	       	<rom file="unka.a1" size="1024" crc="4b65bd7c" sha1="3931f9f5b0e3339ab484eee14473d3a474935fd9" offset="1c00"/>
+				<rom file="unkh.h1" offset="0" size="1024" crc="272b9bf3" sha1="dd57d6a88d42024a39640931114107b547b4c520" />
+				<rom file="unkg.g1" offset="0" size="1024" crc="61bb6101" sha1="8fc8bbd8ac93d239e0cf0e4881f709860ec2c973" />
+				<rom file="unkf.f1" offset="0" size="1024" crc="2a8d9cd5" sha1="7948d79b326e729bcb629607c8797156ff9fb0e8" />
+				<rom file="unke.e1" offset="0" size="1024" crc="1938d349" sha1="3bd2a0deb126cf2e22bc3cb53e9a59c3875be260" />
+				<rom file="unkd.d1" offset="0" size="1024" crc="9bc2ab88" sha1="1e9f3b780135827d16ba25978382b097a8110828" />
+				<rom file="unkc.c1" offset="0" size="1024" crc="d4e2dada" sha1="e98271212fc89e240fdf97d292edd17dc8dd4191" />
+				<rom file="unkb.b1" offset="0" size="1024" crc="ab645a9c" sha1="9c286f8a031a8babfb8e9b594e05e133c338b342" />
+				<rom file="unka.a1" offset="0" size="1024" crc="4b65bd7c" sha1="3931f9f5b0e3339ab484eee14473d3a474935fd9" />
 			</group>
 		</fileset>
 
@@ -1233,10 +1233,10 @@
 		<description>Space King (Space Invaders [Japanese])</description>
 		<fileset primary="true">
 			<group name="maincpu" size="4000">
-       	       	<rom file="invaders.h" size="2048" crc="734f5ad8" sha1="ff6200af4c9110d8181249cbcef1a8a40fa40b7f" offset="0"/>
-       	       	<rom file="spcekng2" size="2048" crc="96dcdd42" sha1="e18d7ffca92e863ef40e235b2be973d8c5879fdb" offset="800"/>
-       	       	<rom file="spcekng3" size="2048" crc="95fc96ad" sha1="38175edad0e538a1561cec8f7613f15ae274dd14" offset="1000"/>
-       	       	<rom file="spcekng4" size="2048" crc="54170ada" sha1="1e8b3774355ec0d448f04805a917f4c1fe64bceb" offset="1800"/>
+				<rom file="invaders.h" offset="0" size="2048" crc="734f5ad8" sha1="ff6200af4c9110d8181249cbcef1a8a40fa40b7f" />
+				<rom file="spcekng2" offset="0" size="2048" crc="96dcdd42" sha1="e18d7ffca92e863ef40e235b2be973d8c5879fdb" />
+				<rom file="spcekng3" offset="0" size="2048" crc="95fc96ad" sha1="38175edad0e538a1561cec8f7613f15ae274dd14" />
+				<rom file="spcekng4" offset="0" size="2048" crc="54170ada" sha1="1e8b3774355ec0d448f04805a917f4c1fe64bceb" />
 			</group>			
 		</fileset>
 
