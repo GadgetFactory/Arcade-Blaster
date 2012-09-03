@@ -575,9 +575,9 @@
 		<fileset primary="true">
 			<group name="maincpu" size="4000">
 				<rom file="spin4.a" offset="0" size="2048" crc="bb386dfe" sha1="cc00f3e4f6ca4c05bae038a24ccdb213fb951cfc" />
-				<rom file="spin4.b" offset="0" size="2048" crc="63afa11d" sha1="d8cedfa010a49237e31f6ebaed35134cb1c3ce68" />
-				<rom file="spin4.c" offset="0" size="2048" crc="22b0317c" sha1="8fd037bf5f89a7bcb06042697410566d5180912a" />
-				<rom file="spin4.d" offset="0" size="2048" crc="9102fd68" sha1="3523e69314844fcd1863b1e9a9d7fcebe9ee174b" />
+				<rom file="spin4.b" offset="800" size="2048" crc="63afa11d" sha1="d8cedfa010a49237e31f6ebaed35134cb1c3ce68" />
+				<rom file="spin4.c" offset="1000" size="2048" crc="22b0317c" sha1="8fd037bf5f89a7bcb06042697410566d5180912a" />
+				<rom file="spin4.d" offset="1800" size="2048" crc="9102fd68" sha1="3523e69314844fcd1863b1e9a9d7fcebe9ee174b" />
 			</group>					
 		</fileset>
 
@@ -1182,9 +1182,9 @@
 		<fileset primary="true">
 			<group name="maincpu" size="4000">
 				<rom file="earthinv.h" offset="0" size="2048" crc="58a750c8" sha1="90bfa4ea06f38e67fe4286d37d151632439249d2" />
-				<rom file="earthinv.g" offset="0" size="2048" crc="b91742f1" sha1="8d9ca92405fbaf1d5a7138d400986616378d061e" />
-				<rom file="earthinv.f" offset="0" size="2048" crc="4acbbc60" sha1="b8c1efb4251a1e690ff6936ec956d6f66136a085" />
-				<rom file="earthinv.e" offset="0" size="2048" crc="df397b12" sha1="e7e8c080cb6baf342ec637532e05d38129ae73cf" />
+				<rom file="earthinv.g" offset="800" size="2048" crc="b91742f1" sha1="8d9ca92405fbaf1d5a7138d400986616378d061e" />
+				<rom file="earthinv.f" offset="1000" size="2048" crc="4acbbc60" sha1="b8c1efb4251a1e690ff6936ec956d6f66136a085" />
+				<rom file="earthinv.e" offset="1800" size="2048" crc="df397b12" sha1="e7e8c080cb6baf342ec637532e05d38129ae73cf" />
 			</group>
 		</fileset>
 
@@ -1206,13 +1206,13 @@
 		<fileset primary="true">
 			<group name="maincpu" size="4000">
 				<rom file="unkh.h1" offset="0" size="1024" crc="272b9bf3" sha1="dd57d6a88d42024a39640931114107b547b4c520" />
-				<rom file="unkg.g1" offset="0" size="1024" crc="61bb6101" sha1="8fc8bbd8ac93d239e0cf0e4881f709860ec2c973" />
-				<rom file="unkf.f1" offset="0" size="1024" crc="2a8d9cd5" sha1="7948d79b326e729bcb629607c8797156ff9fb0e8" />
-				<rom file="unke.e1" offset="0" size="1024" crc="1938d349" sha1="3bd2a0deb126cf2e22bc3cb53e9a59c3875be260" />
-				<rom file="unkd.d1" offset="0" size="1024" crc="9bc2ab88" sha1="1e9f3b780135827d16ba25978382b097a8110828" />
-				<rom file="unkc.c1" offset="0" size="1024" crc="d4e2dada" sha1="e98271212fc89e240fdf97d292edd17dc8dd4191" />
-				<rom file="unkb.b1" offset="0" size="1024" crc="ab645a9c" sha1="9c286f8a031a8babfb8e9b594e05e133c338b342" />
-				<rom file="unka.a1" offset="0" size="1024" crc="4b65bd7c" sha1="3931f9f5b0e3339ab484eee14473d3a474935fd9" />
+				<rom file="unkg.g1" offset="400" size="1024" crc="61bb6101" sha1="8fc8bbd8ac93d239e0cf0e4881f709860ec2c973" />
+				<rom file="unkf.f1" offset="800" size="1024" crc="2a8d9cd5" sha1="7948d79b326e729bcb629607c8797156ff9fb0e8" />
+				<rom file="unke.e1" offset="c00" size="1024" crc="1938d349" sha1="3bd2a0deb126cf2e22bc3cb53e9a59c3875be260" />
+				<rom file="unkd.d1" offset="1000" size="1024" crc="9bc2ab88" sha1="1e9f3b780135827d16ba25978382b097a8110828" />
+				<rom file="unkc.c1" offset="1400" size="1024" crc="d4e2dada" sha1="e98271212fc89e240fdf97d292edd17dc8dd4191" />
+				<rom file="unkb.b1" offset="1800" size="1024" crc="ab645a9c" sha1="9c286f8a031a8babfb8e9b594e05e133c338b342" />
+				<rom file="unka.a1" offset="1c00" size="1024" crc="4b65bd7c" sha1="3931f9f5b0e3339ab484eee14473d3a474935fd9" />
 			</group>
 		</fileset>
 
@@ -1234,9 +1234,9 @@
 		<fileset primary="true">
 			<group name="maincpu" size="4000">
 				<rom file="invaders.h" offset="0" size="2048" crc="734f5ad8" sha1="ff6200af4c9110d8181249cbcef1a8a40fa40b7f" />
-				<rom file="spcekng2" offset="0" size="2048" crc="96dcdd42" sha1="e18d7ffca92e863ef40e235b2be973d8c5879fdb" />
-				<rom file="spcekng3" offset="0" size="2048" crc="95fc96ad" sha1="38175edad0e538a1561cec8f7613f15ae274dd14" />
-				<rom file="spcekng4" offset="0" size="2048" crc="54170ada" sha1="1e8b3774355ec0d448f04805a917f4c1fe64bceb" />
+				<rom file="spcekng2" offset="800" size="2048" crc="96dcdd42" sha1="e18d7ffca92e863ef40e235b2be973d8c5879fdb" />
+				<rom file="spcekng3" offset="1000" size="2048" crc="95fc96ad" sha1="38175edad0e538a1561cec8f7613f15ae274dd14" />
+				<rom file="spcekng4" offset="1800" size="2048" crc="54170ada" sha1="1e8b3774355ec0d448f04805a917f4c1fe64bceb" />
 			</group>			
 		</fileset>
 
