@@ -674,15 +674,19 @@
 				<rom file="5j.cpu" offset="1800" size="0800" crc="7dc75a81" sha1="d3fe1cad3b594052d8367685febb2335b0ad62f4" />
 			</group>
 
-			<group name="proms" size="0">
-				<rom file="82s123.7f" offset="0000" size="0020" crc="2fc650bd" sha1="8d0268dee78e47c712202b0ec4f1f51109b1f2a5" />
-				<rom file="82s126.4a" offset="0020" size="0100" crc="3eb3a8e4" sha1="19097b5f60d1030f8b82d9f1d3a241f93e5c75d6" />
+			<group name="82s1261m" size="100">
+				<rom file="82s126.1m" offset="0" size="100" crc="a9cc86bf" sha1="bbcec0570aeceb582ff8238a4bc8546a23430081" />
 			</group>
-
-			<group name="namco" size="0">
-				<rom file="82s126.1m" offset="0000" size="0100" crc="a9cc86bf" sha1="bbcec0570aeceb582ff8238a4bc8546a23430081" />
-				<rom file="82s126.3m" offset="0100" size="0100" crc="77245b66" sha1="0c4d0bee858b97632411c440bea6948a74759746" />
+			<group name="82s1263m" size="100">
+				<rom file="82s126.3m" offset="100" size="100" crc="77245b66" sha1="0c4d0bee858b97632411c440bea6948a74759746" />
 			</group>
+			<group name="82s1237f" size="20">
+				<rom file="82s123.7f" offset="0" size="20" crc="2fc650bd" sha1="8d0268dee78e47c712202b0ec4f1f51109b1f2a5" />
+			</group>
+			<group name="82s1264a" size="100">
+				<rom file="82s126.4a" offset="20" size="100" crc="3eb3a8e4" sha1="19097b5f60d1030f8b82d9f1d3a241f93e5c75d6" />
+			</group>
+			
 		</fileset>
 
 		<!-- Uses groups as input and creates intermediate mem files by name specified in file atribute-->
@@ -729,14 +733,17 @@
 				<rom file="5j.cpu" offset="1800" size="0800" crc="7dc75a81" sha1="d3fe1cad3b594052d8367685febb2335b0ad62f4" />
 			</group>
 
-			<group name="proms" size="0">
-				<rom file="82s123.7f" offset="0000" size="0020" crc="2fc650bd" sha1="8d0268dee78e47c712202b0ec4f1f51109b1f2a5" />
-				<rom file="82s126.4a" offset="0020" size="0100" crc="3eb3a8e4" sha1="19097b5f60d1030f8b82d9f1d3a241f93e5c75d6" />
+			<group name="82s1261m" size="100">
+				<rom file="82s126.1m" offset="0" size="100" crc="a9cc86bf" sha1="bbcec0570aeceb582ff8238a4bc8546a23430081" />
 			</group>
-
-			<group name="namco" size="0">
-				<rom file="82s126.1m" offset="0000" size="0100" crc="a9cc86bf" sha1="bbcec0570aeceb582ff8238a4bc8546a23430081" />
-				<rom file="82s126.3m" offset="0100" size="0100" crc="77245b66" sha1="0c4d0bee858b97632411c440bea6948a74759746" />
+			<group name="82s1263m" size="100">
+				<rom file="82s126.3m" offset="100" size="100" crc="77245b66" sha1="0c4d0bee858b97632411c440bea6948a74759746" />
+			</group>
+			<group name="82s1237f" size="20">
+				<rom file="82s123.7f" offset="0" size="20" crc="2fc650bd" sha1="8d0268dee78e47c712202b0ec4f1f51109b1f2a5" />
+			</group>
+			<group name="82s1264a" size="100">
+				<rom file="82s126.4a" offset="20" size="100" crc="3eb3a8e4" sha1="19097b5f60d1030f8b82d9f1d3a241f93e5c75d6" />
 			</group>
 		</fileset>
 
@@ -778,14 +785,17 @@
 				<rom file="pacman.5f" offset="1000" size="1000" crc="958fedf9" sha1="4a937ac02216ea8c96477d4a15522070507fb599" />
 			</group>
 
-			<group name="proms" size="0">
-				<rom file="82s123.7f" offset="0000" size="0020" crc="2fc650bd" sha1="8d0268dee78e47c712202b0ec4f1f51109b1f2a5" />
-				<rom file="82s126.4a" offset="0020" size="0100" crc="3eb3a8e4" sha1="19097b5f60d1030f8b82d9f1d3a241f93e5c75d6" />
+			<group name="82s1261m" size="100">
+				<rom file="82s126.1m" offset="0" size="100" crc="a9cc86bf" sha1="bbcec0570aeceb582ff8238a4bc8546a23430081" />
 			</group>
-
-			<group name="namco" size="0">
-				<rom file="82s126.1m" offset="0000" size="0100" crc="a9cc86bf" sha1="bbcec0570aeceb582ff8238a4bc8546a23430081" />
-				<rom file="82s126.3m" offset="0100" size="0100" crc="77245b66" sha1="0c4d0bee858b97632411c440bea6948a74759746" />
+			<group name="82s1263m" size="100">
+				<rom file="82s126.3m" offset="100" size="100" crc="77245b66" sha1="0c4d0bee858b97632411c440bea6948a74759746" />
+			</group>
+			<group name="82s1237f" size="20">
+				<rom file="82s123.7f" offset="0" size="20" crc="2fc650bd" sha1="8d0268dee78e47c712202b0ec4f1f51109b1f2a5" />
+			</group>
+			<group name="82s1264a" size="100">
+				<rom file="82s126.4a" offset="20" size="100" crc="3eb3a8e4" sha1="19097b5f60d1030f8b82d9f1d3a241f93e5c75d6" />
 			</group>
 		</fileset>
 
