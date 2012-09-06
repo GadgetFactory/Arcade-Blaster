@@ -16,7 +16,6 @@ C:/Users/killian/Dropbox/GadgetFactory/GadgetFactory_Engineering/Arcade-Blaster/
 C:/Users/killian/Dropbox/GadgetFactory/GadgetFactory_Engineering/Arcade-Blaster/Arcade-Blaster/hardware/scramble/scramble_hardware_p1_500K_bd.bmm F214BA90-FB81-49D7-9D06-B2055E1914FC zlib
 C:/Users/killian/Dropbox/GadgetFactory/GadgetFactory_Engineering/Arcade-Blaster/Arcade-Blaster/hardware/galaxian/galaxian_hardware_p1_500K.bit 3581C402-6F94-4662-88EE-523678CE0A0C zlib
 C:/Users/killian/Dropbox/GadgetFactory/GadgetFactory_Engineering/Arcade-Blaster/Arcade-Blaster/hardware/galaxian/galaxian_hardware_p1_500K_bd.bmm 2BAD3CB7-07CF-4187-9D6F-8CCA4FD0A9DF zlib
-C:/Users/killian/Dropbox/GadgetFactory/GadgetFactory_Engineering/Arcade-Blaster/Arcade-Blaster/hardware/galaxian/galout.dmp 052F74F4-55E1-4196-8B13-9A0AC24CEA03 zlib
 C:/Users/killian/Dropbox/GadgetFactory/GadgetFactory_Engineering/Arcade-Blaster/Arcade-Blaster/hardware/invaders/invaders_hardware_p1_500K.bit B15B63AA-FF8A-4ED4-9998-F5B18DFD347B zlib
 C:/Users/killian/Dropbox/GadgetFactory/GadgetFactory_Engineering/Arcade-Blaster/Arcade-Blaster/hardware/invaders/invaders_hardware_p1_500K_bd.bmm 82A02489-A89C-4CBD-855E-5984EB0AC31E zlib
 C:/Users/killian/Dropbox/GadgetFactory/GadgetFactory_Engineering/Arcade-Blaster/Arcade-Blaster/hardware/mrdonightmare/mrdo_hardware_p1_500K.bit C08F3357-EB22-459C-AA58-DD530E0108A9 zlib
@@ -81,16 +80,18 @@ C:/Users/killian/Dropbox/GadgetFactory/GadgetFactory_Engineering/Arcade-Blaster/
 C:/Users/killian/Dropbox/GadgetFactory/GadgetFactory_Engineering/Arcade-Blaster/Arcade-Blaster/images/update-button-down.gif 1C5486B4-9CCA-472F-B2CE-8127B709E0B4 zlib
 C:/Users/killian/Dropbox/GadgetFactory/GadgetFactory_Engineering/Arcade-Blaster/Arcade-Blaster/images/update-button-highlighted.gif 978109A8-45A1-49D2-A4EF-CDEF6F77650B zlib
 C:/Users/killian/Dropbox/GadgetFactory/GadgetFactory_Engineering/Arcade-Blaster/Arcade-Blaster/images/update-button.gif B7E49171-7EBB-4D9F-83BC-B197DFFD71E8 zlib
+C:/Users/killian/Dropbox/GadgetFactory/GadgetFactory_Engineering/Arcade-Blaster/Arcade-Blaster/images/monograms/alieninvp2.png AA1B5F42-6264-433C-A58C-ADF5C3AA23AD zlib
 C:/Users/killian/Dropbox/GadgetFactory/GadgetFactory_Engineering/Arcade-Blaster/Arcade-Blaster/images/monograms/amidars.png 2E079EF1-0521-4E93-99AD-DC0D1B258883 zlib
 C:/Users/killian/Dropbox/GadgetFactory/GadgetFactory_Engineering/Arcade-Blaster/Arcade-Blaster/images/monograms/crush2.png B23A8FDA-E347-43BD-BE44-5A209AEA5B7E zlib
 C:/Users/killian/Dropbox/GadgetFactory/GadgetFactory_Engineering/Arcade-Blaster/Arcade-Blaster/images/monograms/filler.png 1FCD2184-F5CA-41FE-82C1-A9135EF680FB zlib
 C:/Users/killian/Dropbox/GadgetFactory/GadgetFactory_Engineering/Arcade-Blaster/Arcade-Blaster/images/monograms/froggers2.png 60E695B1-B27A-45F1-8112-E0257362835D zlib
+C:/Users/killian/Dropbox/GadgetFactory/GadgetFactory_Engineering/Arcade-Blaster/Arcade-Blaster/images/monograms/galaxian.png D1B2F07E-5F12-4910-AFA6-22EC06BE634D zlib
 C:/Users/killian/Dropbox/GadgetFactory/GadgetFactory_Engineering/Arcade-Blaster/Arcade-Blaster/images/monograms/gorkans.png 14A25F69-1266-464C-94A8-56CD8FB3972E zlib
-C:/Users/killian/Dropbox/GadgetFactory/GadgetFactory_Engineering/Arcade-Blaster/Arcade-Blaster/images/monograms/lizwiz.png F0B3CB13-519F-42B4-B27C-C425DB07CDB2 zlib
 C:/Users/killian/Dropbox/GadgetFactory/GadgetFactory_Engineering/Arcade-Blaster/Arcade-Blaster/images/monograms/nonesupported.png 731FD510-FECC-4A04-80C3-35937620218D zlib
 C:/Users/killian/Dropbox/GadgetFactory/GadgetFactory_Engineering/Arcade-Blaster/Arcade-Blaster/images/monograms/pacman.png C25A08F6-DC45-4B6D-BA0F-5B56F1DBFB4A zlib
 C:/Users/killian/Dropbox/GadgetFactory/GadgetFactory_Engineering/Arcade-Blaster/Arcade-Blaster/images/monograms/retrieving.png 6DEEBD31-F652-4D05-BD92-2FEF34200405 zlib
-C:/Users/killian/Dropbox/GadgetFactory/GadgetFactory_Engineering/Arcade-Blaster/Arcade-Blaster/images/monograms/scramble.png 3D363E37-4862-4DA6-A526-65F310D14FFC zlib
+C:/Users/killian/Dropbox/GadgetFactory/GadgetFactory_Engineering/Arcade-Blaster/Arcade-Blaster/images/monograms/scobra.png BD2FDAE6-23F9-4E7D-98AD-0D7DA8FC532E zlib
+C:/Users/killian/Dropbox/GadgetFactory/GadgetFactory_Engineering/Arcade-Blaster/Arcade-Blaster/images/monograms/searthin.png E36BA0C2-FDB1-4075-9480-A9864D5ECC37 zlib
 C:/Users/killian/Dropbox/GadgetFactory/GadgetFactory_Engineering/Arcade-Blaster/Arcade-Blaster/images/monograms/theend.png FB9A2D1B-E7A2-4801-B2EA-C1A137590823 zlib
 C:/Users/killian/Dropbox/GadgetFactory/GadgetFactory_Engineering/Arcade-Blaster/Arcade-Blaster/images/monograms/nologo.png AFE4A0B4-8AA7-45BA-A15E-F14B8CCC81E7 zlib
 C:/Users/killian/Dropbox/GadgetFactory/GadgetFactory_Engineering/Arcade-Blaster/Arcade-Blaster/images/monograms/pongdemo.png 088D4411-BFEF-43E8-9787-7CF884E14497 zlib
@@ -108,16 +109,24 @@ C:/Users/killian/Dropbox/GadgetFactory/GadgetFactory_Engineering/Arcade-Blaster/
 C:/Users/killian/Dropbox/GadgetFactory/GadgetFactory_Engineering/Arcade-Blaster/Arcade-Blaster/images/monograms/searthina.png A85B6D92-87A6-4BEE-AFA8-A9DDC6B69D68 zlib
 C:/Users/killian/Dropbox/GadgetFactory/GadgetFactory_Engineering/Arcade-Blaster/Arcade-Blaster/images/monograms/spceking.png 22C7FFE4-05A1-447E-8C46-3E2459296CC4 zlib
 C:/Users/killian/Dropbox/GadgetFactory/GadgetFactory_Engineering/Arcade-Blaster/Arcade-Blaster/images/monograms/sprglbpg.png 2988C635-E796-4992-813E-0B7A20AEB2D3 zlib
+C:/Users/killian/Dropbox/GadgetFactory/GadgetFactory_Engineering/Arcade-Blaster/Arcade-Blaster/images/monograms/galtest.png F2CED0D1-D590-4644-8AD0-46A3A0A62F9D zlib
+C:/Users/killian/Dropbox/GadgetFactory/GadgetFactory_Engineering/Arcade-Blaster/Arcade-Blaster/images/monograms/newpuc2.png AACD5776-B44A-403C-8B70-B8C5FA11DAC5 zlib
+C:/Users/killian/Dropbox/GadgetFactory/GadgetFactory_Engineering/Arcade-Blaster/Arcade-Blaster/images/monograms/newpuc2b.png DD0BF47F-6BF7-4A5C-8B94-B6F032BB2FB3 zlib
+C:/Users/killian/Dropbox/GadgetFactory/GadgetFactory_Engineering/Arcade-Blaster/Arcade-Blaster/images/monograms/newpuckx.png E5C9FEC0-AFB6-4703-98ED-8307AC947029 zlib
+C:/Users/killian/Dropbox/GadgetFactory/GadgetFactory_Engineering/Arcade-Blaster/Arcade-Blaster/images/monograms/pacheart.png F939D455-C0D6-4E88-9E47-BB33F912BC88 zlib
+C:/Users/killian/Dropbox/GadgetFactory/GadgetFactory_Engineering/Arcade-Blaster/Arcade-Blaster/images/monograms/popeyeman.png 487B498A-4807-4483-ADC4-17EFC802A23B zlib
+C:/Users/killian/Dropbox/GadgetFactory/GadgetFactory_Engineering/Arcade-Blaster/Arcade-Blaster/images/screenshots/alieninvp2.png C2F1708F-3624-403B-A918-0E2DBA00B916 zlib
 C:/Users/killian/Dropbox/GadgetFactory/GadgetFactory_Engineering/Arcade-Blaster/Arcade-Blaster/images/screenshots/amidars.png 05DFE0C2-D378-4743-993A-E5F8C449681F zlib
 C:/Users/killian/Dropbox/GadgetFactory/GadgetFactory_Engineering/Arcade-Blaster/Arcade-Blaster/images/screenshots/crush2.png C933E4DC-D57B-412C-915C-7489A2AA61CD zlib
 C:/Users/killian/Dropbox/GadgetFactory/GadgetFactory_Engineering/Arcade-Blaster/Arcade-Blaster/images/screenshots/froggers2.png 99C7CBE5-47D1-4BD2-8765-A2E2CEEA3BE7 zlib
+C:/Users/killian/Dropbox/GadgetFactory/GadgetFactory_Engineering/Arcade-Blaster/Arcade-Blaster/images/screenshots/galaxian.png 14BE64EE-52C0-4EED-97B5-223476FB7280 zlib
 C:/Users/killian/Dropbox/GadgetFactory/GadgetFactory_Engineering/Arcade-Blaster/Arcade-Blaster/images/screenshots/gorkans.png A12F41FD-C6CF-4A99-8EAC-4617E6AAD688 zlib
-C:/Users/killian/Dropbox/GadgetFactory/GadgetFactory_Engineering/Arcade-Blaster/Arcade-Blaster/images/screenshots/lizwiz.png 49C595E3-D8D4-4D45-AD76-223D5DC273A1 zlib
 C:/Users/killian/Dropbox/GadgetFactory/GadgetFactory_Engineering/Arcade-Blaster/Arcade-Blaster/images/screenshots/noneinstalled.png 672F1C20-2322-44BE-966B-5D4AF2670C68 zlib
 C:/Users/killian/Dropbox/GadgetFactory/GadgetFactory_Engineering/Arcade-Blaster/Arcade-Blaster/images/screenshots/noscreenshot.png 689D619C-3268-4E23-BB44-7310BC209FC4 zlib
 C:/Users/killian/Dropbox/GadgetFactory/GadgetFactory_Engineering/Arcade-Blaster/Arcade-Blaster/images/screenshots/pacman.png E53E8892-41A6-4CC4-AFF0-BA303B8A141B zlib
 C:/Users/killian/Dropbox/GadgetFactory/GadgetFactory_Engineering/Arcade-Blaster/Arcade-Blaster/images/screenshots/retrieving.png 8E698808-4317-47AD-BFE8-E36F52FF80B3 zlib
-C:/Users/killian/Dropbox/GadgetFactory/GadgetFactory_Engineering/Arcade-Blaster/Arcade-Blaster/images/screenshots/scramble.png 1F679291-9A68-4D0A-AA63-31B8A3FCE94E zlib
+C:/Users/killian/Dropbox/GadgetFactory/GadgetFactory_Engineering/Arcade-Blaster/Arcade-Blaster/images/screenshots/scobra.png B67BFDD8-487D-4BD4-A2D8-2A69ED553330 zlib
+C:/Users/killian/Dropbox/GadgetFactory/GadgetFactory_Engineering/Arcade-Blaster/Arcade-Blaster/images/screenshots/searthin.png 265E5B25-9BD2-48D3-A736-2B6B649FE78D zlib
 C:/Users/killian/Dropbox/GadgetFactory/GadgetFactory_Engineering/Arcade-Blaster/Arcade-Blaster/images/screenshots/theend.png 1FFC88C8-ECAD-41D2-B2E1-E6FB2879026D zlib
 C:/Users/killian/Dropbox/GadgetFactory/GadgetFactory_Engineering/Arcade-Blaster/Arcade-Blaster/images/screenshots/pongdemo.png FA7E59F1-219F-4251-8583-814695F27832 zlib
 C:/Users/killian/Dropbox/GadgetFactory/GadgetFactory_Engineering/Arcade-Blaster/Arcade-Blaster/images/screenshots/ctrpllrp.png 6E195DA4-9DC4-4B36-86AC-6FA43218F0F2 zlib
@@ -134,6 +143,12 @@ C:/Users/killian/Dropbox/GadgetFactory/GadgetFactory_Engineering/Arcade-Blaster/
 C:/Users/killian/Dropbox/GadgetFactory/GadgetFactory_Engineering/Arcade-Blaster/Arcade-Blaster/images/screenshots/searthina.png BF45CC7F-A12A-489B-B7A7-3E30734E2D90 zlib
 C:/Users/killian/Dropbox/GadgetFactory/GadgetFactory_Engineering/Arcade-Blaster/Arcade-Blaster/images/screenshots/spceking.png A266ED91-437F-46F1-B185-4ACF0905D75D zlib
 C:/Users/killian/Dropbox/GadgetFactory/GadgetFactory_Engineering/Arcade-Blaster/Arcade-Blaster/images/screenshots/sprglbpg.png 41DAFE0A-173A-418E-A464-A120375F15B3 zlib
+C:/Users/killian/Dropbox/GadgetFactory/GadgetFactory_Engineering/Arcade-Blaster/Arcade-Blaster/images/screenshots/galtest.png 14F63C87-E674-4F8A-A089-37598062C2CD zlib
+C:/Users/killian/Dropbox/GadgetFactory/GadgetFactory_Engineering/Arcade-Blaster/Arcade-Blaster/images/screenshots/newpuc2.png 53686E13-00DF-4B82-85D8-B1FE09A9647E zlib
+C:/Users/killian/Dropbox/GadgetFactory/GadgetFactory_Engineering/Arcade-Blaster/Arcade-Blaster/images/screenshots/newpuc2b.png 44E85188-1E6A-487F-AAB1-4C450EF62C00 zlib
+C:/Users/killian/Dropbox/GadgetFactory/GadgetFactory_Engineering/Arcade-Blaster/Arcade-Blaster/images/screenshots/newpuckx.png 82CA7171-F796-46DA-AE4D-D8DDBB4647BB zlib
+C:/Users/killian/Dropbox/GadgetFactory/GadgetFactory_Engineering/Arcade-Blaster/Arcade-Blaster/images/screenshots/pacheart.png 2454508B-5754-4339-97F6-6AF77BED6723 zlib
+C:/Users/killian/Dropbox/GadgetFactory/GadgetFactory_Engineering/Arcade-Blaster/Arcade-Blaster/images/screenshots/popeyeman.png 9A261C42-8BA8-410C-B44F-17DDBA86DC34 zlib
 C:/Users/killian/Dropbox/GadgetFactory/GadgetFactory_Engineering/Arcade-Blaster/Arcade-Blaster/programmer/bscan_spi_lx9.bit AAECB2DE-AA75-404F-B918-80B6458080B0 zlib
 C:/Users/killian/Dropbox/GadgetFactory/GadgetFactory_Engineering/Arcade-Blaster/Arcade-Blaster/programmer/bscan_spi_xc3s100e.bit D3888759-4E40-4565-9210-327EC0DEEB21 zlib
 C:/Users/killian/Dropbox/GadgetFactory/GadgetFactory_Engineering/Arcade-Blaster/Arcade-Blaster/programmer/bscan_spi_xc3s250e.bit EC5342AC-BCE3-4EB6-B06B-C38574AA5BB8 zlib
@@ -164,6 +179,7 @@ C:/Users/killian/Dropbox/GadgetFactory/GadgetFactory_Engineering/Arcade-Blaster/
 C:/Users/killian/Dropbox/GadgetFactory/GadgetFactory_Engineering/Arcade-Blaster/Arcade-Blaster/roms/MrDoNightmare/galmidw.v D555D74D-5715-4304-B0AF-FFDDB513728C zlib
 C:/Users/killian/Dropbox/GadgetFactory/GadgetFactory_Engineering/Arcade-Blaster/Arcade-Blaster/roms/MrDoNightmare/galmidw.w 16E14042-8947-4142-8B93-7F5567035CDD zlib
 C:/Users/killian/Dropbox/GadgetFactory/GadgetFactory_Engineering/Arcade-Blaster/Arcade-Blaster/roms/MrDoNightmare/galmidw.y D05AFC82-9202-4A91-9E8C-B66B49011F39 zlib
+{C:/Users/killian/Dropbox/GadgetFactory/GadgetFactory_Engineering/Arcade-Blaster/Arcade-Blaster/roms/Papilio Arcade - Games (Trurip-v2012-09-03_XML).dat} C312B390-29C1-430A-87D6-320CC5BBC69D zlib
 C:/Users/killian/Dropbox/GadgetFactory/GadgetFactory_Engineering/Arcade-Blaster/README 5173C861-C54C-4658-9B35-20CA05156BB8 zlib
 C:/Users/killian/Dropbox/GadgetFactory/GadgetFactory_Engineering/Arcade-Blaster/license.txt 9EE31A09-62CA-4A1E-9539-B248AB0A81AB zlib
 {C:/Users/killian/Dropbox/GadgetFactory/GadgetFactory_Engineering/Arcade-Blaster/Deploy/FTDI drivers/dpinstx86.exe} 7B4792BD-0ECE-4793-BAB8-0E8732398BD3 zlib
