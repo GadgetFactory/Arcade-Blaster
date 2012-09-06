@@ -74,7 +74,7 @@ namespace eval ::InstallAPI {}
 namespace eval ::InstallJammer {}
 set conf(version)     1.2.15
 set info(Platform)    Windows
-set info(InstallerID) AE22E187-BD9C-46AB-8D3E-433F289DBA0D
+set info(InstallerID) 94110DCE-37A5-4926-BAC3-CE71754E0A71
 array set ::InstallJammer::languagecodes {ca CatalÃ cs Czech de German en English es Spanish fr French hu Magyar it Italian lt Lithuanian nl Nederlands pl Polish pt_br {Brazilian Portuguese} ru Russian}
 array set info {
 AllowLanguageSelection
@@ -4654,8 +4654,8 @@ File ::8B1E7B50-D3A3-4B86-8EB2-661AFB0F9053 -name pacman_hardware_p1_500K.bit -p
 File ::40F4EC83-4EBE-49E2-8E4E-D04BC825EABD -name pacman_hardware_p1_500K_bd.bmm -parent 47402D84-DB67-4D33-9FFD-1E61EBE1A1AE -directory <%InstallDir%>/hardware/pacman -size 3820 -mtime 1346945358 -attributes 1000 -filemethod 0
 File ::5884BE13-BB45-45D6-BC5E-D6B9C2AFBD49 -name pacman_hardware_papilio_logic_lx9.bit -parent 47402D84-DB67-4D33-9FFD-1E61EBE1A1AE -directory <%InstallDir%>/hardware/pacman -size 340695 -mtime 1340957248 -attributes 1000 -filemethod 0
 File ::D23C0B94-A8B4-4251-ABC4-5F1FDBE51459 -name pacman_hardware_papilio_logic_lx9_bd.bmm -parent 47402D84-DB67-4D33-9FFD-1E61EBE1A1AE -directory <%InstallDir%>/hardware/pacman -size 4603 -mtime 1340957248 -attributes 1000 -filemethod 0
-File ::8811D8EF-8C04-488A-A5FC-3FE1FFD9A349 -name pacman_hardware_p1LS_500K.bit -parent 47402D84-DB67-4D33-9FFD-1E61EBE1A1AE -directory <%InstallDir%>/hardware/pacman -size 283867 -mtime 1346884321 -attributes 1000 -filemethod 0
-File ::79DE7213-49B6-4720-B460-E65CB8E27AD3 -name pacman_hardware_p1LS_500K_bd.bmm -parent 47402D84-DB67-4D33-9FFD-1E61EBE1A1AE -directory <%InstallDir%>/hardware/pacman -size 3820 -mtime 1346884303 -attributes 1000 -filemethod 0
+File ::8811D8EF-8C04-488A-A5FC-3FE1FFD9A349 -name pacman_hardware_p1LS_500K.bit -parent 47402D84-DB67-4D33-9FFD-1E61EBE1A1AE -directory <%InstallDir%>/hardware/pacman -size 283867 -mtime 1346953304 -attributes 1000 -filemethod 0
+File ::79DE7213-49B6-4720-B460-E65CB8E27AD3 -name pacman_hardware_p1LS_500K_bd.bmm -parent 47402D84-DB67-4D33-9FFD-1E61EBE1A1AE -directory <%InstallDir%>/hardware/pacman -size 3820 -mtime 1346953281 -attributes 1000 -filemethod 0
 File ::C04502EE-8BBF-4C3A-8DFE-DB5E2B550605 -name scramble -parent 47402D84-DB67-4D33-9FFD-1E61EBE1A1AE -directory <%InstallDir%>/hardware/scramble -type dir -attributes 0000 -filemethod 0
 File ::C7DF8127-58A8-42EB-BE4A-B00C3F5763D2 -name scramble_hardware_p1_500K.bit -parent 47402D84-DB67-4D33-9FFD-1E61EBE1A1AE -directory <%InstallDir%>/hardware/scramble -size 283873 -mtime 1340957248 -attributes 1000 -filemethod 0
 File ::F214BA90-FB81-49D7-9D06-B2055E1914FC -name scramble_hardware_p1_500K_bd.bmm -parent 47402D84-DB67-4D33-9FFD-1E61EBE1A1AE -directory <%InstallDir%>/hardware/scramble -size 4476 -mtime 1340957248 -attributes 1000 -filemethod 0
