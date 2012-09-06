@@ -1,7 +1,7 @@
 // BMM LOC annotation file.
 //
 // Release 13.2 - Data2MEM O.61xd, build 2.2 May 20, 2011
-// Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+// Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
 
 
 ///////////////////////////////////////////////////////////////////////////////
@@ -21,7 +21,7 @@ ADDRESS_MAP avrmap PPC405 0
 
     ADDRESS_SPACE rom_col7f RAMB16 [0x00000000:0x000007FF]
         BUS_BLOCK
-            u_video/col_rom_7f/rom0.inst [7:0] PLACED = X0Y0;
+            u_video/col_rom_7f/rom0.inst [7:0] PLACED = X1Y0;
         END_BUS_BLOCK;
     END_ADDRESS_SPACE;
 
@@ -34,7 +34,7 @@ ADDRESS_MAP avrmap PPC405 0
 
     ADDRESS_SPACE rom_col4a RAMB16 [0x00000000:0x000007FF]
         BUS_BLOCK
-            u_video/col_rom_4a/rom0.inst [7:0] PLACED = X0Y2;
+            u_video/col_rom_4a/rom0.inst [7:0] PLACED = X1Y2;
         END_BUS_BLOCK;
     END_ADDRESS_SPACE;
 
@@ -47,7 +47,7 @@ ADDRESS_MAP avrmap PPC405 0
 
     ADDRESS_SPACE rom_audio1m RAMB16 [0x00000000:0x000007FF]
         BUS_BLOCK
-            u_audio/audio_rom_1m/rom0.inst [7:0] PLACED = X1Y8;
+            u_audio/audio_rom_1m/rom0.inst [7:0] PLACED = X0Y3;
         END_BUS_BLOCK;
     END_ADDRESS_SPACE;
 
@@ -60,19 +60,19 @@ ADDRESS_MAP avrmap PPC405 0
 
     ADDRESS_SPACE rom_gfx1 RAMB16 [0x00000000:0x00001FFF]
         BUS_BLOCK
-            u_video/char_rom_5ef/rom0.inst [7:0] PLACED = X0Y7;
+            u_video/char_rom_5ef/rom0.inst [7:0] PLACED = X1Y7;
         END_BUS_BLOCK;
 
         BUS_BLOCK
-            u_video/char_rom_5ef/rom1.inst [7:0] PLACED = X0Y8;
+            u_video/char_rom_5ef/rom1.inst [7:0] PLACED = X1Y6;
         END_BUS_BLOCK;
 
         BUS_BLOCK
-            u_video/char_rom_5ef/rom2.inst [7:0] PLACED = X0Y6;
+            u_video/char_rom_5ef/rom2.inst [7:0] PLACED = X1Y9;
         END_BUS_BLOCK;
 
         BUS_BLOCK
-            u_video/char_rom_5ef/rom3.inst [7:0] PLACED = X0Y9;
+            u_video/char_rom_5ef/rom3.inst [7:0] PLACED = X1Y8;
         END_BUS_BLOCK;
     END_ADDRESS_SPACE;
 
@@ -85,35 +85,35 @@ ADDRESS_MAP avrmap PPC405 0
 
     ADDRESS_SPACE rom_code RAMB16 [0x00000000:0x00003FFF]
         BUS_BLOCK
-            u_program_rom/rom0.inst [7:0] PLACED = X1Y7;
+            u_program_rom/rom0.inst [7:0] PLACED = X0Y4;
         END_BUS_BLOCK;
 
         BUS_BLOCK
-            u_program_rom/rom1.inst [7:0] PLACED = X1Y5;
+            u_program_rom/rom1.inst [7:0] PLACED = X0Y7;
         END_BUS_BLOCK;
 
         BUS_BLOCK
-            u_program_rom/rom2.inst [7:0] PLACED = X1Y2;
+            u_program_rom/rom2.inst [7:0] PLACED = X0Y1;
         END_BUS_BLOCK;
 
         BUS_BLOCK
-            u_program_rom/rom3.inst [7:0] PLACED = X1Y3;
+            u_program_rom/rom3.inst [7:0] PLACED = X0Y0;
         END_BUS_BLOCK;
 
         BUS_BLOCK
-            u_program_rom/rom4.inst [7:0] PLACED = X1Y0;
+            u_program_rom/rom4.inst [7:0] PLACED = X0Y5;
         END_BUS_BLOCK;
 
         BUS_BLOCK
-            u_program_rom/rom5.inst [7:0] PLACED = X1Y1;
+            u_program_rom/rom5.inst [7:0] PLACED = X0Y8;
         END_BUS_BLOCK;
 
         BUS_BLOCK
-            u_program_rom/rom6.inst [7:0] PLACED = X1Y4;
+            u_program_rom/rom6.inst [7:0] PLACED = X0Y2;
         END_BUS_BLOCK;
 
         BUS_BLOCK
-            u_program_rom/rom7.inst [7:0] PLACED = X1Y6;
+            u_program_rom/rom7.inst [7:0] PLACED = X0Y6;
         END_BUS_BLOCK;
     END_ADDRESS_SPACE;
 

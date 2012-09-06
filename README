@@ -1,9 +1,34 @@
-Arcade Blaster - Current Version 1.2
+Arcade Blaster - Current Version 1.3
 
 Arcade Blaster Home Page:
 http://www.gadgetfactory.net/opmanuals/index.php?n=Main.ArcadeMegaWing
 
 CHANGELOG
+9/6/2012 Version 1.3
+	-Adds LogicStart MegaWing support for Pacman
+	-Fixes controller scheme for Invaders (Vlait)
+	-Fixes starfield for Invaders (Vlait)
+	-Fixes reset for Galaxian (Vlait)
+	-Sets Pacman to table (Vlait)
+	-Following games added by FelixV
+		: Added (Space Invaders Clones)
+		: Alien Invasion Part II  (alieninvp2)
+		: Space Invaders/Space Invaders M  (invaders)
+		: Space Invaders Part 4 (invader4)
+		: Space King [Japanese Space Invaders]  (spceking)
+		: Super Earth Invasion (Set 1)  (searthin)
+		: Super Earth Invasion (Set 2)  (searthina)
+		: Super Glob (German Bootleg) (sprglbpg)
+		: Space Invaders/Space Invaders M
+		: Space Invaders Part 4
+		: Space King (Space Invaders [Japanese])
+		: Super Earth Invasion (Set 1)
+		: Super Earth Invasion (Set 2)
+		: Pac Heart
+		: PopeyeMan
+		: New Puc
+		: Puckman
+		
 8/14/2012 Version 1.2
 	Adds following games:
 		-Galaxian
