@@ -211,10 +211,15 @@ public class PapilioArcade extends JFrame
 		}
 		else
 		{
-			programmerPath = new File(rootProgrammerPath, "linux32");
+			dataToMemFile = new File(programmerPath, "data2mem");
+			if(System.getProperty("os.arch", "unknown"))=="amd64")
+
+				programmerPath = new File(rootProgrammerPath, "linux64");
+                        else 
+                        	programmerPath = new File(rootProgrammerPath, "linux32");
 			papilioProgrammerFile = new File(programmerPath, "papilio-prog");
 			romgenFile = new File(programmerPath, "romgen");
-			dataToMemFile = new File(programmerPath, "data2mem");
+			
 		}
 
 /*	2) Init UIHelpers.java */
@@ -348,9 +353,10 @@ public class PapilioArcade extends JFrame
 										  JOptionPane.ERROR_MESSAGE);
 		else if (!runningonWindows)
 			JOptionPane.showMessageDialog(this, 
-										  "Linux version is not functional yet.", 
-										  "Linux Not Supported", 
-										  JOptionPane.ERROR_MESSAGE);
+										  "Linux version is in alpha mode. Please build papilio-prog and romgen for your linux distro.", 
+										  "Linux alpha mode", 
+										  JOptionPane.WARNING_MESSAGE);
+                        bValid = true;
 		else
 			bValid = true;
 
@@ -503,7 +509,7 @@ public class PapilioArcade extends JFrame
 	public void NotifyProcessComplete(int exitCode) {
 		if (exitCode != 0)
 		{
-			if (sLastErrorMessage.contains("Could not access USB"))
+			if ((sLastErrorMessage != null) && (sLastErrorMessage.contains("Could not access USB")))
 			{
 				JOptionPane.showMessageDialog(
 						this,

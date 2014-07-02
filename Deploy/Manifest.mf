@@ -1,2 +1,0 @@
-Main-Class: net.gadgetfactory.papilio.arcade.PapilioArcade
-Sealed: true
