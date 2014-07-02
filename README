@@ -4,6 +4,18 @@ Arcade Blaster Home Page:
 http://www.gadgetfactory.net/opmanuals/index.php?n=Main.ArcadeMegaWing
 
 CHANGELOG
+7/2/2014 Add Linux Support. Build with cmake
+         
+         cd Arcade-Blaster
+         mkdir build
+         cd    build
+         cmake ..
+         make 
+         make install
+
+         Add romgen and prog
+
+
 9/6/2012 Version 1.3
 	-Adds LogicStart MegaWing support for Pacman
 	-Fixes controller scheme for Invaders (Vlait)
