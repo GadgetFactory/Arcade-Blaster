@@ -41,8 +41,9 @@ pkg_check_modules(libftdi REQUIRED libftdi>=0.19)
 include(CheckIncludeFiles)
 add_subdirectory(papilio_prog)
 add_subdirectory(romgen)
-INSTALL(DIRECTORY roms hardware help images programmer DESTINATION PapilioArcade)
+INSTALL(DIRECTORY roms hardware help images programmer DESTINATION PapilioArcade  USE_SOURCE_PERMISSIONS)
 INSTALL(FILES start.sh PERMISSIONS OWNER_EXECUTE OWNER_READ DESTINATION PapilioArcade)
 INSTALL(FILES ${CMAKE_CURRENT_BINARY_DIR}/papilio_arcade.jar PERMISSIONS OWNER_READ DESTINATION PapilioArcade)
+INSTALL(FILES ${CMAKE_CURRENT_BINARY_DIR}/gadget-shared.jar PERMISSIONS OWNER_READ DESTINATION PapilioArcade)
 
 

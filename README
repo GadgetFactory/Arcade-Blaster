@@ -4,8 +4,10 @@ Arcade Blaster Home Page:
 http://www.gadgetfactory.net/opmanuals/index.php?n=Main.ArcadeMegaWing
 
 CHANGELOG
-7/2/2014 Add Linux Support. Build with cmake
+7/2/2014 Add Linux Support and build with cmake  ( http://www.cmake.org/ )
          
+	Install cmake
+
          cd Arcade-Blaster
          mkdir build
          cd    build
@@ -13,7 +15,8 @@ CHANGELOG
          make 
          make install
 
-         Add romgen and prog
+         Add romgen and prog from 
+         https://github.com/GadgetFactory/Papilio-Loader
 
 
 9/6/2012 Version 1.3

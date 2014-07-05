@@ -19,13 +19,14 @@
 
 package net.gadgetfactory.papilio.arcade;
 
+import static net.gadgetfactory.papilio.arcade.PapilioArcade.AppPath;
 import static net.gadgetfactory.papilio.arcade.PapilioArcade.GAMEPAD_IMAGE_HEIGHT;
 import static net.gadgetfactory.papilio.arcade.PapilioArcade.GAMEPAD_IMAGE_WIDTH;
 import static net.gadgetfactory.papilio.arcade.PapilioArcade.currTheme;
 import static net.gadgetfactory.papilio.arcade.PapilioArcade.programSettings;
 import static net.gadgetfactory.papilio.arcade.PapilioArcade.romsFolder;
-import static net.gadgetfactory.papilio.arcade.PapilioArcade.AppPath;
 import static net.gadgetfactory.papilio.arcade.PapilioArcade.runningonWindows;
+
 import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.Font;
@@ -43,7 +44,6 @@ import java.awt.event.MouseEvent;
 import java.awt.geom.Path2D;
 import java.awt.image.BufferedImage;
 import java.io.File;
-import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
@@ -57,7 +57,6 @@ import java.util.concurrent.ExecutionException;
 import java.util.zip.ZipEntry;
 import java.util.zip.ZipException;
 import java.util.zip.ZipFile;
-import java.util.zip.ZipInputStream;
 
 import javax.swing.JComponent;
 import javax.swing.JOptionPane;
@@ -65,8 +64,10 @@ import javax.swing.JPanel;
 import javax.swing.KeyStroke;
 import javax.swing.SwingWorker;
 import javax.swing.filechooser.FileNameExtensionFilter;
-import net.gadgetfactory.shared.UIHelpers;
+
 import net.gadgetfactory.shared.HelperFunctions;
+import net.gadgetfactory.shared.UIHelpers;
+
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.w3c.dom.NodeList;

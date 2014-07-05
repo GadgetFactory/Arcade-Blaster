@@ -1,3 +1,3 @@
 #!/bin/sh
-java -cp papilio_arcade.jar net/gadgetfactory/papilio/arcade/PapilioArcade
+java -cp gadget-shared.jar:papilio_arcade.jar net/gadgetfactory/papilio/arcade/PapilioArcade
 
