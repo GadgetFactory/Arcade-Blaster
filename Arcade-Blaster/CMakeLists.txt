@@ -2,7 +2,7 @@ cmake_minimum_required (VERSION 2.8)
 
 find_package(Java REQUIRED)
 include(UseJava)
-
+enable_testing()
 project (gadget-shared)
 
 list(APPEND gadget-shared_sources 
@@ -45,5 +45,9 @@ INSTALL(DIRECTORY roms hardware help images programmer DESTINATION PapilioArcade
 INSTALL(FILES start.sh PERMISSIONS OWNER_EXECUTE OWNER_READ DESTINATION PapilioArcade)
 INSTALL(FILES ${CMAKE_CURRENT_BINARY_DIR}/papilio_arcade.jar PERMISSIONS OWNER_READ DESTINATION PapilioArcade)
 INSTALL(FILES ${CMAKE_CURRENT_BINARY_DIR}/gadget-shared.jar PERMISSIONS OWNER_READ DESTINATION PapilioArcade)
+
+add_test(NAME romgen COMMAND ${CMAKE_COMMAND} -P ${CMAKE_CURRENT_SOURCE_DIR}/script.cmake)
+add_test(NAME papilio-prog COMMAND ${CMAKE_COMMAND} -P ${CMAKE_CURRENT_SOURCE_DIR}/script1.cmake)
+add_test(NAME data2mem COMMAND ${CMAKE_COMMAND} -P ${CMAKE_CURRENT_SOURCE_DIR}/script2.cmake)
 
 
