@@ -13,6 +13,7 @@ CHANGELOG
          cd    build
          cmake ..
          make 
+         make test
          make install
 
          Add romgen and prog from 
