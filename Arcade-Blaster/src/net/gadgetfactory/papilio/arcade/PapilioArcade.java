@@ -33,7 +33,6 @@ import java.io.IOException;
 import java.io.OutputStreamWriter;
 import java.net.MalformedURLException;
 import java.net.URL;
-import java.security.acl.LastOwnerException;
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
@@ -42,6 +41,7 @@ import java.util.Random;
 import java.util.SortedMap;
 import java.util.StringTokenizer;
 import java.util.TreeMap;
+
 import javax.swing.JFrame;
 import javax.swing.JOptionPane;
 import javax.swing.UIManager;
@@ -50,11 +50,13 @@ import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
 import javax.xml.parsers.FactoryConfigurationError;
 import javax.xml.parsers.ParserConfigurationException;
+
 import net.gadgetfactory.shared.AppSettings;
 import net.gadgetfactory.shared.HelperFunctions;
 import net.gadgetfactory.shared.MessageConsumer;
 import net.gadgetfactory.shared.MessageSiphon;
 import net.gadgetfactory.shared.UIHelpers;
+
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.w3c.dom.Node;
@@ -63,6 +65,10 @@ import org.xml.sax.SAXException;
 
 public class PapilioArcade extends JFrame
 {
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 946037016052438496L;
 	public static final boolean DEBUG = true;
 	public static final int GAMEPAD_IMAGE_WIDTH = 900;
 	public static final int GAMEPAD_IMAGE_HEIGHT = 700;
@@ -80,8 +86,10 @@ public class PapilioArcade extends JFrame
 				new WrJoysticksArray();
 	public static final boolean runningonWindows = 
 				System.getProperty("os.name").toLowerCase().startsWith("windows");
-	public static final File AppPath = 
-				new File(System.getProperty("java.class.path")).getParentFile();
+	public static final boolean runningonLinux = 
+				System.getProperty("os.name").toLowerCase().startsWith("linux");
+				
+	public static final File AppPath = new File(".");
 	public static final AppSettings programSettings = 
 				new AppSettings(SETTINGS_FOLDER, PREFERENCES_FILE, runningonWindows);
     public static final File romsFolder = 
@@ -116,7 +124,7 @@ public class PapilioArcade extends JFrame
 	private File gameBitFile, gameBmmFile;
 
 	private String selPlatformId;
-	private String sLastErrorMessage;
+	private String sLastErrorMessage ="";
 	private boolean bWrite2FPGA;
 	private int exitCode;
 	
@@ -198,6 +206,8 @@ public class PapilioArcade extends JFrame
 
 		if (AppCompromised())
 			System.exit(0);
+		
+		
 
 		rootProgrammerPath = new File(AppPath, "programmer");
 		// Determine locations of Papilio Programmer, romgen and data2mem executables
@@ -211,10 +221,12 @@ public class PapilioArcade extends JFrame
 		}
 		else
 		{
+			
 			programmerPath = new File(rootProgrammerPath, "linux32");
+			dataToMemFile = new File(programmerPath, "data2mem");
 			papilioProgrammerFile = new File(programmerPath, "papilio-prog");
 			romgenFile = new File(programmerPath, "romgen");
-			dataToMemFile = new File(programmerPath, "data2mem");
+			
 		}
 
 /*	2) Init UIHelpers.java */
@@ -246,6 +258,7 @@ public class PapilioArcade extends JFrame
 		this.setTitle(APP_TITLE);
 		this.setSize(GAMEPAD_IMAGE_WIDTH, GAMEPAD_IMAGE_HEIGHT);
 		this.setLocationByPlatform(true);
+		
 /*	------------------------------------------------------------------------------------
  *		When setting the shape on your window, note that the effect supports only undecorated 
  * 		windows. If your window is decorated and you apply the effect, you will get the original 
@@ -255,7 +268,14 @@ public class PapilioArcade extends JFrame
  *		must not be in the full-screen mode when setting a non-null shape. Otherwise, an 
  *		IllegalArgumentException is thrown.
  *	------------------------------------------------------------------------------------ */
-		this.setUndecorated(true);
+		try {
+			this.dispose(); // If a dialog cames up
+			this.setUndecorated(true);
+			this.setVisible(true);
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 // TODO: Mention reason why .setUndecorated() call must be PRIOR to .pack()  
 		/*	Since the shape of application window is fixed and made of hard-coded points 
 			resizing ability is out of question. 
@@ -346,12 +366,15 @@ public class PapilioArcade extends JFrame
 										  "Platforms.xml not found. Please reinstall the program.", 
 										  "File Error", 
 										  JOptionPane.ERROR_MESSAGE);
-		else if (!runningonWindows)
+		else if (runningonLinux)
+		{
 			JOptionPane.showMessageDialog(this, 
-										  "Linux version is not functional yet.", 
-										  "Linux Not Supported", 
-										  JOptionPane.ERROR_MESSAGE);
-		else
+										  "Linux version is in alpha mode. Please build papilio-prog and romgen for your linux distro.", 
+										  "Linux alpha mode", 
+										  JOptionPane.WARNING_MESSAGE);
+			bValid = true;
+		}
+		else if(runningonWindows)
 			bValid = true;
 
 		return !bValid;
@@ -503,7 +526,7 @@ public class PapilioArcade extends JFrame
 	public void NotifyProcessComplete(int exitCode) {
 		if (exitCode != 0)
 		{
-			if (sLastErrorMessage.contains("Could not access USB"))
+			if ((sLastErrorMessage != null) && (sLastErrorMessage.contains("Could not access USB")))
 			{
 				JOptionPane.showMessageDialog(
 						this,
@@ -1205,7 +1228,10 @@ process_assembly:
 		    } catch (IOException e) {
 		      System.err.println("()\t" + e.getMessage());
 		    }
-
+		    if(process == null)
+		    {
+		    	return;
+		    }
 		    // any output?
 		    MessageSiphon in = 
 		    	new MessageSiphon("Message-Siphon-StdOut", process.getInputStream(), this);
